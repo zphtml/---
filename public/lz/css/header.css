@@ -1,0 +1,88 @@
+/*======================================================================================================================
+header
+========================================================================================================================*/
+
+header {
+    width:10rem;
+    height:2.24rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    margin: auto!important;
+    z-index:9999;
+    background: #eeeeee;
+}
+.navbar-header {
+    width:10rem;
+    height:2.1rem;
+}
+header .header-logo {
+    width:2.66666rem;
+    margin-top: 0.89rem;
+}
+header .header-logo img {
+    width:100%;
+    float: left;
+    margin-left:0.666666rem;
+}
+.header-btn {
+    float: right;
+    width:2.4rem;
+    height: 0.8rem;
+    border:1px solid #e60012;
+    background: none;
+    margin-right:0.666666rem;
+    border-radius: 5px;
+    margin-top: -0.14rem;
+}
+.header-btn .header-btn-left {
+    float: left;
+    margin-left: 7.1px;
+    color: #e60012;
+    margin-top: 0.1rem;
+}
+.header-btn .header-btn-right {
+    float: right;
+    margin-right: 7.1px;
+}
+.header-btn .header-btn-right span {
+    display: block;
+    width:0.4rem;
+    margin: 0.1066666rem 0;
+    border:1px solid #e60012;
+}
+.navbar-collapse {
+    padding:0!important;
+}
+.header-nav {
+    width:10rem;
+    height:1.8rem;
+    background: #c41226;
+    color: white;
+}
+.header-nav li {
+    width:19%;
+    height:100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+.header-nav li a{
+    color: white;
+    text-decoration: none;
+}
+.header-nav li p:first-child {
+    margin: 0.4666rem 0 0.1rem 0;
+    font-size: 14px;
+}
+.header-nav li .line {
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    display: block;
+    height:0.933rem;
+    border:1px solid #a60b08;
+}

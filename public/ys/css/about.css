@@ -1,0 +1,756 @@
+/*=======================================================================================================================
+banner
+======================================================================================================================*/
+body{
+    overflow-x: hidden;
+}
+.banner {
+    width: 100%;
+    height: 570px;
+    margin: 0 auto;
+    background: url("http://test.myushan.com//yushan/g1.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.infor-a-container {
+    padding: 0;
+    max-width: 1200px;
+
+}
+
+.infor-a-container .block {
+    position: relative;
+    width: 100%;
+    height: 540px;
+
+}
+
+.infor-a-container .block .derc-box {
+    float: right;
+    margin-right: 72px
+
+}
+
+.infor-a-container .block .infor-a-derc {
+    right: 0
+}
+
+.infor-a-container .block .infor-a-img {
+    left: 0
+}
+
+.banner .infor-a-derc {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%
+}
+
+.banner .infor-a-derc .derc-box {
+    width: 450px;
+    margin-top: 190px;
+    text-align: right
+}
+
+.infor-a-derc .title {
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    font-size: PingHei, STHeitiSC-Light, 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif!important;
+}
+
+.infor-a-derc .content {
+    margin-top: 32px;
+    font-size: 20px;
+    color: white;
+    line-height: 28px;
+    font-size: PingHei, STHeitiSC-Light, 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif!important;
+}
+
+.infor-a-derc .tip-button {
+    display: block;
+    width: 144px;
+    height: 48px;
+    margin-top: 24px;
+    line-height: 48px;
+    font-size: 16px;
+    color: #5182E4;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: center;
+    box-shadow: 0 0 0 2px #5182E4;
+    transition: .1s all 0s ease-in-out
+}
+
+.infor-a-derc .tip-button span {
+    z-index: 1
+}
+
+
+.infor-a-derc .tip-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 2px transparent;
+    transition: .1s all 0s ease-in-out
+}
+
+
+
+.banner .infor-a-img {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%
+}
+
+.infor-a-img-a .img-wrap {
+    width: 428px;
+    height: 420px;
+    margin: 100px 0 0 72px;
+    background: url("http://test.myushan.com//yushan/g2.png") no-repeat center center
+}
+
+/*=======================================================================================================================
+历程
+======================================================================================================================*/
+.infor-a {
+    width:100%;
+}
+.infor-a h2{
+    width: 100%;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 200;
+    color: #000;
+    margin: 70px 0 140px 0;
+}
+
+.hide_txt {
+    text-indent: -9999em;
+    font-size: 0;
+    line-height: 0;
+}
+.wrap {
+    width: 100%;
+    transform-origin: center top;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    min-width: 370px;
+    margin: 0 auto;
+    zoom: 1;
+    position: relative;
+}
+.events_list .ic_time {
+    display: block;
+    width: 38px;
+    height: 68px;
+    margin: 0 auto;
+}
+
+.events_list .ic_arr {
+    display: block;
+    width: 38px;
+    height: 59px;
+    margin: 0 auto;
+    position: relative;
+    top: -14px;
+}
+
+.events_list ul {
+    position: relative;
+}
+
+.events_list li {
+    position: relative;
+    height: 85px;
+    margin-bottom: 20px;
+}
+
+
+.events_list li.yaer-0 .ic_events {
+    border-top:none!important;
+}
+
+.events_list .ic_events {
+    position: absolute;
+    width: 51px;
+    height: 100%;
+    top: 0;
+    word-wrap: break-word;
+    word-break: normal;
+}
+.yaer-9 span i {
+    left:-6px!important;
+}
+.events_list .txt_events {
+    width: 240px;
+    height: 60px;
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor:pointer;
+}
+.events_list .txt_events.even {
+    background: url("http://test.myushan.com//yushan/juxing.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.events_list .txt_events.odd {
+    background: url("http://test.myushan.com//yushan/juxing1.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.events_list .right_li .txt_events p:first-child {
+    font-size: 16px;
+}
+.events_list .right_li .txt_events p {
+    margin-left: 48px;
+}
+.last-event-text {
+  font-size: 16px;
+}
+.events_list .txt_events span:first-child {
+    font-size: 14px;
+    color: #89aef2;
+
+}
+.events_list .txt_events span:last-child {
+    font-size: 14px;
+
+}
+.events_list .right_li {
+    margin-left: 49%;
+}
+
+.events_list .right_li .ic_events {
+    left: 0;
+    border-left:1px solid #4d8ced;
+    border-bottom: none;
+    border-right: none;
+}
+.last-events {
+    border-right: none!important;
+}
+.events_list .right_li .ic_events .yuan {
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    background: #4d8ced;
+    position: absolute;
+    top: -18px;
+    left: -7.5px;
+    z-index:199;
+    -webkit-transition:0.7s all 0s ease-in-out;
+    -moz-transition:0.7s all 0s ease-in-out;
+    -ms-transition: 0.7s all 0s ease-in-out;
+    -o-transition: 0.7s all 0s ease-in-out;
+    transition: 0.7s all 0s ease-in-out;
+}
+.events_list .left_li .ic_events .yuan {
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    background: #4d8ced;
+    position: absolute;
+    top: -18px;
+    right: -7.5px;
+    z-index:199;
+    -webkit-transition:0.7s all 0s ease-in-out;
+    -moz-transition:0.7s all 0s ease-in-out;
+    -ms-transition: 0.7s all 0s ease-in-out;
+    -o-transition: 0.7s all 0s ease-in-out;
+    transition: 0.7s all 0s ease-in-out;
+}
+.add_txt {
+    -webkit-transition:0.7s ay 0s ease-in-out;
+    -moz-transition:0.7s ay 0s ease-in-out;
+    -ms-transition: 0.7s ay 0s ease-in-out;
+    -o-transition: 0.7s ay 0s ease-in-out;
+    transition: 0.7s ay 0s ease-in-out;
+}
+.add_txt:hover {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-transition:0.7s all 0s ease-in-out;
+    -moz-transition:0.7s all 0s ease-in-out;
+    -ms-transition: 0.7s all 0s ease-in-out;
+    -o-transition: 0.7s all 0s ease-in-out;
+    transition: 0.7s all 0s ease-in-out;
+}
+
+.last-yuan {
+    background: #a6c4f8!important;
+}
+
+.events_list li .addic  .yuan-1{
+    background: url("http://test.myushan.com//yushan/about0001.png") no-repeat center!important;
+    background-size: contain!important;
+}
+.events_list li .addic .yuan-2{
+    background: url("http://test.myushan.com//yushan/about0002.png") no-repeat center!important;
+    background-size: contain!important;
+}
+.events_list li .addic .yuan-3{
+    background: url("http://test.myushan.com//yushan/about0003.png") no-repeat center!important;
+    background-size: contain!important;
+}
+.events_list li .addic .yuan-4{
+    background: url("http://test.myushan.com//ys/about013.png") no-repeat center!important;
+    background-size: contain!important;
+}
+.events_list li .addic .yuan-5{
+    background: url("http://test.myushan.com//yushan/about0005.png") no-repeat center!important;
+    background-size: contain!important;
+}
+.events_list li .addic .yuan-6{
+    background: url("http://test.myushan.com//yushan/about0006.png") no-repeat center!important;
+    background-size: contain!important;
+}
+.events_list li .addic .yuan-7{
+    background: url("http://test.myushan.com//ys/about012.png") no-repeat center!important;
+    background-size: contain!important;
+}
+.events_list li .addic .yuan-8{
+    background: url("http://test.myushan.com//yushan/about0008.png") no-repeat center!important;
+    background-size: contain!important;
+}
+.events_list li .addic .yuan-9{
+    background: url("http://test.myushan.com//yushan/about0009.png") no-repeat center!important;
+    background-size: contain!important;
+}
+.events_list li .addic .yuan-10{
+    background: url("http://test.myushan.com//yushan/about00010.png") no-repeat center!important;
+    background-size: contain!important;
+}
+
+.events_list li .addic .yuan-1,.events_list li .addic .yuan-2,.events_list li .addic .yuan-3,.events_list li .addic .yuan-4,.events_list li .addic .yuan-5, .events_list li .addic .yuan-6
+,.events_list li .addic .yuan-7,.events_list li .addic .yuan-8,.events_list li .addic .yuan-9,.events_list li .addic .yuan-10{
+    -webkit-transform: scale(10);
+    -moz-transform: scale(10);
+    -ms-transform: scale(10);
+    -o-transform: scale(10);
+    transform: scale(10);
+    transition:0.7s all 0s ease-in-out;
+}
+
+.events_list ul li .last_ic_events {
+    border-left: none!important;
+}
+.events_list .right_li .txt_events {
+    left: 56px;
+    top:-38px;
+
+}
+.events_list .right_li .txt_events p{
+    margin-left: 50px;
+   margin-top: 6px;
+    color: #4d8ced;
+}
+.events_list .right_li .txt_events p.last-event-text {
+    font-size: 18px;
+}
+.events_list .left_li {
+    text-align: right;
+    width: 49%;
+}
+.year-2016 span {
+    color: #e60012;
+}
+.events_list .left_li .ic_events {
+    right: -1px;
+}
+.events_list ul li .ic_events .even-logo {
+    width:130px;
+    height:60px;
+    background: url("http://test.myushan.com//yushan/g3.png") no-repeat center;
+    background-size: 100% 100%;
+    display: inline-block;
+    position: absolute;
+    top: -61px;
+    left: -60.5px;
+    font-size: 20px;
+}
+.events_list .left_li .ic_events  {
+    position: absolute;
+    top: 0;
+    border-right: 1px solid #4d8ced;
+    border-bottom:none;
+    border-left:none;
+}
+
+.events_list .left_li .txt_events {
+    right: 74px;
+    top:-38px;
+}
+.events_list .left_li .txt_events p {
+    text-indent: -10px;
+    margin-top: 6px;
+    color: #4d8ced;
+    text-align: right;
+    margin-right: 48px;
+}
+.events_list .left_li .txt_events p:first-child {
+    font-size: 16px;
+    margin-top:10px;
+}
+/*========================================================================================================================
+foot
+=========================================================================================================*/
+.join-text {
+    width:100%;
+    height:300px;
+    background: #ecf3fd;
+    padding: 0.1px;
+    font-size: PingHei, STHeitiSC-Light, 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif!important;
+}
+.join-text h2{
+    width: 100%;
+    font-size: 30px;
+    color: #4e8bed;
+    margin: 100px 0 50px 0;
+    text-align: center;
+
+}
+.join-text p{
+    text-align: center;
+    font-size: 21px;
+    color: #4e8bed;
+    padding: 0 10px;
+}
+/*======================================================================================================================
+适配 -- 信息
+======================================================================================================================*/
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+    .infor-a-derc .title {
+        font-size: 30px;
+    }
+
+    .infor-a-derc .content {
+        font-size: 16px;
+    }
+
+    .infor-a-container .block .derc-box {
+        margin-right: 0px;
+    }
+
+    .infor-a-img-a .img-wrap {
+        width: 370px;
+        margin-left: 56px;
+        background-size: contain;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .infor-a .infor-a-derc .derc-box {
+        width: 320px
+    }
+
+    .infor-a-derc .title {
+        font-size: 24px
+    }
+
+    .infor-a-derc .content {
+        font-size: 14px
+    }
+
+    .infor-a-container .block .derc-box {
+        margin-right: 48px
+    }
+
+    .infor-a-img-a .img-wrap {
+        width: 78%;
+        background-size: contain;
+    }
+
+    .infor-a-derc .tip-button {
+        width: 128px;
+        height: 42px;
+        line-height: 42px
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .infor-a-slogan {
+        height: auto
+    }
+
+    .infor-a-slogan .title {
+        font-size: 28px;
+        margin-top: 56px
+    }
+
+    .infor-a-slogan .derc {
+        font-size: 14px;
+        width: 100%;
+        padding: 0 40px;
+        line-height: 24px;
+        margin-bottom: 3px
+    }
+
+    .infor-a-container .block {
+        height: 750px
+    }
+
+    .infor-a .infor-a-img {
+        width: 100%;
+        height: auto
+    }
+
+    .infor-a .infor-a-img .img-wrap {
+        margin: 260px auto 0;
+        width: 280px;
+        height: 286px;
+        background-size: 80%
+    }
+
+    .infor-a .infor-a-derc {
+        width: 100%;
+        height: auto;
+        top: 95px;
+    }
+
+    .infor-a-derc .content {
+        width: 100%;
+        padding: 0 16px;
+        margin-top: 24px;
+        font-size: 18px
+    }
+
+    .infor-a .infor-a-derc .derc-box {
+        width: 100%;
+        float: none !important;
+        margin: 0 auto !important;
+        text-align: center
+    }
+
+    .infor-a-derc .title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .infor-a-img-a .img-wrap {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    .infor-a-slogan .title {
+        margin: 36px auto 16px;
+        font-size: 28px;
+        width: 280px
+    }
+
+    .infor-a-slogan .derc {
+        font-size: 14px
+    }
+
+    .infor-a-container .block {
+        height: 560px
+    }
+
+    .infor-a .infor-a-img .img-wrap {
+        margin: 240px auto 0;
+        background-size: 80%
+    }
+
+    .infor-a-img-a .img-wrap {
+        max-width: 300px;
+        height: 220px;
+    }
+
+    .infor-a .infor-a-derc {
+        top: 115px;
+    }
+
+    .infor-a-derc .content {
+        margin-top: 18px;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0 40px
+    }
+
+    .infor-a-derc .title {
+        font-size: 22px;
+        font-weight: 400
+    }
+
+}
+/*=====================================================================================================================
+时间轴
+============================================================================================================================*/
+@media screen and (min-width: 992px) and (max-width: 1280px) {}
+@media screen and (min-width: 768px) and (max-width: 992px) {}
+@media screen and (max-width: 768px) {
+    .events_list li {
+        height:65px;
+    }
+    .events_list .right_li .txt_events {
+        left: 0px;
+    }
+    .events_list .left_li .txt_events {
+        right: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .events_list {
+        font-size: 14px;
+    }
+    .events_list .txt_events {
+        width: 225px;
+        height: 76px;
+    }
+    .events_list .right_li .txt_events p {
+        margin-left: 45px;
+    }
+    .events_list .left_li .txt_events p{
+        margin-right: 45px;
+    }
+    .events_list .right_li .txt_events {
+        top: -50px;
+    }
+    .events_list .left_li .txt_events {
+        top: -47px;
+        right: 16px;
+    }
+    .events_list .left_li .txt_events p:first-child {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+    .events_list .left_li .txt_events p:last-child{
+        font-size: 12px;
+    }
+    .events_list .right_li .txt_events p:first-child {
+        font-size: 14px;
+        margin-top: 14px;
+    }
+    .events_list .right_li .txt_events p:last-child {
+        font-size: 12px;
+    }
+    .last-event-text {
+        font-size: 13px!important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .events_list .left_li .txt_events p:first-child {
+        font-size: 12px;
+        margin-top: 16px;
+        padding-left: 10px;
+    }
+    .events_list .left_li .txt_events p:last-child {
+        font-size: 12px;
+        padding-left: 12px;
+    }
+    .events_list .right_li .txt_events p:first-child {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    .events_list .right_li .txt_events p:last-child {
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    .events_list .txt_events {
+        width: 167px;
+        height: 75px;
+    }
+    .events_list .right_li .txt_events {
+        left: -3px;
+    }
+    .events_list {
+        font-size: 12px;
+    }
+    .last-event-text {
+        font-size: 16px;
+    }
+    .events_list .right_li .txt_events, .events_list .left_li .txt_events {
+        top: -47px;
+    }
+    .events_list .left_li .txt_events p {
+        margin-right: 35px;
+        text-indent: -10px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .events_list .txt_events {
+        width: 150px;
+        height: 75px;
+    }
+    .events_list .left_li .txt_events p {
+        margin-top: 3px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .events_list .txt_events {
+        width: 140px;
+        height: 75px;
+    }
+    .events_list .left_li .txt_events p {
+        margin-top: 3px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .events_list .txt_events {
+        width: 130px;
+        height: 75px;
+    }
+}
+/*========================================================================================================================
+foot
+=========================================================================================================*/
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+    .join-text h2 {
+        font-size: 28px;
+        margin: 100px 0 50px 0;
+    }
+    .join-text p {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .join-text h2 {
+        font-size: 26px;
+        margin: 100px 0 50px 0;
+    }
+    .join-text p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .join-text h2 {
+        font-size: 24px;
+        margin: 100px 0 50px 0;
+    }
+    .join-text p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .infor-b {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .join-text {
+        height: 250px;
+    }
+    .join-text h2 {
+        font-size: 24px;
+        margin: 50px 0 50px 0;
+    }
+    .join-text p {
+        font-size: 14px;
+    }
+}

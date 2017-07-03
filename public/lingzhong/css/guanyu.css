@@ -1,0 +1,844 @@
+
+        html {
+            font-family: "微软雅黑", Arial, sans-serif
+        }
+
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, button, textarea, p, th, td, b, i, strong {
+            padding: 0;
+            margin: 0;
+            font-family: Microsoft YaHei, sans-serif, Arial;
+            list-style: none;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%
+        }
+
+        fieldset, img {
+            border: 0
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            outline: none
+        }
+
+        li {
+            list-style: none
+        }
+
+        h2, h3, h4, h5, h6 {
+            font-size: 100%;
+            font-weight: normal
+        }
+
+        input, button, textarea, select, optgroup, option {
+            font-family: inherit;
+            font-size: inherit;
+            font-style: inherit;
+            font-weight: inherit
+        }
+
+        input, button, textarea, select {
+            *font-size: 100%
+        }
+
+        i {
+            font-style: normal
+        }
+
+        .clear:after {
+            display: block;
+            content: "clear";
+            height: 0;
+            clear: both;
+            visibility: hidden;
+
+        }
+
+        img {
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .clear {
+            zoom: 1;
+        }
+
+        @font-face {
+            font-family: 'iconfont';
+            src: url('../icon/iconfont.eot');
+            src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'),
+            url('../icon/iconfont.woff') format('woff'),
+            url('../icon/iconfont.ttf') format('truetype'),
+            url('../icon/iconfont.svg#iconfont') format('svg');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            min-height: 600px;
+            min-width: 1024px;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+        }
+
+        .box .lz-left {
+            width: 65%;
+            height: 100%;
+            float: left;
+            min-width: 650px;
+        }
+
+        .box .lz-right {
+            width: 35%;
+            height: 100%;
+            float: left;
+            min-width: 350px;
+        }
+
+        .foot {
+            width: 100%;
+            height: 67px;
+            min-width: 1000px;
+            position: absolute;
+            bottom: 0;
+            overflow: hidden;
+        }
+
+        .cebian {
+            width: 28%;
+            min-width: 250px;
+            padding-right: 7%;
+            height: 62px;
+            color: #fff;
+            z-index: 197;
+            transition: all 300ms ease;
+            float: right;
+        }
+
+        .navn {
+            width: 100%;
+            height: 100%;
+        }
+
+        .col-xs-2 {
+            float: left;
+            cursor: pointer;
+            width: 19%;
+            height: 100%;
+            min-width: 51px;
+            text-align: center;
+            display: inline-block;
+            padding-top: 10px;
+            padding-bottom: 7px;
+            background: #e60012;
+        }
+
+        .col-xs-2:nth-last-child {
+            border-right: none;
+        }
+
+        .col-xs-2 div {
+            border-right: 1px solid #bb0303;
+        }
+
+        .col-xs-2:last-child div {
+            border-right: none;
+        }
+
+        .col-xs-2 a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: white;
+        }
+
+        .col-xs-2:hover {
+            background: #fff;
+        }
+        .col-xs-2:hover a{
+            color: #e60012;
+        }
+        .col-xs-2 a p:first-child{
+            margin:2px;
+        }
+        .logobox {
+            width: 65%;
+            height: 67px;
+            z-index: 199;
+            display: block;
+            background: #cbcbcb;
+            float: left;
+            min-width: 650px;
+        }
+        .col-xs-2 a p:first-child{
+            font-size: 16px;
+        }
+        .col-xs-2 a p:last-child{
+            font-size: 14px;
+        }
+        .logo2 {
+            display: inline-block;
+            position: relative;
+            width: 51px;
+            height: 44px;
+            margin-left: 69px;
+            margin-top: 10px;
+            background: red;
+            background: url(http://test.myushan.com//lingzhong/众@3x.png)  no-repeat center;
+            transition: transform 300ms, opacity 300ms, visibility 300ms, background 0ms;
+            -webkit-transition: transform 300ms, opacity 300ms, visibility 300ms, background 0ms;
+        }
+        .lz_gybox {
+            overflow: hidden;
+        }
+        /*右边导航*/
+        .lz-right div {
+            width: 100%;
+            height: 25%;
+            min-height: 150px;
+            /*padding-bottom: 1px;*/
+            box-sizing: border-box;
+        }
+
+        .lz-right .lz_png:nth-child(even) {
+            border-bottom: 2px solid white;
+        }
+
+        .lz-right .lz_png:nth-child(odd) {
+            border-bottom: 2px solid white;
+        }
+
+        .lz-right .lz_png:last-child {
+            border-bottom: none;
+        }
+
+        .lz-right div a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            background: rgba(123, 123, 123, 0.5);
+        }
+
+        .lz-right a p {
+            height: 36px;
+            line-height: 36px;
+            width: 200px;
+            position: absolute;
+            z-index: 9999;
+            top: 42%;
+            left: 37%;
+            font-size: 36px;
+            color: white;
+            border-left: 8px solid red;
+            text-indent: 15px;
+        }
+
+        .lz-right a .left_sj {
+            width: 33px;
+            height: 40px;
+            position: absolute;
+            left: -23px;
+            top: 44%;
+            bottom: 0;
+            margin: 0 auto;
+        }
+
+        /*右侧导航背景*/
+
+        /*左侧*/
+        .lz_gy {
+            width: 100%;
+            height: 100%;
+            background: url("http://test.myushan.com//lingzhong/关于-关于我们背景@3x.png") no-repeat center;
+            -webkit-background-size: 100% 100%;
+            background-size: 110% 100%;
+        }
+
+        .lz_qy {
+            width: 100%;
+            height: 100%;
+            background: url("http://test.myushan.com//lingzhong/关于-公司历程背景@3x.png") no-repeat center;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+
+        .lz_wh {
+            width: 100%;
+            height: 100%;
+            background: url("http://test.myushan.com//lingzhong/关于-文化理念背景.png") no-repeat center;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+
+        .lz_hz {
+            width: 100%;
+            height: 100%;
+            background: url("http://test.myushan.com//lingzhong/关于-合作伙伴背景.png") no-repeat center;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+
+        .lz_left_box {
+            width: 84%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 0.1px;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+
+        /*关于我们*/
+        .lz_left_box p.text {
+            font-size: 34px;
+            color: #333333;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .lz_left_box .infor {
+            width: 85%;
+            height: 185px;
+            margin: 109px auto 0;
+            padding: 31px 0 0 30px;
+            text-indent: 2em;
+            position: relative;
+        }
+        .lz_left_box .infor img {
+            animation: text_infor 0.8s 0.8s linear both;
+            -webkit-animation: text_infor 0.8s 0.8s linear both;
+        }
+        .lz_left_box .infor p {
+            font-size: 18px;
+            line-height: 30px;
+            color: #333;
+            animation: text_infor 0.8s 1.2s linear both;
+            -webkit-animation: text_infor 0.8s 1.2s linear both;
+        }
+        @-webkit-keyframes text_infor {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes text_infor {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .lz_left_box .infor img {
+            position: absolute;
+        }
+
+        .lz_left_box .infor img.infot_right {
+            width: 40px;
+            top: 0;
+            left: 0;
+        }
+
+        .lz_left_box .infor img.infot_left {
+            width: 40px;
+            bottom: 0;
+            right: -25px;
+            z-index:9999;
+        }
+
+        /*关于我们*/
+        @media (max-width: 1680px) and (max-height: 1050px) {
+            .lz_left_box p.text {
+                font-size: 30px;
+            }
+
+            .lz_left_box .infor {
+                margin: 90px auto 0;
+            }
+
+            .lz_left_box .infor p {
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+
+        @media (max-width: 1550px) and (max-height: 900px) {
+            .lz_left_box p.text {
+                font-size: 26px;
+            }
+
+            .lz_left_box .infor {
+                margin: 60px auto 0;
+                height: 220px;
+            }
+
+            .lz_left_box .infor p {
+                font-size: 14px;
+                line-height: 30px;
+            }
+        }
+
+        @media (max-width: 1360px) and (max-height: 768px) {
+            .lz_left_box p.text {
+                font-size: 22px;
+            }
+
+            .lz_left_box .infor {
+                margin: 40px auto 0;
+                height: 260px;
+            }
+        }
+
+        @media (max-width: 1280px) and (max-height: 720px) {
+            .lz_left_box p.text {
+                font-size: 20px;
+            }
+
+            .lz_left_box .infor {
+                margin: 20px auto 0;
+                height: 270px;
+            }
+        }
+
+        /*企业事迹*/
+
+        .lz_left_box > p.title {
+            margin-top: 68px;
+        }
+
+        .lz_left_box p.title span:first-child {
+            font-size: 45px;
+            font-weight: bold;
+            color: #e60012;
+        }
+
+        .lz_left_box p.title span:last-child {
+            font-size: 24px;
+            color: #e60012;
+            font-weight: 500;
+        }
+
+        .lz_left_box .time {
+            width: 595px;
+            height: 70px;
+            margin: 50px auto 40px;
+        }
+
+        .lz_left_box .time div {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 3.5%;
+            text-align: center;
+            border: 1px solid #0a0a0a;
+        }
+
+        .lz_left_box .time div:first-child {
+            background: #e60012;
+            border: none;
+        }
+
+        .lz_left_box .time div:first-child i {
+            color: white;
+        }
+
+        .lz_left_box .time div:first-child p {
+            color: white;
+        }
+
+        .lz_left_box .time div i {
+            margin: 9px 0;
+            display: block;
+            color: #333333;
+
+        }
+
+        .lz_left_box .time div p {
+            color: #333333;
+        }
+
+        .lz_left_box .time_line {
+            width: 100%;
+            height: 50%;
+        }
+
+        .lz_left_box .logo {
+            width: 138px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+
+        /*企业事迹*/
+        /*1680-1050*/
+        @media (max-width: 1680px) and (max-height: 1050px) {
+            .lz_left_box p.title span:first-child {
+                font-size: 42px;
+            }
+
+            .lz_left_box p.title span:last-child {
+                font-size: 22px;
+            }
+
+            .lz_left_box > p.title {
+                margin-top: 65px;
+            }
+
+            .lz-right a p {
+                left: 34%;
+                font-size: 34px;
+            }
+        }
+
+        @media (max-width: 1550px) and (max-height: 900px) {
+            .lz_left_box p.title span:first-child {
+                font-size: 36px;
+            }
+
+            .lz_left_box p.title span:last-child {
+                font-size: 20px;
+            }
+
+            .lz_left_box > p.title {
+                margin-top: 45px;
+            }
+
+            .lz_left_box .time {
+                width: 510px;
+                height: 60px;
+                margin: 30px auto 15px;
+            }
+
+            .lz_left_box .time div {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: inline-block;
+                margin: 0 3.5%;
+                text-align: center;
+            }
+            .lz_left_box .logo {
+                margin-top: 50px;
+            }
+        }
+        @media (max-width: 1480px) {
+
+        }
+        @media (max-width: 1376px) and (max-height: 768px) {
+            .lz_left_box .time div i {
+                margin: 9px 0 5px 0;
+
+            }
+            .lz_left_box p.title span:first-child {
+                font-size: 30px;
+            }
+
+            .lz_left_box p.title span:last-child {
+                font-size: 18px;
+            }
+
+            .lz_left_box > p.title {
+                margin-top: 19px;
+            }
+
+            .lz-left .lz_text p {
+                font-size: 20px;
+            }
+
+            .lz_left_box .time {
+                width: 510px;
+                height: 60px;
+                margin: 15px auto 15px;
+            }
+
+            .lz_left_box .time div {
+                width: 60px;
+                height: 60px;
+            }
+
+            .lz-right a p {
+                left: 28%;
+                font-size: 30px;
+            }
+            .lz_left_box .logo {
+                margin-top: 18px;
+            }
+        }
+
+        @media (max-width: 1280px) and (max-height: 720px) {
+            .lz_left_box .time div i {
+                margin: 9px 0 0 0;
+
+            }
+            .lz_left_box .time {
+                width: 440px;
+                height: 50px;
+                margin: 15px auto 15px;
+            }
+
+            .lz_left_box .time div {
+                width: 50px;
+                height: 50px;
+            }
+
+            .lz_left_box .time div i {
+                margin: 6px 0;
+                font-size: 12px;
+            }
+
+            .lz_left_box .time div p {
+                font-size: 12px;
+            }
+
+            .lz-right a p {
+                height: 28px;
+                line-height: 28px;
+                width: 200px;
+                position: absolute;
+                top: 42%;
+                left: 30%;
+                font-size: 28px;
+            }
+        }
+
+        /*理念*/
+        .lz_left_box .ln_infor {
+            width: 750px;
+            height: 130px;
+            margin: 127px auto 0;
+        }
+
+        .lz_left_box .ln_infor:last-child {
+            width: 750px;
+            height: 187px;
+        }
+
+        .lz_left_box .ln_infor .infor_img {
+            width: 12%;
+            height: 100%;
+            float: left;
+        }
+
+        .infor-1 {
+            background-position: 0px -35px;
+        }
+
+        .lz_left_box .ln_infor .yuanjing {
+            width: 84%;
+            float: left;
+            padding-top: 10px;
+
+        }
+
+        .lz_left_box .ln_infor .yuanjing span {
+            display: block;
+            font-size: 34px;
+            color: #333333;
+            margin-bottom: 25px;
+        }
+
+        .lz_left_box .ln_infor .yuanjing p {
+            font-size: 18px;
+            color: #333333;
+        }
+
+        .lz_left_box .banner {
+            width: 100%;
+            height: 65%;
+            position: relative;
+        }
+
+        .lz_left_box .banner img {
+            width: 79%;
+            min-width: 535px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 0;
+        }
+
+        /*1680-1050*/
+        @media (max-width:1680px) and (max-height: 1050px){
+            .lz_left_box .time div i {
+                margin: 9px 0 0 0;
+
+            }
+            .lz_left_box .ln_infor {
+                width: 680px;
+                height: 130px;
+                margin: 90px auto 0;
+            }
+
+            .lz_left_box .ln_infor:last-child {
+                width: 680px;
+            }
+
+            .lz_left_box .ln_infor .yuanjing span {
+                font-size: 30px;
+            }
+
+            .lz_left_box .ln_infor .yuanjing p {
+                font-size: 16px;
+                color: #333333;
+            }
+        }
+
+        @media (max-width: 1550px)  and (max-height: 900px){
+
+            .col-xs-2 a p:first-child{
+                font-size: 14px;
+            }
+            .col-xs-2 a p:last-child{
+                font-size: 12px;
+            }
+            .lz_left_box .ln_infor {
+                width: 600px;
+                height: 130px;
+                margin: 70px auto 0;
+            }
+
+            .lz_left_box .ln_infor:last-child {
+                width: 600px;
+            }
+
+            .lz_left_box .ln_infor .yuanjing span {
+                font-size: 28px;
+            }
+
+            .lz_left_box .ln_infor .yuanjing p {
+                font-size: 16px;
+                color: #333333;
+            }
+
+            .lz_left_box .ln_infor .infor_img {
+                width: 15%;
+                height: 100%;
+                float: left;
+            }
+
+            .lz_left_box .ln_infor .infor_img img {
+                width: 80%;
+            }
+
+            .col-xs-2 {
+                font-size: 14px;
+            }
+
+            .foot {
+                height: 64px;
+            }
+
+            .logo2 {
+                margin-top: 6px;
+            }
+
+        }
+        @media (max-width: 1376px) and (max-height: 768px){
+            .col-xs-2 a p:first-child{
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+            .col-xs-2 a p:last-child{
+                font-size: 12px;
+            }
+            .lz_left_box .ln_infor {
+                width: 600px;
+                height: 130px;
+                margin: 60px auto 0;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .col-xs-2 a p:first-child{
+                font-size: 12px;
+            }
+            .col-xs-2 a p:last-child{
+                font-size: 12px;
+            }
+            .lz_left_box .ln_infor {
+                width: 500px;
+                height: 130px;
+                margin: 65px auto 0;
+            }
+
+            .lz_left_box .ln_infor:last-child {
+                width: 500px;
+            }
+
+            .lz_left_box .ln_infor .yuanjing span {
+                font-size: 24px;
+            }
+
+            .lz_left_box .ln_infor .yuanjing p {
+                font-size: 14px;
+                color: #333333;
+            }
+
+            .col-xs-2 {
+                font-size: 12px;
+            }
+
+            .foot {
+                height: 64px;
+            }
+
+            .logo2 {
+                margin-top: 0px;
+            }
+            .lz_left_box {
+                width:86%;
+            }
+            .logo2 {
+                margin-top: 0px;
+            }
+            .lz_left_box .ln_infor {
+                width: 600px;
+                height: 130px;
+                margin: 50px auto 0;
+            }
+        }
+        @media (min-width: 670px) {
+            .lz-right a p {
+                top: 36%;
+            }
+        }

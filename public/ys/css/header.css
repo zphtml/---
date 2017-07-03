@@ -1,0 +1,757 @@
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 -1px 0 0 rgba(255, 255, 255, .1) inset;
+    background-color: #4e8bed;
+    transition: all .1s ease-in-out 0s
+}
+header .container {
+    padding: 0
+}
+
+header .navbar-header {
+    margin: 0
+}
+
+header .navbar-header .telephone-wap {
+    display: none;
+    position: absolute;
+    top: 16px;
+    right: 84px
+}
+
+header .navbar-header .telephone-wap:hover {
+    color: rgba(255, 255, 255, .6)
+}
+
+header .navbar-header .telephone-wap:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -24px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    opacity: .8;
+    background: url("http://test.myushan.com//yushan/dianhua1.png") no-repeat center center;
+    background-size: cover;
+}
+
+header .navbar-collapse {
+    padding: 0 -0px;
+}
+
+header .navbar-toggle {
+    margin-right: 24px
+}
+
+header .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: azure
+}
+
+header .logo {
+    width: 250px;
+    padding: 0;
+    background: url("http://test.myushan.com//yushan/羽扇@2x.png")  no-repeat center center;
+    background-size: contain;
+    margin-left: -10px;
+}
+header .logo-1 {
+    display: block;
+}
+
+header ul li {
+    height: 64px;
+    line-height: 64px;
+    padding: 0 16px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+}
+
+header ul li a {
+    position: relative;
+    padding: 0;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    line-height: 65px;
+    font-weight: 200;
+    transition: all .2s ease-in-out
+}
+
+.navbar-nav > li > a {
+    line-height: 65px
+}
+
+header ul li.nav-item a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .2s ease-in-out
+}
+
+header ul:hover li.nav-item a, header ul:hover li.nav-item.active a {
+    color: rgba(255, 255, 255, .36);
+    transition: all .2s ease-in-out
+}
+
+header ul:hover li.nav-item.active a::before {
+    background: rgba(255, 255, 255, .36)
+}
+
+header ul:hover li.nav-item.active:hover a::before {
+    background: rgba(255, 255, 255, 1)
+}
+
+header ul li.nav-item:hover a, header ul li.nav-item.active a, header ul li.nav-item.active:hover a {
+    color: rgba(255, 255, 255, 1)
+}
+
+header ul li.nav-item:hover a::before, header ul li.nav-item.active a::before {
+    transform: scaleX(1);
+    background: rgba(255, 255, 255, 1);
+    transition: all .2s ease-in-out
+}
+
+header ul li a:focus, header ul li a:hover, .nav > li > a:focus, .nav > li > a:hover {
+    background-color: transparent
+}
+
+header ul li.active a, header ul li:hover a, header ul li a:hover {
+    color: #fff
+}
+
+header ul li:hover {
+    transition: all .2s ease-in-out
+}
+
+header ul li:last-child {
+    margin-right: 0
+}
+
+header ul li .download-btn-mobile {
+    display: none
+}
+
+header ul li .download-btn {
+    border:1px solid white;
+    background: transparent;
+    color: #fff;
+    padding: 0 14px;
+    line-height: 30px;
+    font-weight: 200;
+    margin-top: 16px;
+}
+
+header ul li .download-btn::before {
+    background: white;
+
+}
+
+header ul li .download-btn:hover {
+    color: #5182e4;
+}
+header ul li .signin-btn {
+    width: auto;
+    line-height: 28px;
+    padding: 0 30px;
+    margin-top: 16px;
+    background: rgba(81, 130, 228, 1);
+    color: #fff;
+    border: 2px solid transparent
+}
+
+header ul li .signin-btn::before {
+    background: #fff
+}
+
+header ul li .signin-btn:hover {
+    border: 2px solid #fff;
+    color: #5182e4
+}
+
+header ul li .signin-btn:hover::before {
+    background: #fff;
+    z-index: -1
+}
+
+header ul li#download_app {
+    padding: 0 0 0 24px
+}
+
+header ul li#dash, header ul li#login {
+    padding-right: 8px
+}
+
+header ul li#dash {
+    display: none
+}
+
+header ul li#dash .signin-btn {
+    width: auto
+}
+
+header ul li#telephone {
+    padding: 0 0 0 24px
+}
+
+header ul li#telephone a {
+    padding-left: 24px;
+    color: #FFF
+}
+
+header ul li#telephone a:before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    opacity: .8;
+    background: url("http://test.myushan.com//yushan/dianhua1.png")  no-repeat center center;
+    background-size: cover
+}
+
+header.header-scroll-default {
+    transition: all .1s ease-in-out 0s
+}
+
+.bhg-body header.header-scroll-default {
+    background: rgba(28, 141, 107, .98)
+}
+
+.nestle-body header.header-scroll-default {
+    background: rgba(142, 97, 54, .98)
+}
+
+.dj58-body header.header-scroll-default {
+    background: rgba(83, 110, 165, .98)
+}
+
+.rrc-body header.header-scroll-default {
+    background: rgba(229, 114, 84, .98)
+}
+
+.only-body header.header-scroll-default {
+    background: rgba(56, 151, 142, .98)
+}
+
+header.header-scroll {
+    transition: all .1s ease-in-out 0s;
+    background: rgba(255, 255, 255, .98);
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, .08) inset
+}
+
+header.header-scroll ul li.nav-item a {
+    color: rgba(10, 18, 32, .64)
+}
+
+header.header-scroll ul li.nav-item a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: rgba(81, 130, 228, .82);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .2s ease-in-out
+}
+
+header.header-scroll ul:hover li.nav-item a {
+    color: rgba(0, 0, 0, .36);
+    transition: all .2s ease-in-out
+}
+
+header.header-scroll ul:hover li.nav-item.active a {
+    color: rgba(81, 130, 228, .36)
+}
+
+header.header-scroll ul:hover li.nav-item.active a::before {
+    background: rgba(81, 130, 228, .36)
+}
+
+header.header-scroll ul:hover li.nav-item.active:hover a::before {
+    background: #5182e4
+}
+
+header.header-scroll ul li.nav-item:hover a, header.header-scroll ul li.nav-item.active a, header.header-scroll ul li.nav-item.active:hover a {
+    color: #5182e4
+}
+
+header.header-scroll ul li.nav-item:hover a::before, header.header-scroll ul li.nav-item.active a::before {
+    transform: scaleX(1);
+    background: #5182e4;
+    transition: all .2s ease-in-out
+}
+
+header.header-scroll .download-btn {
+    border: 2px solid rgba(0, 0, 0, .2);
+    color: rgba(10, 18, 32, .64)
+}
+
+header.header-scroll .download-btn-mobile {
+    color: rgba(0, 0, 0, .64)
+}
+
+header.header-scroll .download-btn::before {
+    background: #5182e4
+}
+
+header.header-scroll .download-btn:hover {
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid #5182e4
+}
+
+header.header-scroll .download-btn:hover::before {
+    background: #5182e4
+}
+
+header.header-scroll .signin-btn {
+    color: rgba(255, 255, 255, 1)
+}
+
+header.header-scroll .signin-btn::before {
+    background: #fff !important
+}
+
+header.header-scroll .signin-btn:hover {
+    color: rgba(81, 130, 228, 1) !important;
+    border: 2px solid #5182e4 !important
+}
+
+header.header-scroll .signin-btn:hover::before {
+    background: #fff !important
+}
+
+header.header-scroll .navbar-toggle .icon-bar {
+    background: #a3abb0 !important
+}
+
+header.header-scroll ul li#telephone a {
+    color: rgba(10, 18, 32, .64)
+}
+
+header.header-scroll ul li#telephone a:hover {
+    color: rgba(0, 0, 0, .5) !important
+}
+
+header.header-scroll ul li#telephone a:before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    opacity: .8;
+    background: url("http://test.myushan.com//yushan/dianhua1.png")  no-repeat center center;
+    background-size: cover
+}
+@media  (max-width: 1200px) {
+    header .logo {
+        margin-left: -50px;
+    }
+}
+    @media screen and (min-width: 768px) and (max-width: 1100px) {
+    header ul li {
+        padding: 0 8px
+    }
+    header .logo {
+        width: 198px;
+        margin: 8px 0px 0 0px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header ul li#download_app {
+        padding: 0 16px
+    }
+
+    header ul li#dash {
+        padding: 0;
+        margin-left: -8px
+    }
+
+    header ul li#dash .signin-btn {
+        width: auto;
+        padding: 0 8px
+    }
+
+    header ul li#telephone {
+        display: none
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header .navbar-right {
+        margin-right: 0
+    }
+
+    header ul.solution-list-float {
+        display: none
+    }
+
+    .navbar-nav > li > a {
+        padding: 0
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header .logo {
+        display: none;
+    }
+    header .logo-1 {
+        width: 100px;
+        margin-left:20px;
+        padding: 0;
+        background: url("http://test.myushan.com//yushan/%E7%BE%BD%E6%89%87-%E6%8B%B7%E8%B4%9D@2x.png")  no-repeat center center;
+        background-size: contain;
+        display: block;
+    }
+    header .navbar-header {
+        float: none
+    }
+
+    header .navbar-toggle {
+        display: block
+    }
+
+    header .navbar-collapse {
+        padding: 0;
+        margin: 0
+    }
+
+    header .container > .navbar-collapse {
+        margin: 0
+    }
+
+    header .navbar-collapse {
+        position: fixed;
+        top: -50em;
+        left: 0;
+        right: 0;
+        padding: 0 !important;
+        margin: 0;
+        background: #4f8bed;
+        transition: all .4s ease-in-out;
+        overflow-y: auto;
+        display: none
+    }
+
+    header .navbar-header .telephone-wap {
+        display: block;
+        color: rgba(255, 255, 255, 1)
+    }
+
+    header .navbar-nav {
+        margin: 0
+    }
+
+    header ul {
+        overflow-y: auto;
+        margin: 0;
+        display: block;
+        transition: all .3s ease-in-out
+    }
+
+    header .navbar-collapse ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-top: 48px;
+    }
+
+    header .navbar-collapse ul:nth-child(2) {
+        top: 345px;
+        padding-top: 0
+    }
+
+    header .navbar-collapse ul:nth-child(3) {
+        top: 80px;
+    }
+
+    header .navbar-collapse.slide-down {
+        top: 0;
+        display: none;
+        transition: all .4s ease-in-out
+    }
+
+    header .navbar-collapse.slide-down ul {
+        display: block;
+    }
+
+    header ul li, header ul li.active {
+        width: 100%;
+        height: auto;
+        line-height: 48px;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        color: #fff;
+        font-weight: 200;
+        box-shadow: 0 -1px 0 0 rgba(255, 255, 255, .1) inset
+    }
+
+    header ul li a {
+        width: 100%;
+        text-align: center;
+        line-height: 48px;
+        color: #fff
+    }
+
+    header ul li:hover a, header ul li a:hover, header.header-scroll ul li a:hover {
+        color: rgba(255, 255, 255, 1) !important
+    }
+
+    .navbar-nav > li > a {
+        line-height: 55px;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: PingHei, STHeitiSC-Light, 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif!important;
+    }
+
+    header ul li.nav-item a::before {
+        content: "";
+        display: none !important;
+        width: 0
+    }
+
+    header ul li.nav-item a:hover, header ul li.nav-item.active a, header ul li.nav-item.active a:hover {
+        color: rgba(255, 255, 255, 1) !important
+    }
+
+    header ul li.nav-item a:hover::before, header ul li.nav-item.active a::before {
+        transform: scaleX(1);
+        background: rgba(255, 255, 255, 1) !important;
+        transition: all .2s ease-in-out
+    }
+    header ul li .download-btn::before {
+        background:  #4f8bed;;
+    }
+    header ul li .btn-animation::before {
+        content: '';
+        position: static!important;
+    }
+    header ul li .signin-btn:hover::before {
+        background: #4f8bed;
+        z-index: -1
+    }
+    header ul li .signin-btn:hover {
+        border: none;
+        color: #5182e4;
+    }
+    header ul li#login {
+        padding: 0
+    }
+
+    header ul li .download-btn, header ul li .signin-btn {
+        border: 0;
+        background: transparent;
+        color: #fff !important;
+        width: 100%;
+        text-align: center;
+        line-height: 24px;
+        font-weight: 200
+    }
+
+    header ul li#download_app {
+        padding-left: 0
+    }
+
+    header ul li .signin-btn {
+        margin-top: 0;
+        line-height: 48px
+    }
+    header ul li#telephone {
+        display: none
+    }
+
+    header ul.solution-list-float {
+        display: none;
+        padding-bottom: 16px
+    }
+
+    header ul.solution-list-float li {
+        line-height: 40px;
+        padding-left: 32px;
+        color: rgba(255, 255, 255, .54);
+        box-shadow: none
+    }
+
+    header .navbar-toggle {
+        margin-right: 16px
+    }
+
+    header .navbar-toggle.close-toggle {
+        position: absolute;
+        top: 10px;
+        right: 26px;
+        width: 24px;
+        height: 32px;
+        margin: 0;
+        padding: 0;
+        transition: all .3s ease-in-out;
+        z-index: 100
+    }
+
+    header .navbar-toggle.close-toggle:hover {
+        opacity: .8
+    }
+
+    header .navbar-toggle.close-toggle .icon-bar:nth-child(1) {
+        transform: rotate(45deg)
+    }
+
+    header .navbar-toggle.close-toggle .icon-bar:nth-child(2) {
+        transform: rotate(-45deg);
+        margin-top: -2px
+    }
+
+    header.header-scroll .navbar-toggle.close-toggle .icon-bar {
+        background: azure
+    }
+}
+
+.slide-down {
+    -webkit-animation-name: slideDown;
+    -webkit-animation-duration: .2s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        height: 0
+    }
+    100% {
+        height: 100%
+    }
+}
+
+.slide-up {
+    -webkit-animation-name: slideUp;
+    -webkit-animation-duration: .2s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        height: 100%
+    }
+    100% {
+        height: 0
+    }
+}
+
+.btn-animation {
+    display: inline-block;
+    position: relative;
+    transition: .2s all 0s cubic-bezier(0.2, 1, .3, 1)
+}
+
+.btn-animation span {
+    position: relative;
+    z-index: 2;
+    white-space: nowrap
+}
+
+.download-modal-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    z-index: 10100
+}
+
+.download-modal {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    position: absolute;
+    width: 500px;
+    height: 360px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, .96);
+    text-align: center
+}
+
+.download-modal-header .modal-close {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px
+}
+
+.download-modal-body img {
+    width: 200px
+}
+
+.download-modal-body div, .download-modal-body img {
+    margin-top: 40px
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.ml-8 {
+    margin-left: 8px
+}
+
+.mr-8 {
+    margin-right: 8px
+}
+
+.home-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle
+}
+
+.home-icon-large {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle
+}
+
+.ico-home-modal-close {
+    background-repeat: no-repeat;
+}

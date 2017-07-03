@@ -1,0 +1,4005 @@
+@charset "utf-8";
+/* CSS Document */
+/* fixed */
+html, body {
+    font: 14px/1.8 "微软雅黑";
+    color: #646464;
+}
+
+.pw {
+    width: 848px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* fixed end */
+.content {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.ibox {
+    height: 100%;
+    position: relative;
+}
+
+.banner .pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner .slick-dots {
+    position: absolute;
+    z-index: 99;
+    left: 4%;
+    bottom: 5.9%;
+    border: 1px solid #fff;
+    padding: 0 47px;
+}
+
+.banner .slick-dots li {
+    border-radius: 0;
+    width: 1px;
+    height: 6px;
+    margin: 3px 0;
+    background: none;
+    position: relative;
+    padding: 0 6px;
+}
+
+.banner .slick-dots li a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 6px;
+    background: #fff;
+    top: 50%;
+    margin-top: -3px;
+}
+
+.banner .slick-dots li.slick-active a {
+    height: 20px;
+    margin-top: -10px;
+    background: #c80000;
+}
+
+.banner .slick-dots li:hover a {
+    background: #c80000;
+}
+
+.play-pause-btn {
+    position: absolute;
+    top: -5px;
+    left: -12px;
+    width: 36px;
+    z-index: 100;
+    height: 20px;
+    background: url("http://test.myushan.com//lingzhong/playbtn2.png") no-repeat center center;
+    cursor: pointer;
+}
+
+.play-pause-btn.act {
+    background: url("http://test.myushan.com//lingzhong/playbtn1.png") no-repeat center center;
+}
+
+.ixtxts {
+    position: fixed;
+    z-index: 199;
+    width: 710px;
+    height: 270px;
+    left: 4%;
+    top: 35.8%;
+    background: #000;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+}
+
+.itTx {
+    position: relative;
+    width: 710px;
+}
+
+.itTx li {
+    padding: 36px 50px 0 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(60px);
+    -webkit-transform: translateX(60px);
+    transition: 600ms;
+    -webkit-transition: 600ms;
+}
+
+.itTx li.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.itTx .ti {
+    font-size: 38px;
+    margin-bottom: 38px;
+}
+
+.itTx .tx {
+    font-size: 13px;
+    line-height: 25px !important;
+}
+
+.menu {
+    position: fixed;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    width: 8%;
+    z-index: 199;
+}
+
+.menu-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 90px;
+    background: #c80000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-nav {
+    padding: 70.5% 20px 0 20px;
+}
+
+.menu-nav2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.menu-nav2 a {
+    color: #fff !important;
+}
+
+.menu-handler {
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+    z-index: 399;
+    top: 5.5%;
+    cursor: pointer;
+}
+
+.menu-handler .burger {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.menu-handler .burger-1 {
+    top: 0;
+}
+
+.menu-handler .burger-1 {
+    top: 16px;
+}
+
+.menu-handler.active .burger {
+    background: #fff !important;
+}
+
+.menu-handler.active .burger-1 {
+    top: 8px;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.menu-handler.active .burger-2 {
+    top: 8px;
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+}
+
+.menu-nav a {
+    display: block;
+    color: #000;
+    line-height: 1.4;
+    padding: 8px 0;
+}
+
+.menu-nav a:hover {
+    color: #c80000;
+}
+
+.menu-nav a p {
+    display: inline-block;
+    width: 90px;
+    margin-left: -53px;
+    height: 60px;
+    text-align: center;
+    background: #e60012;
+}
+
+.menu-nav a p span {
+
+    display: block;
+    height: 20px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.fubiao {
+    width: 66px;
+    height: 132px;
+    text-align: center;
+    position: absolute;
+    bottom: 23%;
+    right: 0;
+    background: #cfcfcf;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 9999;
+}
+
+.pa1mg {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.yx {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #e60012;
+    color: #e60012;
+    text-align: center;
+    line-height: 90px;
+    font-size: 18px;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+
+.yx:hover {
+    background: #e60012;
+    color: white;
+}
+
+.menu .mln {
+    display: none;
+}
+
+.menu2 .mln {
+    display: block;
+}
+
+.navbox {
+    position: fixed;
+    width: 30%;
+    padding-right: 10%;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    z-index: 197;
+}
+
+.navbox .b {
+    background: #c80000;
+    padding: 43px 0;
+}
+
+.ix-ab-A {
+    display: block;
+    font-size: 0;
+    color: #fff;
+    padding: 0 12%;
+    line-height: 24px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.ix-ab-A .line {
+    width: 46px;
+    height: 1px;
+    background: #fff;
+    margin-left: 23px;
+    margin-top: 1px;
+}
+
+.ix-ab-A .aw {
+    width: 6px;
+    height: 24px;
+    background-image: url("http://test.myushan.com//lingzhong/ixaw1.png");
+    margin-left: 7px;
+    margin-top: 2px;
+}
+
+.ix-ab-A:hover .aw {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+
+.sl {
+    width: 65%;
+    float: left;
+    overflow: hidden;
+}
+
+.sr {
+    width: 35%;
+    float: right;
+    overflow: hidden;
+}
+
+.itTx1 {
+    width: 268px;
+    height: 410px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(80px);
+    -webkit-transform: translateY(80px);
+    display: none \9;
+}
+
+.itTx1 .itoL {
+    width: 138px;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+
+.itTx1 .numbox {
+    height: 100%;
+}
+
+.itTx1 .numbox li {
+    height: 100%;
+    overflow: hidden;
+}
+
+.itTx1 .numbox img {
+    display: block;
+    margin-top: 58px;
+    max-width: 95%;
+}
+
+.itTx1 .numbox .num1 {
+    margin-left: -42px;
+}
+
+.itTx1 .numbox .num2 {
+    margin-left: -127px;
+}
+
+.itTx1 .numbox .num3 {
+    margin-left: -89px;
+}
+
+.itTx1 .numbox .num4 {
+    margin-left: -92px;
+}
+
+.itTx1 .numbox .num5 {
+    margin-left: 0;
+}
+
+.itTx1 .itoR {
+    width: 130px;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+
+.itTx1 .tibox {
+    height: 100%;
+}
+
+.itTx1 .tibox li {
+    height: 100%;
+}
+
+.itTx1 .tibox .ch {
+    font-size: 26px;
+    line-height: 1.1;
+}
+
+.itTx1 .tibox .line2 {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background: #fff;
+    margin: 23px 0 12px 0;
+}
+
+.itTx1 .tibox .en {
+    line-height: 1.1;
+}
+
+.itTx1 .tibox .pa {
+    position: relative;
+}
+
+.itTx1 .tibox .ti1 .pa {
+    padding-top: 135px;
+    height: 275px;
+}
+
+.itTx1 .tibox .ti4 .pa {
+    padding-top: 130px;
+    height: 280px;
+}
+
+.itTx1 .tibox .ti2 .pa,
+.itTx1 .tibox .ti3 .pa,
+.itTx1 .tibox .ti5 .pa {
+    padding-top: 110px;
+    height: 300px;
+}
+
+.page-controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+.page-controls li {
+    float: left;
+    padding: 0 3px;
+    position: relative;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.page-controls li .line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.page-controls li.act .line {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pagesider .ixtxts {
+    width: 268px;
+    height: 410px;
+    top: 0;
+    left: 0;
+}
+
+.pagesider .itTx {
+    transform: translateY(-80px);
+    -webkit-transform: translateY(-80px);
+    opacity: 0;
+    visibility: hidden;
+    display: none \9;
+}
+
+.pagesider .itTx1 {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    opacity: 1;
+    visibility: visible;
+    display: block \9;
+}
+
+.pagesider .navbox .b {
+    padding: 20px 0;
+}
+
+.pagesider .navbox .move {
+    margin-top: 0;
+}
+
+.navbox .movebox {
+    height: 24px;
+    overflow: hidden;
+}
+
+.navbox .move {
+    margin-top: -24px;
+}
+
+.nav a {
+    float: left;
+    color: #fff;
+    margin-left: 38px;
+    line-height: 24px;
+}
+
+.nav a:first-child {
+    margin-left: 0;
+}
+
+.nav {
+    height: 24px;
+    overflow: hidden;
+}
+
+.nav a:hover {
+    opacity: 0.7;
+}
+
+.pagesider .menu {
+    height: 64px;
+}
+
+.pagesider .menu-handler {
+    top: 22px;
+}
+
+/*.pagesider .menu-handler .burger{
+	background:#fff;
+	}*/
+.pagesider .menu-content {
+    bottom: 64px;
+}
+
+/*.pagesider .menu.active{ height:100%; background-color:transparent; }
+.pagesider .menu.active .menu-handler{ top: 5.5%; }
+.pagesider .menu.active .menu-handler .burger{ background:#fff; }
+.pagesider .menu.active .menu-content{ bottom:64px; }*/
+
+.logo {
+    width: 215px;
+    position: absolute;
+    left: 3.4%;
+    top: 5.6%;
+    z-index: 99;
+}
+
+.logobox {
+    position: fixed;
+    z-index: 199;
+    bottom: 0;
+    left: 0;
+    width: 61.6%;
+    padding: 10px 0;
+    padding-left: 3.4%;
+    display: none;
+}
+
+.logobox .bg {
+    bottom: 0;
+    width: 0;
+    background: #cbcbcb;
+}
+
+.logo2 {
+    position: relative;
+    width: 51px;
+    height: 44px;
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    opacity: 0;
+    visibility: hidden;
+    background: url("http://test.myushan.com//lingzhong/众@3x.png") no-repeat center;
+    transition: transform 300ms, opacity 300ms, visibility 300ms, background 0ms;
+    -webkit-transition: transform 300ms, opacity 300ms, visibility 300ms, background 0ms;
+}
+
+.pagesider .logobox .bg {
+    width: 100%;
+}
+
+.pagesider .logobox .logo2 {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.stawbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 107px 0 200px 0;
+    width: 1px;
+    z-index: 99;
+    right: 36%;
+    margin-right: 11px;
+}
+
+.stawbox .line {
+    border-left: 1px dashed #818181;
+    height: 100%;
+}
+
+.stawbox .t {
+    width: 14px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 167px;
+    left: 50%;
+    margin-left: -7px;
+}
+
+.stawbox .t .square {
+    display: block;
+    width: 100%;
+    height: 14px;
+    background: #c80000;
+    margin-bottom: 20px;
+}
+
+.stawbox .t .txx {
+    display: block;
+    margin: 0 1px;
+}
+
+.st-top, .st-bottom {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #818181;
+    position: relative;
+    margin-top: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background 300ms;
+    -webkit-transition: background 300ms;
+}
+
+.st-top .aw, .st-bottom .aw {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.st-top .aw {
+    background-image: url("http://test.myushan.com//lingzhong/at-top.png");
+}
+
+.st-bottom .aw {
+    background-image: url("http://test.myushan.com//lingzhong/at-down.png");
+}
+
+.st-top .aw1, .st-bottom .aw1 {
+    left: -4px;
+}
+
+.st-top .aw2, .st-bottom .aw2 {
+    right: -4px;
+}
+
+.staw {
+    position: absolute;
+    left: 50%;
+    margin-left: -26px;
+    top: 20px;
+    z-index: 99;
+}
+
+.staw .line2 {
+    display: block;
+    border-left: 1px dashed #818181;
+    width: 0;
+    height: 10px;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+
+.st-top:hover, .st-bottom:hover {
+    background: #f2f2f2;
+}
+
+.st-top:hover .aw, .st-bottom:hover .aw {
+    left: 0;
+    right: 0;
+}
+
+.mouse {
+    width: 28px;
+    height: 49px;
+    background: url("http://test.myushan.com//lingzhong/mouse.png") no-repeat;
+    position: absolute;
+    left: 12.5%;
+    bottom: 13.5%;
+    animation: mouse 2s linear alternate infinite running;
+    -webkit-animation: mouse 2s linear alternate infinite running;
+    cursor: pointer;
+}
+
+@keyframes mouse {
+    0% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+    }
+}
+
+@-webkit-keyframes mouse {
+    0% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+    }
+}
+
+.ipbox {
+    padding-left: 28%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.mypos {
+    background: #fafafa;
+}
+
+.mypos .tx1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #323232;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+.mypos .ti {
+    font-size: 34px;
+    font-weight: bold;
+    color: #c80000;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.mypos .ti i {
+    position: relative;
+    top: -9px;
+    margin-right: 6px;
+}
+
+.mypos .tx {
+    font-size: 15px;
+    line-height: 26px !important;
+    color: #8e8e8e;
+    margin-bottom: 62px;
+}
+
+.ixmore {
+    font-size: 12px;
+    color: #000;
+    overflow: hidden;
+    display: block;
+    line-height: 24px;
+}
+
+.ixmore .txx {
+    float: left;
+}
+
+.ixmore .aw {
+    width: 6px;
+    height: 24px;
+    background-image: url("http://test.myushan.com//lingzhong/ixmore.png");
+    float: left;
+    margin-left: 15px;
+    background-position: left 1px;
+    transition: transform 300ms;
+    -webkit-transition: transform 300ms;
+}
+
+.mypos .pa {
+    padding-top: 25%;
+}
+
+.yx {
+    margin-left: 25px
+}
+
+.yx:first-child {
+    margin-left: 0
+}
+
+.movie {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden
+}
+
+.myvideo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.video2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 440px;
+    bottom: 0;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.myvideo2 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+}
+
+.pics-video {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pics-video li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.pics-video .pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pics-video .txts {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    padding-top: 11.25%;
+    overflow: hidden;
+}
+
+.pics-video .txts .line {
+    width: 6px;
+    height: 36px;
+    background: #1effbc;
+    margin: 0 4px;
+    margin-bottom: 13px;
+}
+
+.pics-video .txts .txx {
+    line-height: 1;
+    margin-bottom: 15px;
+    color: #000;
+    width: 14px;
+}
+
+.pics-video .txts .txx2 {
+    color: #000;
+}
+
+.footer {
+    background: #1b1b1b;
+    color: #fff;
+    text-align: center;
+    padding: 7% 0 63px 0;
+    position: relative;
+    z-index: 9999;
+}
+
+.footer a {
+    color: #fff;
+}
+
+/*.logo3{ width:78px; margin:0 auto; }*/
+.f-tx {
+    overflow: hidden;
+    margin-top: 32px;
+}
+
+.f-tx .square {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #91010c;
+    margin: 0 10px;
+    margin-top: 6px;
+}
+
+.f-tx .txx {
+    font-size: 18px;
+    margin: 0 5px;
+    line-height: 24px;
+}
+
+.f-cta {
+    margin-top: 2%;
+}
+
+.f-cta a {
+    overflow: hidden;
+    margin: 0 10px;
+    line-height: 25px;
+}
+
+.f-cta .ico {
+    float: left;
+    height: 25px;
+    width: 25px;
+    background-position: center top;
+    margin-right: 0px;
+}
+
+.f-cta .txx {
+    float: left;
+}
+
+.f-cta .tel {
+    font-size: 13px;
+}
+
+.f-cta .tel .ico {
+    background-image: url("http://test.myushan.com//lingzhong/f-cta.png");
+}
+
+.f-cta .addr .ico {
+    background-image: url("http://test.myushan.com//lingzhong/f-cta2.png");
+}
+
+.f-cta a:hover .txx {
+    color: #c80000;
+}
+
+.f-cta a:hover .ico {
+    background-position: center bottom;
+}
+
+.f-tx2 {
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.backtop {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 42px;
+    right: 22px;
+}
+
+.backtop .aw {
+    background-image: url("http://test.myushan.com//lingzhong/backtop.png");
+}
+
+.backtop:hover {
+    background: #c80000;
+    border-color: #c80000;
+}
+
+.f-ma .ma {
+    display: block;
+    border-radius: 4px;
+}
+
+.f-ma {
+    position: absolute;
+    right: 22px;
+    bottom: 65px;
+}
+
+.pagesider3 .logobox, .pagesider3 .navbox, .pagesider3 .menu {
+    bottom: -64px;
+}
+
+.pagesider3 .ixtxts {
+    top: -410px;
+}
+
+.header {
+    height: 64px;
+}
+
+.header .logobox {
+    display: block;
+    position: absolute;
+    bottom: auto;
+    top: 0;
+}
+
+.header .logobox .bg {
+    width: 100%;
+}
+
+.header .logo2 {
+    transform: none;
+    -webkit-transform: none;
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .navbox {
+    position: absolute;
+    bottom: auto;
+    top: 0;
+}
+
+.header .navbox .b {
+    padding: 20px 0;
+}
+
+.header .menu {
+    height: 64px;
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    background: #000;
+    z-index: 1008;
+}
+
+.header .menu-handler {
+    top: 20px;
+}
+
+.header .menu-handler .burger {
+    background: #fff;
+}
+
+.header .menu-content {
+    bottom: 0;
+}
+
+.mtop {
+    height: 64px;
+}
+
+.conpanel {
+    min-height: 100%;
+    position: relative;
+}
+
+.conL {
+    width: 66.67%;
+    position: relative;
+    z-index: 100;
+}
+
+.conR {
+    width: 33.33%;
+    position: fixed;
+    z-index: 99;
+    top: 64px;
+    bottom: 0;
+    right: 0;
+    background: url("http://test.myushan.com//lingzhong/abbg.png");
+    color: #fff;
+}
+
+.abbox {
+    padding: 56px 58px 64px 58px;
+}
+
+.abnav a {
+    width: 48.5%;
+    margin-left: 1.5%;
+    margin-bottom: 1.5%;
+    float: left;
+    position: relative;
+    color: #000;
+    overflow: hidden;
+}
+
+.abnav {
+    margin-left: -1.5%;
+}
+
+.abnav .cover {
+    background: #c80000;
+    background: rgba(200, 0, 0, .8);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.abnav .txts {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 40%;
+    text-align: center;
+}
+
+.abnav .txts .ch {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.abnav .txts .en {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.abnav .txts .aws {
+    width: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 13.3%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.abnav .txts .aws .dot {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.abnav .txts .aws .line {
+    width: 1px;
+    height: 12px;
+    background: url("http://test.myushan.com//lingzhong/avline.png") no-repeat center top;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.abnav .txts .aws .aw {
+    width: 100%;
+    height: 5px;
+    background-image: url("http://test.myushan.com//lingzhong/avaw.png");
+    margin-top: 4px;
+}
+
+.ipbox {
+    background: url(http://test.myushan.com//lingzhong/组-1@3xbj.png) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+@keyframes avline {
+    0% {
+        height: 12px;
+    }
+    100% {
+        height: 62px;
+    }
+}
+
+@-webkit-keyframes avline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 62px;
+    }
+}
+
+.bobg {
+    background: #fafafa;
+}
+
+.absurvey .t {
+    width: auto;
+    padding: 25% 18% 40px 18%;
+    color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.absurvey .t .sym {
+    display: block;
+    margin: 0 auto;
+}
+
+.absurvey .t .ti {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-top: 26.5%;
+}
+
+.absurvey .b {
+    padding: 5.5% 18% 10% 18%;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.absurvey .b .line {
+    width: 46px;
+    height: 4px;
+    background: #a0a0a0;
+    margin-bottom: 20px;
+}
+
+.absurvey {
+    margin-top: 3%;
+}
+
+.aibox {
+    width: 80%;
+    background: #fff;
+    padding: 2.8% 0 11% 0;
+    margin: 0 auto;
+    margin-top: -11.9%;
+    position: relative;
+    overflow: hidden;
+}
+
+.stslide {
+    margin: 0 9.8%;
+}
+
+.aibox .txts {
+    width: 570px;
+    padding: 20px 0;
+}
+
+.aibox .txts .ti {
+    font-size: 26px;
+    color: #323232;
+    font-weight: bold;
+}
+
+.aibox .txts .tx {
+    line-height: 24px;
+    margin-top: 55px;
+}
+
+.aibox .slick-dots {
+    position: absolute;
+    top: 50%;
+    right: -58px;
+}
+
+.aibox .slick-dots li {
+    display: block;
+    width: 9px;
+    height: 9px;
+    border: 2px solid #dcdcdc;
+    background: none;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.aibox .slick-dots li.slick-active, .aibox .slick-dots li:hover {
+    background: #dcdcdc !important;
+}
+
+.abIdea {
+    padding-bottom: 6.5%;
+}
+
+.abpartners .apa {
+    display: block;
+    width: 48%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+}
+
+.abpartners {
+    margin-left: -2%;
+}
+
+.abpartners .cover {
+    background: url("http://test.myushan.com//lingzhong/black.png");
+    background: rgba(0, 0, 0, .7);
+}
+
+.abpartners .apa1 .cover {
+    background: url("http://test.myushan.com//lingzhong/black.png");
+    background: rgba(0, 0, 0, .75);
+}
+
+.abpartners .txts {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 30px;
+    padding-top: 21%;
+}
+
+.abpartners .txts .ti {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 23px;
+    line-height: 25px;
+    position: relative;
+}
+
+.abpartners .txts .ti .line {
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.abpartners .txts .tx {
+    padding-left: 23px;
+    margin-top: 21%;
+}
+
+.abpartners .apa1 .tx {
+    margin-top: 12px;
+}
+
+.ab3 {
+    padding-bottom: 4.2%;
+}
+
+.curnav {
+    width: 22.93%;
+    padding: 20px 0;
+    padding-left: 58px;
+    position: fixed;
+    right: 10.4%;
+    bottom: 0;
+    z-index: 199;
+    background: #1c1d1d;
+    color: #fff;
+}
+
+.curnav .b {
+    padding-left: 63px;
+    min-height: 24px;
+    position: relative;
+}
+
+.curnav .b .aw {
+    width: 58px;
+    height: 24px;
+    background-position: 0 center;
+    background-image: url("http://test.myushan.com//lingzhong/abaw.png");
+    left: -34px;
+    top: 0;
+    position: absolute;
+    animation: caw 1.5s linear alternate infinite;
+    -webkit-animation: caw 1.5s linear alternate infinite;
+}
+
+@keyframes caw {
+    0% {
+        background-position: 0 center;
+    }
+    100% {
+        background-position: 20px center;
+    }
+}
+
+@-webkit-keyframes caw {
+    0% {
+        background-position: 0 center;
+    }
+    100% {
+        background-position: 20px center;
+    }
+}
+
+.curnav .b ul {
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.curnav .b ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.curnav .b ul li.act {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.pbox {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(80px);
+    -webkit-transform: translateY(80px);
+    transition: 700ms;
+    -webkit-transition: 700ms;
+}
+
+.pbox.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+
+.serbox {
+    padding: 30px 32px 0 32px;
+}
+
+.serpic {
+    position: relative;
+}
+
+.serpic .txts {
+    width: 688px;
+    background: #c80000;
+    color: #fff;
+    position: absolute;
+    top: 33%;
+    right: -34%;
+    z-index: 199;
+}
+
+.serpic .txts .pa {
+    padding: 9.5% 7.5% 10% 7.5%;
+}
+
+.serpic .txts .ti {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.serpic .txts .aws {
+    width: 45px;
+    height: 58px;
+    border: 1px solid #fff;
+    position: absolute;
+    right: 17px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.serpic .txts .aws .aw {
+    background-image: url("http://test.myushan.com//lingzhong/seraw.png");
+    animation: arrow 2s linear alternate infinite running;
+    -webkit-animation: arrow 2s linear alternate infinite running;
+}
+
+.stnav {
+    padding: 8.5% 0 30px 0;
+    border-bottom: 1px solid #c80000;
+}
+
+.stnav li {
+    width: 190px;
+    cursor: pointer;
+    margin: 0 4.5%;
+}
+
+.stnav .t {
+    position: relative;
+}
+
+.stnav .icos {
+    width: 112px;
+    height: 90px;
+    float: right;
+    position: relative;
+}
+
+.stnav .icos .ico {
+    width: 224px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    margin-top: -90px;
+    left: 50%;
+    margin-left: -112px;
+    transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+}
+
+.stnav .icos .ico img {
+    display: block;
+    width: 100%;
+}
+
+.stnav .t .ti {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    z-index: 10;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.stnav .b {
+    text-align: left;
+    padding-left: 100px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.stnav .b .en {
+    font-size: 14px;
+    line-height: 20px;
+    height: 60px;
+    color: #cbcbcb;
+}
+
+.stnav .b .lines {
+    width: 19px;
+    height: 4px;
+    position: relative;
+    margin-top: 18px;
+}
+
+.stnav .b .lines .line {
+    width: 100%;
+    height: 100%;
+    background: #c80000;
+    position: absolute;
+    top: 0;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.stnav .b .lines .line1 {
+    right: 0;
+}
+
+.stnav .b .lines .line2 {
+    left: 0;
+}
+
+.stnav li.act .ico {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+.stnav li.act .b .line1 {
+    width: 77px;
+}
+
+.stnav li.act .b .line2 {
+    width: 79px;
+}
+
+.sttxts .s {
+    display: block;
+    color: #646464;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.sttxts li {
+    float: left;
+    margin-left: 6%;
+}
+
+.sttxts .t {
+    padding-left: 20px;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sttxts .t .square {
+    width: 8px;
+    height: 8px;
+    background: #c80000;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.sttxts {
+    padding: 30px 0 20% 0;
+}
+
+.sttbox .s {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+}
+
+.sttbox.show .s {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.abcrtxts {
+    padding-left: 10%;
+    padding-top: 45%;
+}
+
+/*.abcrtxts .tx{ width:305px; }*/
+
+.abctas {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.abctas .cover {
+    background: url("http://test.myushan.com//lingzhong/black.png");
+    background: rgba(0, 0, 0, .8);
+}
+
+.abctas .txts {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-left: 18%;
+    padding-top: 14.1%;
+    padding-right: 25px;
+}
+
+.abctas a {
+    color: #fff;
+}
+
+.abctas .txts .addr {
+    display: block;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: bold;
+    padding-top: 14px;
+    position: relative;
+}
+
+.abctas .txts .line {
+    width: 41px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.abctas .txts .addr .line {
+    width: 76px;
+    background: #c80000;
+}
+
+.abctas .telList .ti {
+    font-weight: bold;
+    position: relative;
+    padding-top: 13px;
+    margin-bottom: 20px;
+}
+
+.abctas .telList a {
+    display: block;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.abctas .telList .b {
+    height: 60px;
+}
+
+.abctas .telList li {
+    float: left;
+    margin-bottom: 20px;
+    width: 33.33%;
+}
+
+.abctas .telList {
+    margin-top: 9.3%;
+}
+
+.abctas a:hover {
+    color: #c80000;
+}
+
+.curnav2 {
+    padding-left: 32px !important;
+}
+
+.curnav2 .b .aw {
+    left: -8px !important;
+}
+
+.mypoint {
+    background: #fafafa;
+}
+
+.mypoint .pa {
+    position: relative;
+    padding-top: 23%;
+    z-index: 10;
+}
+
+.mypoint .tx1 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #323232;
+    margin-bottom: 6px;
+}
+
+.mypoint .ti {
+    font-size: 34px;
+    font-weight: bold;
+    color: #c80000;
+    margin-bottom: 18px;
+}
+
+.mypoint .tx {
+    font-size: 15px;
+    line-height: 26px !important;
+    color: #8e8e8e;
+    margin-bottom: 32px;
+}
+
+.mythink {
+    background: #f5f5f5;
+}
+
+.mtlist li {
+    width: 136px;
+    height: 136px;
+    border: 1px solid #c80000;
+    border-radius: 100%;
+    text-align: center;
+    float: left;
+    margin-right: 30px;
+}
+
+.mtlist .ti {
+    font-size: 24px;
+    color: #c80000;
+    font-weight: bold;
+}
+
+.mtlist .txx {
+    font-size: 13px;
+    font-weight: bold;
+    color: #323232;
+    margin-top: 3px;
+}
+
+.mtlist .pa2 {
+    padding-top: 46px;
+}
+
+.mtlist {
+    margin-bottom: 38px;
+}
+
+.mythink .tx {
+    font-size: 15px;
+    line-height: 26px !important;
+    color: #8e8e8e;
+    margin-bottom: 30px;
+}
+
+.mythink .pa {
+    padding-top: 20%;
+    position: relative;
+    z-index: 10;
+}
+
+.mtbg {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.myser .ti {
+    font-size: 34px;
+    color: #c80000;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.myser .tx {
+    font-size: 15px;
+    line-height: 26px !important;
+    color: #8e8e8e;
+    margin-bottom: 33px;
+}
+
+.myser {
+    background: #fff;
+}
+
+.myser .mss {
+    margin-bottom: 43px;
+}
+
+.myser .mss a {
+    display: block;
+    float: left;
+    color: #323232;
+    margin-right: 3.8%;
+}
+
+.myser .mss .ico {
+    height: 40px;
+    background-position: center bottom;
+}
+
+.myser .mss .msa1 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/isIco1.png");
+}
+
+.myser .mss .msa2 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/isIco2.png");
+}
+
+.myser .mss .msa3 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/isIco3.png");
+}
+
+.myser .mss .msa4 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/isIco4.png");
+}
+
+.myser .mss .name {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.myser .index-jion {
+    padding-top: 25%;
+    position: relative;
+    z-index: 10;
+}
+.myser .index-jion p.index-jion-title {
+    width:80px;
+    height:80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 50px;
+    color: #e50112;
+    font-weight: 500;
+    border-radius: 5px;
+    display: inline-block;
+    border:1px solid #e50112;
+    float: left;
+}
+.myser .index-jion .index-jion-text {
+    width:180px;
+    height:80px;
+    vertical-align: top;
+    display:table-cell;
+    float: left;
+}
+.myteam {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.myteam .ti {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+.myteam .tx {
+    font-size: 15px;
+    line-height: 26px !important;
+    margin-bottom: 50px;
+}
+
+.myteam .ixmore {
+    color: #fff;
+}
+
+.myteam .ixmore .aw {
+    background-image: url("http://test.myushan.com//lingzhong/ixmore2.png");
+    background-position: right 1px;
+}
+
+.myteam .pa {
+    padding-top: 27%;
+}
+
+.nwti {
+    float: right;
+    margin-right: 8px;
+    line-height: 14px;
+}
+
+.nwti .dot {
+    display: block;
+    border: 3px solid #818181;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+}
+
+.nwti .txx {
+    float: left;
+}
+
+.nwti .square {
+    float: left;
+    width: 14px;
+    height: 14px;
+    background: #c80000;
+    margin-left: 20px;
+}
+
+.nwbox {
+    padding: 20px 0 60px 0;
+}
+
+.newslist a {
+    display: block;
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+    color: #646464;
+    margin-bottom: 15px;
+}
+
+.newslist {
+    margin-left: -5%;
+    min-height: 500px;
+}
+
+.newslist .pa {
+    padding: 18px;
+    transition: 600ms;
+    -webkit-transition: 600ms;
+}
+
+.newslist .nowti {
+    font-weight: bold;
+    color: #000;
+}
+
+.newslist .tx {
+    line-height: 20px !important;
+    height: 60px;
+    margin-top: 24px;
+}
+
+.newslist .datebox .date {
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+    line-height: 25px;
+}
+
+.newslist .datebox {
+    position: relative;
+    margin-top: 12px;
+}
+
+.addbox {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+
+.addbox .line {
+    background: #c80000;
+    position: absolute;
+}
+
+.addbox .line1 {
+    width: 9px;
+    height: 1px;
+    top: 4px;
+    left: 0;
+}
+
+.addbox .line2 {
+    height: 9px;
+    width: 1px;
+    top: 0;
+    left: 4px;
+}
+
+.newslist .datebox .line3 {
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: 32px;
+    top: 12px;
+    background: #c80000;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.newslist .txts {
+    padding-top: 14px;
+}
+
+.nwbox > .pw {
+    padding-top: 7.5%;
+}
+
+.nwcrbox .nwti {
+    color: #323232;
+    margin-right: 28%;
+}
+
+.nwcrbox {
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.nwnav li {
+    float: left;
+    line-height: 28px;
+    white-space: nowrap;
+    padding: 0 15px;
+    background: #c80000;
+    color: #fff;
+    border-radius: 12px;
+    margin-left: 20px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    cursor: pointer;
+}
+
+.nwnav li:first-child {
+    margin-left: 0;
+}
+
+.nwnav {
+    margin-top: 14.5%;
+    padding: 0 70px;
+}
+
+.nwnav li.act {
+    background: #8a0000;
+}
+
+.nvlist li {
+    padding: 0 35px 0 25px;
+}
+
+.nvlist a {
+    display: block;
+    color: #646464;
+    padding: 0 35px 0 45px;
+    position: relative;
+}
+
+.nvlist .pa {
+    padding: 16px 0;
+    border-bottom: 1px solid #cdcdcd;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.nvlist .nowti {
+    line-height: 25px;
+    width: 90%;
+    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.nvlist .square {
+    border: 2px solid #c80000;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    margin-top: -4px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.nvlist .addbox {
+    position: absolute;
+    left: auto;
+    right: 48px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+.nvlist .bg {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.nvlist li a:first-child .pa {
+    border-top: 1px solid #cdcdcd;
+}
+
+/*.nvlist { }*/
+.nvlist li.act .nowti {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.nvdlist .nowti {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    -webkit-transform: none;
+}
+
+.nvdlist {
+    margin-top: 23.3% !important;
+}
+
+.ndbox {
+    padding: 25px 32px;
+}
+
+.ndti .txts {
+    width: 912px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: -7.2%;
+    position: relative;
+}
+
+.ndti .txts .pa {
+    padding: 50px 28px 60px 48px;
+}
+
+.ndti .txts .ti {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+.ndti .txts .date {
+    color: #525252;
+    padding-left: 25px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 22px;
+}
+
+.ndti .txts .date .square {
+    width: 8px;
+    height: 8px;
+    background: #e6e6e4;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -4px;
+}
+
+.ndti .txts .tx {
+    line-height: 20px !important;
+    margin-top: 30px;
+}
+
+.ndtxts .txts {
+    width: 912px;
+    margin: 0 auto;
+}
+
+.ndtxts .txts .freeTx {
+    padding: 6% 28px 8.8% 48px;
+}
+
+.nd-arrow {
+    display: block;
+    border: 3px solid #c80000;
+    width: 88px;
+    height: 40px;
+    float: left;
+}
+
+.nd-next {
+    float: right;
+}
+
+.nd-prev .aw {
+    background-image: url("http://test.myushan.com//lingzhong/nd-prev.png");
+    background-position: left center;
+}
+
+.nd-next .aw {
+    background-image: url("http://test.myushan.com//lingzhong/nd-next.png");
+    background-position: right center;
+}
+
+.ndti {
+    padding-bottom: 50px;
+}
+
+.tmbox {
+    padding: 14% 9.5% 0 9.5%;
+}
+
+.team-infos {
+    padding: 0 6%;
+}
+
+.team-infos .ti {
+    font-size: 26px;
+    color: #323232;
+}
+
+.team-infos .tx {
+    width: 622px;
+    margin-top: 40px;
+}
+
+.tmlist .item {
+    margin-left: 7.5%;
+}
+
+.tmlist {
+    margin-left: -7.5%;
+    margin-top: 135px;
+    margin-bottom: 80px;
+}
+
+.tmlist li {
+    width: 39.5%;
+    position: relative;
+    margin-bottom: 88px;
+    float: left;
+}
+
+.tmlist li.two {
+    margin-left: 14.5%;
+    margin-top: 96px;
+}
+
+.tmlist .txts {
+    position: absolute;
+    top: 35px;
+    height: 100%;
+    width: 100%;
+    left: 13%;
+    border: 5px solid #fff;
+    padding-bottom: 17px;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.tmlist .txts .name {
+    background: #fff;
+    color: #4f4f4f;
+    font-size: 13px;
+    line-height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 22px 0 12px;
+}
+
+.tmlist .txts .name .txx {
+    text-transform: uppercase;
+    margin-right: 12px;
+}
+
+.tmlist .item2 {
+    padding-top: 96px;
+}
+
+.tmlist .lines {
+    position: absolute;
+    width: 274px;
+    height: 114px;
+    left: 50%;
+    top: -84px;
+}
+
+.tmlist .lines .line {
+    position: absolute;
+    background: #c80000;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.tmlist .lines .line1 {
+    width: 1px;
+    height: 0;
+    left: 0;
+    top: 0;
+}
+
+.tmlist .lines .line2 {
+    width: 0;
+    height: 1px;
+    right: 0;
+    top: 0;
+    transition-delay: 300ms;
+    -webkit-transition-delay: 300ms;
+}
+
+.tmlist .bodr {
+    position: absolute;
+    top: 35px;
+    height: 100%;
+    width: 100%;
+    left: 13%;
+    border: 5px solid #fff;
+    padding-bottom: 17px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.tmcrc {
+    position: relative;
+    height: 1px;
+}
+
+.tmcrti {
+    position: absolute;
+    left: 0;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+    width: 100%;
+}
+
+/*.tmcrti .ch{ font-size:18px; }*/
+.tmcrti .en {
+    font-size: 12px;
+    color: #b4b4b4;
+    text-transform: capitalize;
+    font-size: 12px;
+    margin-top: 35px;
+}
+
+.tmcrti .en strong {
+    text-transform: uppercase;
+}
+
+.tmcrti .line {
+    width: 20px;
+    height: 3px;
+    background: #a0a0a0;
+    margin-top: 10px;
+}
+
+.tmtxts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    overflow: hidden;
+    display: none;
+}
+
+.tmtti .en {
+    font-size: 30px;
+    text-transform: uppercase;
+    float: left;
+}
+
+.tmtti .r {
+    float: right;
+}
+
+.tmtti .r .ch {
+    font-size: 20px;
+}
+
+.tmtti .r .py {
+    font-size: 12px;
+    margin-top: 45px;
+}
+
+.tmtti {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.tmtxts .line {
+    width: 156px;
+    height: 5px;
+    background: #fff;
+    margin-bottom: 12px;
+}
+
+.tmtxts .line2 {
+    background: #c80000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+    width: 0;
+}
+
+.tmtxts .tx1 {
+    line-height: 26px !important;
+    margin-top: 40px;
+}
+
+.tmtxts .works {
+    margin-top: 40px;
+}
+
+.tmtxts .works .ti {
+    color: #ddd;
+}
+
+.tmtxts .works .tx2 {
+    line-height: 26px !important;
+    margin-top: 10px;
+}
+
+.tmcrbox {
+    padding: 45% 10% 0 10%;
+}
+
+/*.tmcrti.hide { transform: translateX(-15px); -webkit-transform: translateX(-15px); opacity: 0; visibility: hidden; }*/
+/*.tmtxts.show { transform: translate(0); -webkit-transform: translate(0); opacity: 1; visibility: visible; }*/
+.tmtxts.act .line {
+    width: 156px;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.probox {
+    padding: 38px 40px 8.2% 40px;
+}
+
+.prolist li {
+    display: block;
+    float: left;
+    width: 33.33%;
+    position: relative;
+    color: #fff;
+}
+
+.prolist .name {
+    line-height: 24px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url("http://test.myushan.com//lingzhong/black.png");
+    padding: 0 9px 0 13px;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+
+.prolist a {
+    color: #fff;
+    display: block;
+}
+
+.prolist .txts {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background: url("http://test.myushan.com//lingzhong/black.png");
+    background: rgba(0, 0, 0, .8);
+    transition: 400ms;
+    -webkit-transition: 400ms;
+    z-index: 199;
+}
+
+.prolist .txts .t {
+    padding: 10% 60px 0 13%;
+}
+
+.prolist .txts .t .line {
+    background: #fff;
+}
+
+.prolist .txts .t .line1 {
+    width: 24px;
+    height: 3px;
+    margin-bottom: 9px;
+}
+
+.prolist .txts .t .ti {
+    font-size: 26px;
+}
+
+.prolist .txts .t .line2 {
+    width: 60px;
+    height: 1px;
+    margin-top: 12px;
+}
+
+.prolist .txts .tx {
+    position: absolute;
+    left: 13%;
+    right: 60px;
+    top: 118px;
+    overflow: hidden;
+    line-height: 22px !important;
+    height: 62px;
+}
+
+.protools {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    z-index: 199;
+}
+
+.protools a {
+    display: block;
+    width: 31px;
+    height: 31px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.protools .link .ico {
+    background-image: url("http://test.myushan.com//lingzhong/prolink.png");
+}
+
+.protools .share .ico {
+    background-image: url("http://test.myushan.com//lingzhong/proshare.png");
+}
+
+.protools .link {
+    transition-delay: 100ms;
+    -webkit-transition-delay: 100ms;
+}
+
+.protools .share {
+    transition-delay: 200ms;
+    -webkit-transition-delay: 200ms;
+}
+
+.procrbox {
+    padding: 0 18% 0 25px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pcrnav li {
+    padding: 7px 0;
+    position: relative;
+}
+
+.pcrnav .bodr {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    right: 38px;
+    border-bottom: 1px solid #535353;
+    border-top: 1px solid #1b1b1b;
+}
+
+.pcrnav a {
+    position: relative;
+    display: block;
+    color: #fff;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.pcrnav .txx {
+    float: left;
+}
+
+.pcrnav .ico {
+    width: 25px;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+.pcrnav .square {
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #fff;
+    float: left;
+    margin-top: 13px;
+    margin-right: 25px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pcrnav .pcrv1 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/pcrvIco1.png");
+}
+
+.pcrnav .pcrv2 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/pcrvIco2.png");
+}
+
+.pcrnav .pcrv3 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/pcrvIco3.png");
+}
+
+.pcrnav .pcrv4 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/pcrvIco4.png");
+}
+
+.pcrnav .pcrv5 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/pcrvIco5.png");
+}
+
+.pcrnav .aw {
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 45px;
+    background-image: url("http://test.myushan.com//lingzhong/pcrvaw.png");
+    transform: translateX(-15px);
+    -webkit-transform: translateX(-15px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pcrnav {
+    margin-top: 38px;
+    position: relative;
+}
+
+.pcrnav .line {
+    position: absolute;
+    left: 40px;
+    right: 38px;
+    height: 1px;
+}
+
+.pcrnav .line1 {
+    background: #535353;
+    top: -1px;
+}
+
+.pcrnav .line2 {
+    background: #1b1b1b;
+    bottom: -1px;
+}
+
+.pcrnav li.act .aw, .pcrnav li.act .square {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+}
+
+.pcrnav li.act a {
+    background: #fff;
+    background: rgba(255, 255, 255, .2);
+}
+
+.prosearchbox {
+    position: absolute;
+    left: 77px;
+    bottom: 30px;
+}
+
+.prosearchbox .pstxts {
+    border: 1px solid #787878;
+    width: 188px;
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    float: left;
+    border-radius: 34px;
+    padding: 5px 20px;
+    color: #c8c8c8;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    font-size: 13px;
+}
+
+.prosearchbox .pstxts:focus {
+    border: 1px solid #fff;
+}
+
+.prosearchbox .psbtn {
+    height: 36px;
+    width: 25px;
+    background: url("http://test.myushan.com//lingzhong/prosearch.png") no-repeat center center;
+    float: left;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.pdbox {
+    padding: 30px 38px 45px 38px;
+}
+
+.pdti .ti {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 4.3%;
+}
+
+.move_title p.text_1 {
+    animation: entic_effect 1s 0.8s linear both;
+    -webkit-animation: entic_effect 1s 0.8s linear both;
+}
+
+.move_title p.text_2 {
+    animation: entic_effect 1s 1.6s linear both;
+    -webkit-animation: entic_effect 1s 1.6s linear both;
+}
+
+.move_title .move_btn {
+    animation: entic_effect 1s 2.2s linear both;
+    -webkit-animation: entic_effect 1s 2.2s linear both;
+}
+
+.move_title .ixmore {
+    animation: entic_effect 1s 2.8s linear both;
+    -webkit-animation: entic_effect 1s 2.8s linear both;
+}
+
+@-webkit-keyframes entic_effect {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.pdti {
+    margin-left: 5%;
+    background: #fff;
+    padding: 3.7% 4.2% 2.5% 4.2%;
+    margin-top: -7%;
+    position: relative;
+}
+
+.pdti .date {
+    margin-right: 5%;
+    color: #646464;
+    font-size: 14px;
+    padding-left: 25px;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url("http://test.myushan.com//lingzhong/pdate.png") no-repeat left center;
+    float: left;
+}
+
+.pdti .share {
+    width: 20px;
+    height: 25px;
+    display: block;
+    float: left;
+    background: url("http://test.myushan.com//lingzhong/pdshare.png") no-repeat center top;
+}
+
+.pdtxts .txts {
+    margin-left: 5%;
+    padding: 6.6% 4.2% 6% 4.2%;
+}
+
+.pdtxts .txts .tx {
+    width: 570px;
+}
+
+.pdcrbox {
+    padding: 50% 10% 0 10%;
+}
+
+.pdInfo {
+    width: 395px;
+}
+
+.pdInfo .tx {
+    color: #b3b1b1;
+    font-size: 14px;
+    margin-top: 28px;
+}
+
+.pdIcos {
+    margin-top: 14.3%;
+}
+
+.pdIcos a {
+    width: 90px;
+    display: block;
+    color: #fff;
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 10px;
+    cursor: auto;
+}
+
+.pdIcos .dot {
+    width: 72px;
+    height: 72px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.pdIcos .name {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.pdIcos .pi1 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/pdIco1.png");
+}
+
+.pdIcos .pi2 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/pdIco2.png");
+}
+
+.pdIcos .pi3 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/pdIco3.png");
+}
+
+.pdIcos .pi4 .ico {
+    background-image: url("http://test.myushan.com//lingzhong/pdIco4.png");
+}
+
+.rotmovebox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.rotmove {
+    width: 640px;
+    height: 950px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -475px;
+    margin-left: -320px;
+}
+
+.rotmove img {
+    display: block;
+}
+
+.rotbg {
+    position: relative;
+}
+
+.rotcir1 {
+    position: absolute;
+    top: 270px;
+    left: -22px;
+    animation: rot1 3s linear infinite;
+    -webkit-animation: rot1 3s linear infinite;
+}
+
+.rotcir2 {
+    position: absolute;
+    top: 42px;
+    right: 65px;
+    animation: rot1 3s linear infinite;
+    -webkit-animation: rot1 3s linear infinite;
+}
+
+.rotcir3 {
+    position: absolute;
+    bottom: -87px;
+    right: 28px;
+    animation: rot1 3s linear infinite;
+    -webkit-animation: rot1 3s linear infinite;
+}
+
+@keyframes rot1 {
+    0% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rot1 {
+    0% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotline1 {
+    width: 447px;
+    height: 274px;
+    position: absolute;
+    top: 169px;
+    left: 0;
+    background: url("http://test.myushan.com//lingzhong/rot/rot-line1.png") no-repeat;
+}
+
+.rotline2 {
+    width: 430px;
+    height: 500px;
+    position: absolute;
+    bottom: 64px;
+    right: 0;
+    background: url("http://test.myushan.com//lingzhong/rot/rot-line2.png") no-repeat;
+}
+
+.rotline3 {
+    width: 259px;
+    height: 520px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("http://test.myushan.com//lingzhong/rot/rot-line3.png") no-repeat;
+}
+
+.rotline11, .rotline21, .rotline31 {
+    background-position: left top;
+    animation: line1 5s linear alternate infinite;
+    -webkit-animation: line1 5s linear alternate infinite;
+}
+
+.rotline12, .rotline22, .rotline32 {
+    background-position: left center;
+    animation: line2 5s linear alternate infinite;
+    -webkit-animation: line2 5s linear alternate infinite;
+}
+
+.rotline13, .rotline23, .rotline33 {
+    background-position: left bottom;
+    animation: line3 5s linear alternate infinite;
+    -webkit-animation: line3 5s linear alternate infinite;
+}
+
+@keyframes line1 {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes line2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes line3 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.renbg, .ren {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none \9;
+}
+
+.page-controls li:first-child {
+    margin-left: 0;
+}
+
+.itTx {
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.itTx1 {
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.ixtxts, .menu, .pagesider .logobox .bg {
+    transition: 700ms;
+    -webkit-transition: 700ms;
+}
+
+.menu-content {
+    transition: 700ms;
+    -webkit-transition: 700ms;
+}
+
+.menu-tools .search {
+    position: relative;
+}
+
+.menu-tools .search .txx {
+    border: 1px solid #fff;
+    border-radius: 36px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.menu-tools .search .txx input {
+    display: block;
+    height: 24px;
+    width: 100%;
+    padding: 5px 0;
+    color: #fff;
+    text-indent: 40px;
+}
+
+.menu-tools .search .btn {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    top: 0;
+    left: 10px;
+    background: url("http://test.myushan.com//lingzhong/search.png") no-repeat center center;
+    cursor: pointer;
+}
+
+.menu-tools .share {
+    display: block;
+    width: 20px;
+    height: 25px;
+    margin-left: 10px;
+    background: url("http://test.myushan.com//lingzhong/share.png") no-repeat center center;
+    margin-top: 6px;
+}
+
+.menu-tools {
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+    right: 10px;
+}
+
+.menu-tools .search.act .txx {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-nav1 {
+    display: none;
+}
+
+.menu-nav2 {
+    display: block;
+}
+
+.menu2 .menu-handler .burger {
+    background: #000;
+}
+
+.menu2 .menu-content {
+    background: #fff;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu2 .menu-tools .search .txx {
+    border-color: #b0b0b0;
+}
+
+.menu2 .menu-tools .search .txx input {
+    color: #b0b0b0;
+}
+
+.menu2 .menu-tools .search .btn {
+    background-image: url("http://test.myushan.com//lingzhong/search2.png");
+}
+
+.menu2 .menu-tools .share {
+    background-image: url("http://test.myushan.com//lingzhong/share2.png");
+}
+
+.menu2 .menu-nav1 {
+    display: block;
+}
+
+.menu2 .menu-nav2 {
+    display: none;
+}
+
+.menu.menushow {
+    height: 100%;
+    background: none;
+}
+
+.menu.menushow .menu-content .menu-nav2 a.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+}
+
+.menu.menushow .menu-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.crbox, .curnav {
+    transition: 600ms;
+    -webkit-transition: 600ms;
+}
+
+.crbox.hide, .curnav.hide {
+    transform: translateX(80px);
+    -webkit-transform: translateX(80px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.curnav.hide {
+    transform: translateX(80px);
+    -webkit-transform: translateX(80px);
+}
+
+.flogo {
+    display: block;
+    width: 78px;
+    height: 102px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flogo img {
+    display: block;
+}
+
+.flogo .lg1 {
+    width: 47px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: lg1 2s linear alternate infinite;
+    -webkit-animation: lg1 2s linear alternate infinite;
+}
+
+.flogo .lg2 {
+    width: 47px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: lg2 2s linear alternate infinite;
+    -webkit-animation: lg2 2s linear alternate infinite;
+}
+
+@keyframes lg1 {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -10px;
+    }
+}
+
+@-webkit-keyframes lg1 {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -10px;
+    }
+}
+
+@keyframes lg2 {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: -10px;
+    }
+}
+
+@-webkit-keyframes lg2 {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: -10px;
+    }
+}
+
+.tmcrti .tx1 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 6px;
+}
+
+.tmcrti .tx2 {
+    font-weight: bold;
+    line-height: 1.4;
+    font-size: 36px;
+}
+
+.abcrtxts .tx1 {
+    line-height: 30px;
+}
+
+.abcrtxts .tx2 {
+    line-height: 1.4;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.abcrtxts .tx2 .c {
+    color: #c80000;
+}
+
+.abcrtxts .en1, .sercrtxts .en1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.abcrtxts .en2, .sercrtxts .en2 {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.sercrtxts {
+    padding-left: 10%;
+    padding-top: 45%;
+}
+
+.sercrtxts .tx1 {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.sercrtxts .en1 {
+    margin-top: 28px;
+}
+
+.black2 {
+    background: url("http://test.myushan.com//lingzhong/black.png");
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 64px;
+    z-index: 299;
+    display: none;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+    }
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+    }
+}
+
+.backbox {
+    position: relative;
+    margin-top: 5%;
+}
+
+.backList {
+    display: block;
+    width: 60px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    color: #646464;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    top: 0;
+}
+
+.backList:hover {
+    color: #c80000;
+}
+
+.ndtxts {
+    overflow: hidden;
+}
+
+.ndtxts img, .pdtxts img {
+    width: 70% !important;
+    height: auto !important;
+}
+
+.pdtxts table, .ndtxts table {
+    border: none;
+    margin: 2% auto 2%;
+    text-align: justify;
+    width: 70% !important;
+}
+
+.pdtxts table p, .ndtxts table p {
+    margin-bottom: 10px !important;
+    background: none !important;
+}
+
+.pdtxts table p, .ndtxts table p, .pdtxts table span, .ndtxts table span {
+    font-size: 14px;
+    background: none !important;
+}
+
+.isCurrent {
+    z-index: 20 !important;
+}
+
+.isOut {
+    z-index: 19 !important;
+}
+
+.bannerslide {
+    height: 100%;
+    position: relative;
+}
+
+.banner .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.bacbox {
+    height: 29px;
+    position: absolute;
+    left: 4%;
+    bottom: 5.9%;
+    z-index: 98;
+}
+
+.bacbox .bodr {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 12px;
+    border: 1px solid #fff;
+    top: 50%;
+    margin-top: -7px;
+}
+
+.ip-controls {
+    font-size: 0;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.ip-controls li {
+    width: 30px;
+    height: 2px;
+    padding: 8px 6px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ip-controls .line {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    left: 8px;
+    background: #fff;
+}
+
+.ip-controls li:hover .line {
+    background: #c80000;
+}
+
+.ip-controls li.act .line {
+    height: 8px;
+    margin-top: -8px;
+    background: #c80000;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.ba-next {
+    width: 36px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -7px;
+    cursor: pointer;
+}
+
+.ba-next .btn {
+    width: 24px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    left: 6px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.ba-next .btn .ico {
+    background-image: url("http://test.myushan.com//lingzhong/banext.png");
+}
+
+.ba-next:hover .btn {
+    background: #c80000;
+}
+
+.pager {
+    text-align: left;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.pager a, .pager span {
+    display: inline-block;
+    width: 48px;
+    height: 30px;
+    line-height: 30px;
+    color: #323232;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 !important;
+    float: left;
+}
+
+.pager .line {
+    position: absolute;
+    bottom: 0;
+    width: 11px;
+    height: 2px;
+    background: #e6e6e6;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.pager .line1 {
+    right: 50%;
+}
+
+.pager .line2 {
+    left: 50%;
+}
+
+.pager a:not(.act):hover {
+    color: #c80000;
+}
+
+.pager a:not(.act):hover .line {
+    width: 50%;
+    background: #c80000;
+}
+
+.pager span.act {
+    background: #c80000;
+    color: #fff !important;
+}
+
+.pager span .line {
+    width: 0px;
+}
+
+.pager a.act .line {
+    background: #c80000;
+}
+
+.nwv-controls {
+    font-size: 0;
+    padding: 0 70px;
+    margin-top: 30px;
+}
+
+.nwv-controls .sp {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #b40000;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.nwv-controls .sp .square {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: none;
+    margin: 2px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.nwv-controls .sp:hover .square, .nwv-controls .sp.act .square {
+    background: #b40000;
+}
+
+.nvlist {
+    height: auto;
+    margin-top: 20px;
+}
+
+.nvlist-demo {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    opacity: 0;
+    transition: 700ms;
+    -webkit-transition: 700ms;
+    position: relative;
+    overflow: hidden;
+}
+
+.nvlist-demo.show {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    opacity: 1;
+}
+
+.nvlist-demo .slick-dots {
+    padding: 0 70px;
+    text-align: left;
+    font-size: 0;
+}
+
+.nvlist-demo .slick-dots li {
+    width: 25px;
+    height: 25px;
+    margin: 0px 8px 0px 0px;
+    cursor: pointer;
+    border-radius: 0px;
+    background-color: transparent;
+    position: relative;
+}
+
+.nvlist-demo .slick-dots li a {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #908b87;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.nvlist-demo .slick-dots li.slick-active a {
+    background: #c80000;
+    height: 6px;
+}
+
+.nvlist-demo .slick-dots li:hover a {
+    background: #c80000;
+}
+
+.blbox {
+    padding: 0 35px 0 25px;
+    margin-top: 12px;
+}
+
+.blbox a {
+    color: #646464;
+}
+
+.backList2 {
+    display: block;
+    padding: 0 35px 0 45px;
+    line-height: 24px;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.backList2 .txx {
+    padding: 24px 0;
+    float: left;
+}
+
+.backList2 .ico {
+    height: 72px;
+    float: left;
+    width: 32px;
+    margin-right: 13px;
+    background-image: url("http://test.myushan.com//lingzhong/backlist.png");
+    background-position: left center;
+    transition: 0ms;
+    -webkit-transition: 0ms;
+}
+
+.backList2:hover .ico {
+    background-position: right center;
+}
+
+.backList2:hover .txx {
+    color: #c80000;
+}
+
+#screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    vertical-align: bottom;
+    z-index: 9999
+}
+
+#inner {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#screen p {
+    color: white;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.one {
+    background: url('http://test.myushan.com//lingzhong/QP1.png') no-repeat;
+    background-size: 100% auto;
+}
+
+.two {
+    background: url('http://test.myushan.com//lingzhong/QP2.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.three {
+    background: url('http://test.myushan.com//lingzhong/QP3.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.four {
+    background: url('http://test.myushan.com//lingzhong/QP4.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.five {
+    background: url('http://test.myushan.com//lingzhong/QP5.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.six {
+    background: url('http://test.myushan.com//lingzhong/QP6.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.seven {
+    background: url('http://test.myushan.com//lingzhong/QP7.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.eight {
+    background: url('http://test.myushan.com//lingzhong/QP8.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.nine {
+    background: url('http://test.myushan.com//lingzhong/QP9.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.ten {
+    background: url('http://test.myushan.com//lingzhong/QP10.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.eleven {
+    background: url('http://test.myushan.com//lingzhong/百度外卖.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.twelve {
+    background: url('http://test.myushan.com//lingzhong/有妖气.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.thirteen {
+    background: url('http://test.myushan.com//lingzhong/书旗小说.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.fourteen {
+    background: url('http://test.myushan.com//lingzhong/陌陌.png') no-repeat;
+    background-size: auto 100%;
+}
+
+.fifteen {
+    background: url('http://test.myushan.com//lingzhong/蜻蜓fm.png') no-repeat;
+    background-size: auto 100%;
+}
+
+#screen #inner > div {
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: ease-out 0.3s;
+    cursor: pointer;
+}
+
+#screen #inner > div:hover {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.pin {
+    margin-top: 30px;
+}
+
+.pin span {
+    cursor: pointer;
+    display: inline-block;
+    width: 220px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border: 1px solid #e60012;
+    border-radius: 3px;
+    color: #e60012;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+
+.pin span:hover {
+    background: #e60012;
+    color: #fff;
+}
+
+.cebian {
+    position: fixed;
+    width: 27%;
+    padding-right: 8%;
+    height: 90px;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    z-index: 190;
+    transition: all 300ms ease;
+    z-index: 999;
+}
+
+.navn {
+    display: none;
+}
+
+.txx1 {
+    padding-left: 20px;
+    line-height: 90px;
+    display: block;
+}
+
+.bao {
+    width: 100%;
+    height: 100%;
+    background: #e60012;
+}
+
+.col-xs-2 {
+    float: left;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+}
+
+.col-xs-2 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.col-xs-2 a p:first-child {
+    font-size: 16px;
+}
+
+.col-xs-2 a p:last-child {
+    font-size: 14px;
+}
+
+.col-xs-2:hover {
+    background: #fff;
+}
+
+.col-xs-2:hover a {
+    color: #e60012;
+}
+
+@media (max-width: 1440px) {
+    .col-xs-2 a p:first-child {
+        font-size: 14px;
+    }
+
+    .col-xs-2 a p:last-child {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1366px) and (max-height: 768px) {
+    .col-xs-2 a p:first-child {
+        font-size: 12px;
+    }
+
+    .col-xs-2 a p:last-child {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .col-xs-2 a p:first-child {
+        font-size: 14px;
+    }
+
+    .col-xs-2 a p:last-child {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 1366px) {
+    .col-xs-2 a p:first-child {
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+
+    .col-xs-2 a p:last-child {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .pin span {
+        width: 180px;
+        height: 50px;
+    }
+}

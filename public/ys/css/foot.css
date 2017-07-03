@@ -1,0 +1,112 @@
+/*======================================================================================================================
+底部导航
+=======================================================================================================================*/
+.join {
+    width:100%;
+    height:300px;
+    background: #ecf3fc;
+    text-align: center;
+    padding: 0.1px;
+}
+.join p {
+    width:100%;
+    font-size: 24px;
+    color: #4e8bed;
+    margin:100px 0 50px 0;
+}
+.join .tip-button {
+    display: block;
+    width: 144px;
+    height: 48px;
+    margin: 0 auto;
+    line-height: 48px;
+    font-size: 16px;
+    color: #5182E4;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: center;
+    box-shadow: 0 0 0 2px #5182E4;
+    transition: .1s all 0s ease-in-out;
+    overflow: hidden;
+}
+
+.join .tip-button span {
+    z-index: 1
+}
+
+.join .tip-button::before {
+    background: #5182e4
+}
+
+.join .tip-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 2px transparent;
+    transition: .1s all 0s ease-in-out
+}
+
+.join .tip-button:hover::before {
+    background: #5182e4
+}
+
+.foot {
+    width:100%;
+    background: #4e8cec;
+    padding: 0.1px;
+
+}
+.foot .banben {
+    width:100%;
+    text-align: center  ;
+    margin: 2.5em auto;
+    font-size: 16px;
+    color: white;
+    font-size: PingHei, STHeitiSC-Light, 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif!important;
+}
+.foot .banben .contact {
+    width:100%;
+    height: 30px;
+}
+.foot .banben .map p {
+    width:100%;
+    text-align: center;
+}
+.contact .sp1 {
+    margin-right: 10px;
+}
+.foot .banben .map p:last-child {
+    font-size: 14px;
+    margin-top: 15px;
+;
+}
+/*======================================================================================================================
+foot
+========================================================================================================================*/
+@media screen and (max-width: 772px){
+    .join p {
+        width: 100%;
+        font-size: 22px;
+        color: #4e8bed;
+        margin: 100px 0 50px 0;
+        padding: 0px 14px;
+    }
+    .foot .banben {
+        width: 100%;
+        font-size: 16px;
+        color: white;
+    }
+}
+@media screen and (max-width: 456px){
+    .join p {
+        font-size: 20px;
+    }
+    .contact .sp2 {
+        display: block;
+    }
+    .foot .banben .contact {
+        font-size: 14px;
+    }
+    .foot .banben .map {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}

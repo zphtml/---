@@ -1,0 +1,534 @@
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../icon/iconfont.eot');
+    src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../icon/iconfont.woff') format('woff'),
+    url('../icon/iconfont.ttf') format('truetype'),
+    url('../icon/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:14px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*=======================================================================================================================
+关于
+=========================================================================================================================*/
+
+.about {
+    width:10rem;
+    margin:2.24rem auto 1rem;
+
+}
+.about-header {
+    width:10rem;
+    height:4.2rem;
+    background:url('http://test.myushan.com//lzphone/about01.png') no-repeat center;
+    background-size: cover;
+}
+.about-header-title {
+    width:10rem;
+    height:4.2rem;
+    background: rgba(0,0,0,0.5);
+    padding: 0.1px;
+}
+
+.about-header-title p:first-child {
+    font-size: 0.7rem;
+    color: white;
+    margin-top:1.1rem ;
+    margin-left: 0.7444444rem;
+}
+
+.about-header-title p:first-child>span {
+    font-size: 14px;
+}
+.about-header-t {
+    margin-top: 0.3rem;
+    margin-left: 0.7444444rem;
+    color: white;
+    font-size: 14px;
+    display: block;
+}
+.about-infor-t {
+    width:10rem;
+    padding:0 0.6rem;
+}
+.about p {
+    font-size: 14px;
+    line-height: 0.7rem;
+    position: relative;
+    margin-top: 0.5rem;
+}
+
+.about-a {
+    position: relative;
+}
+.about-open {
+    text-align: right;
+    margin-top: 0.3rem;
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+}
+.about-open-text {
+    float: right;
+}
+.about-open-icon {
+    float: right;
+    margin: -0.05rem 0.5rem 0 0.2rem
+}
+.about-b {
+    margin-bottom: 0.3rem;
+}
+.rotate{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg)
+}
+.rotate-a {
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg); 	/* IE 9 */
+    -moz-transform:rotate(0deg); 	/* Firefox */
+    -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+    -o-transform:rotate(0deg);
+}
+/*竖线*/
+.about-line {
+    position: absolute;
+    top:0;
+    left:-0.2rem;
+    display: block;
+    height:0.6666rem;
+    border:1px solid #e60012;
+}
+.about-line i {
+    display: block;
+    position: absolute;
+    top:-0.1rem;
+    left:-0.1rem;
+    width:0.24rem;
+    height:0.24rem;
+    background: #e60012;
+}
+/*=====================================================================================================================
+企业历程
+========================================================================================================================*/
+.Milestone {
+    width:10rem;
+    margin:0 auto;
+}
+.Milestone-header {
+    width:10rem;
+    height:4.2rem;
+    background:url('http://test.myushan.com//lzphone/about02.png') no-repeat center;
+    background-size: cover;
+}
+.Milestone-header-title {
+    width:10rem;
+    height:4.2rem;
+    background: rgba(0,0,0,0.5);
+    padding: 0.1px;
+}
+.Milestone-header-title p {
+    font-size: 0.7rem;
+    color: white;
+    margin-top:1.1rem ;
+    margin-left: 0.7444444rem;
+}
+.Milestone-header-title p>span {
+    font-size: 14px;
+}
+.Milestone-header-title p>span {
+    font-size: 14px;
+}
+.Milestone-header-title .Milestone-header-t {
+    margin-top:0.3rem ;
+    margin-left: 0.7444444rem;
+    color: white;
+    font-size: 14px;
+    display: block;
+}
+/*时间轴*/
+.wrapper {
+    width:10rem;
+    margin:1rem auto;
+}
+.content {
+    width: 100%;
+    margin: 0 auto;
+    zoom: 1;
+    position: relative;
+}
+
+.events_list ul {
+    position: relative;
+}
+
+.events_list li {
+    position: relative;
+    height: 1.5rem;
+}
+
+.events_list li.yaer-0 .ic_events {
+    border-top:none!important;
+}
+
+.events_list .ic_events {
+    position: absolute;
+    width: 1rem;
+    height: 100%;
+    top: 0;
+    word-wrap: break-word;
+    word-break: normal;
+}
+.yaer-9 span i {
+    left:-6px!important;
+}
+.events_list .txt_events {
+    line-height: 22px;
+    color: black;
+    position: absolute;
+    top: -12px;
+
+}
+.events_list .txt_events span:first-child {
+    font-size: 14px;
+    color: #e60012;
+    display: inline-block;
+    margin-bottom: 0.2rem;
+}
+.events_list .txt_events span:last-child {
+    font-size: 12px;
+
+}
+.events_list .right_li {
+    margin-left: 49%;
+}
+
+.events_list .right_li .ic_events {
+    left: 0;
+    border-left:3px solid #e60012;
+    border-top:1px dotted  #e60012 ;
+    border-bottom: none;
+    border-right: none;
+}
+.events_list .right_li:last-child .ic_events {
+    border-left:3px solid #fdc2c7;
+}
+.events_list .left_li:last-child .ic_events {
+    border-left:3px solid #fdc2c7;
+}
+.events_list .right_li .ic_events .yuan {
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    background: #e60012;
+    position: absolute;
+    top: -9px;
+    left: -8.5px;
+}
+.events_list .left_li .ic_events .yuan {
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    background: #e60012;
+    position: absolute;
+    top: -9px;
+    right: -8.5px;
+}
+.events_list ul li .last_ic_events {
+    border-left: none!important;
+}
+.events_list .right_li .txt_events {
+    left: 1.3rem;
+}
+
+.events_list .left_li {
+    text-align: right;
+    width: 49%;
+}
+.events_list .left_li .ic_events {
+    right: -3px;
+}
+.events_list ul li .ic_events .icon {
+    position: absolute;
+    top: -20px;
+    left: -11.5px;
+    font-size: 20px;
+    color: #e60012;
+}
+.events_list ul li .ic_events .yaer-0 {
+
+}
+.events_list .left_li .ic_events  {
+    position: absolute;
+    top: 0;
+    border-top:1px dotted #e60012;
+    border-right: 3px solid #e60012;
+    border-bottom:none;
+    border-left:none;
+}
+
+.events_list .left_li .txt_events {
+    right: 1.3rem;
+}
+
+
+
+/*.events_list li:nth-child(9) .ic_events {*/
+    /*animation: entic_effect .8s 1s linear both;*/
+    /*-webkit-animation: entic_effect .8s 1s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(8) .ic_events {*/
+    /*animation: entic_effect .8s 1.6s linear both;*/
+    /*-webkit-animation: entic_effect .8s 1.6s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(7) .ic_events {*/
+    /*animation: entic_effect .8s 2.2s linear both;*/
+    /*-webkit-animation: entic_effect .8s 2.2s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(6) .ic_events {*/
+    /*animation: entic_effect .8s 2.8s linear both;*/
+    /*-webkit-animation: entic_effect .8s 2.8s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(5) .ic_events {*/
+    /*animation: entic_effect .8s 3.4s linear both;*/
+    /*-webkit-animation: entic_effect .8s 3.4s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(4) .ic_events {*/
+    /*animation: entic_effect .8s 4s linear both;*/
+    /*-webkit-animation: entic_effect .8s 4s linear both;*/
+/*}*/
+/*.events_list li:nth-child(3) .ic_events {*/
+    /*animation: entic_effect .8s 4.6s linear both;*/
+    /*-webkit-animation: entic_effect .8s 4.6s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(2) .ic_events {*/
+    /*animation: entic_effect .8s 5.2s linear both;*/
+    /*-webkit-animation: entic_effect .8s 5.2s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(1) .ic_events {*/
+    /*animation: entic_effect .8s 5.8s linear both;*/
+    /*-webkit-animation: entic_effect .8s 5.8s linear both;*/
+/*}*/
+/*@keyframes entic_effect {*/
+    /*0% {*/
+        /*width: 0px;*/
+        /*opacity: 1;*/
+    /*}*/
+    /*40% {*/
+        /*width: 20px;*/
+        /*opacity: 1;*/
+    /*}*/
+    /*100% {*/
+        /*width: 51px;*/
+        /*opacity: 1;*/
+    /*}*/
+/*}*/
+
+/*@-webkit-keyframes entic_effect {*/
+    /*0% {*/
+        /*width: 0px;*/
+        /*opacity: 1;*/
+    /*}*/
+    /*40% {*/
+        /*width: 20px;*/
+        /*opacity: 1;*/
+    /*}*/
+    /*100% {*/
+        /*width: 51px;*/
+        /*opacity: 1;*/
+    /*}*/
+/*}*/
+
+/*.events_list li:nth-child(9) .txt_events {*/
+    /*animation: enttxt_effect .8s 1s linear both;*/
+    /*-webkit-animation: enttxt_effect .8s 1s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(8) .txt_events {*/
+    /*animation: enttxt_effect .8s 1.6s linear both;*/
+    /*-webkit-animation: enttxt_effect .8s 1.6s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(7) .txt_events {*/
+    /*animation: enttxt_effect .8s 2.2s linear both;*/
+    /*-webkit-animation: enttxt_effect .8s 2.2s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(6) .txt_events {*/
+    /*animation: enttxt_effect .8s 2.8s linear both;*/
+    /*-webkit-animation: enttxt_effect .8s 2.8s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(5) .txt_events {*/
+    /*animation: enttxt_effect .8s 3.4s linear both;*/
+    /*-webkit-animation: enttxt_effect .8s 3.4s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(4) .txt_events {*/
+    /*animation: enttxt_effect .8s 4s linear both;*/
+    /*-webkit-animation: enttxt_effect .8s 4s linear both;*/
+/*}*/
+/*.events_list li:nth-child(3) .txt_events {*/
+    /*animation: enttxt_effect .8s 4.6s linear both;*/
+    /*-webkit-animation: enttxt_effect .8s 4.6s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(2) .txt_events {*/
+    /*animation: enttxt_effect .8s 5.2s linear both;*/
+    /*-webkit-animation: enttxt_effect .8s 5.2s linear both;*/
+/*}*/
+
+/*.events_list li:nth-child(1) .txt_events {*/
+    /*animation: enttxt_effect .8s 5.6s linear both;*/
+    /*-webkit-animation: enttxt_effect .8s 5.6s linear both;*/
+/*}*/
+/*======================================================================================================================
+文化理念
+========================================================================================================================*/
+.culture {
+    width:10rem;
+    margin:0 auto;
+}
+.culture-header {
+    width:10rem;
+    height:4.2rem;
+    background:url('http://test.myushan.com//lzphone/about03.png') no-repeat center;
+}
+.culture-header-title {
+    width:10rem;
+    height:4.2rem;
+    background: rgba(0,0,0,0.5);
+    padding: 0.1px;
+}
+.culture-header-title p {
+    font-size: 0.7rem;
+    color: white;
+    margin-top:1.1rem ;
+    margin-left: 0.7444444rem;
+}
+.culture-header-title p>span {
+    font-size: 14px;
+}
+
+.culture-header-title .Milestone-header-t {
+    margin-top:0.3rem ;
+    margin-left: 0.7444444rem;
+    color: white;
+    font-size: 14px;
+    display: block;
+}
+.ln_infor {
+    width:10rem;
+    height:2.866666rem;
+    padding:0 0.8rem;
+    margin-top: 0.5rem;
+}
+.ln_infor .infor-1 {
+    width:0.866666rem;
+    height:100%;
+    float: left;
+}
+.ln_infor .infor-1 img{
+    width:100%;
+}
+.ln_infor .yuanjing {
+    width:7.5rem;
+    float: left;
+    padding: 0.1px;
+}
+.yuanjing-title {
+   font-size: 14px;
+    color: #e60012;
+    display: block;
+    margin:0.1rem 0.2rem 0.2rem;
+}
+.yuanjing-text {
+    font-size: 12px;
+    line-height: 0.6rem;
+    margin-left:0.2rem;
+}
+.yuanjing .yuanjing-a,.yuanjing-b {
+    float: left;
+    display: inline-block;
+}
+.yuanjing-b {
+    width: 5.3rem;
+}
+/*=====================================================================================================================
+合作伙伴
+======================================================================================================================*/
+.Partner {
+    width:10rem;
+    margin: 1rem auto 0;
+}
+.Partner-header {
+    width:10rem;
+    height:4.2rem;
+    background:url('http://test.myushan.com//lzphone/about04.png') no-repeat center;
+}
+.Partner-header-title {
+    width:10rem;
+    height:4.2rem;
+    background: rgba(0,0,0,0.5);
+    padding: 0.1px;
+}
+.Partner-header-title p {
+    font-size: 0.7rem;
+    color: white;
+    margin-top:1.1rem ;
+    margin-left: 0.7444444rem;
+}
+.Partner-header-title p>span {
+    font-size: 14px;
+}
+.Partner-header-title p>span {
+    font-size: 14px;
+}
+.Partner-header-title .Milestone-header-t {
+    margin-top:0.3rem ;
+    margin-left: 0.7444444rem;
+    color: white;
+    font-size: 14px;
+    display: block;
+}
+.Partner-img {
+    width: 100%;
+}
+.Partner-img img {
+    width:100%;
+}
+/*=====================================================================================================================
+foot
+=========================================================================================================================*/
+.foot {
+    width:100%;
+    height:1.4rem;
+    margin:0 auto;
+    background: #cbcbcb;
+    position: relative;
+}
+.foot-logo  {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:2.4rem;
+}

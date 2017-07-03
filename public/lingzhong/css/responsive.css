@@ -1,0 +1,1731 @@
+@media screen and (max-width: 1025px) {
+    .yx {
+        margin-left: 0px
+    }
+
+    .mypos .ti, .pa > p {
+        font-size: 20px !important;
+    }
+
+    .mypos .tx1, .tx, .pin > span {
+        font-size: 12px !important;
+    }
+
+    .pin > span {
+        width: 150px;
+    }
+
+    .navbox .b, .navbox .move {
+        transition: 500ms 200ms;
+        -webkit-transition: 500ms 200ms;
+    }
+
+    .pagesider .menu-handler, .pagesider .menu-handler .burger {
+        transition: 300ms 400ms;
+        -webkit-transition: 300ms 400ms;
+    }
+
+    .pagesider .logobox .logo {
+        transition: 500ms 200ms;
+        -webkit-transition: 500ms 200ms;
+    }
+
+    .logobox, .navbox, .menu {
+        transition: 400ms;
+        -webkit-transition: 400ms;
+    }
+
+    .menu-handler:hover .burger {
+        background: #c80000;
+    }
+
+    .abnav a:hover .cover {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .abnav a:hover .txts {
+        color: #fff;
+    }
+
+    .abnav a:hover .aws {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+
+    .abnav a:hover .aws .line {
+        animation: avline 1.5s ease-out alternate infinite;
+        -webkit-animation: avline 1.5s ease-out alternate infinite;
+    }
+
+    .abpartners .cover {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .abpartners .txts .ti .line {
+        width: 0;
+        transition: 300ms;
+        -webkit-transition: 300ms;
+    }
+
+    .abpartners .txts .ti .txx, .abpartners .txts .tx {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        transition: 400ms;
+        -webkit-transition: 400ms;
+    }
+
+    .abpartners .txts .tx {
+        transform: translateX(-30px);
+        -webkit-transform: translateX(-30px);
+    }
+
+    .abpartners .apa:hover .cover, .abpartners .apa1 .cover {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .abpartners .apa:hover .txts .ti .line, .abpartners .apa1 .txts .ti .line {
+        width: 16px;
+    }
+
+    .abpartners .apa:hover .txts .ti .txx, .abpartners .apa:hover .txts .tx {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+    }
+
+    .abpartners .apa1 .txts .ti .txx, .abpartners .apa1 .txts .tx {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+    }
+
+    .stnav li:hover .ico {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+    }
+
+    /*.stnav li:hover .t .ti{ font-size:25px; }*/
+    .stnav li:hover .b .line1 {
+        width: 77px;
+    }
+
+    .stnav li:hover .b .line2 {
+        width: 79px;
+    }
+
+    .picw .pic img {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        opacity: 0;
+    }
+
+    .trans-1 .pic img {
+        transition: 1s cubic-bezier(0.165, 0.74, 0.44, 1);
+        -webkit-transition: 1s cubic-bezier(0.165, 0.74, 0.44, 1);
+    }
+
+    /*.header .menu.active{ height:100%; background-color:transparent; }
+.header .menu.active .menu-handler{ top: 5.5%; }
+.header .menu.active .menu-handler .burger{ background:#000; }*/
+    /*.ms-mpc li:hover .ms{ transform:rotateY(180deg); -webkit-transform:rotateY(180deg); background-position:center bottom; }
+.ms-mpc li:hover .ico{ background-position:center bottom; }*/
+    .newslist .datebox .date {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-30px);
+        -webkit-transform: translateX(-30px);
+        transition: 300ms 200ms;
+        -webkit-transition: 300ms 200ms;
+    }
+
+    .addbox .line {
+        opacity: 0;
+        visibility: hidden;
+        transition: 300ms;
+        -webkit-transition: 300ms;
+    }
+
+    .addbox .line1 {
+        transform: translateX(-15px);
+        -webkit-transform: translateX(-15px);
+    }
+
+    .addbox .line2 {
+        transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+    }
+
+    .newslist a:hover .pa {
+        background: #d1fff5;
+    }
+
+    .newslist a:hover .nowti {
+        color: #c80000;
+    }
+
+    .newslist a:hover .addbox .line {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .newslist a:hover .datebox .line3 {
+        width: 70%;
+    }
+
+    .newslist a:hover .datebox .date {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nwnav li:hover {
+        background: #a90000;
+    }
+
+    .nvlist a:hover .bg {
+        background: #fff;
+    }
+
+    .nvlist a:hover .square {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+    }
+
+    .nvlist a:hover .addbox .line {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+    }
+
+    .nd-arrow:hover {
+        background: #c80000;
+    }
+
+    .nd-prev:hover .aw {
+        background-position: right center;
+    }
+
+    .nd-next:hover .aw {
+        background-position: left center;
+    }
+
+    .tmlist li:hover .txts {
+        opacity: 0;
+        visibility: hidden;
+        top: 57px;
+        left: 20%;
+    }
+
+    .tmlist li:hover .bodr {
+        opacity: 1;
+        visibility: visible;
+        top: 57px;
+        left: 20%;
+    }
+
+    .tmlist li:hover .lines .line1 {
+        height: 100%;
+        transition-delay: 300ms;
+        -webkit-transition-delay: 300ms;
+    }
+
+    .tmlist li:hover .lines .line2 {
+        width: 100%;
+        transition-delay: 0ms;
+        -webkit-transition-delay: 0ms;
+    }
+
+    .prolist .name {
+        transition: 400ms;
+        -webkit-transition: 400ms;
+    }
+
+    .prolist li:hover .txts {
+        top: 20px;
+        left: 20px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .prolist li:hover .protools a {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .prolist li:hover .name {
+        transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .pcrnav li:hover .aw, .pcrnav li:hover .square {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+    }
+
+    .pcrnav li:hover a {
+        background: #fff;
+        background: rgba(255, 255, 255, .2);
+    }
+
+    .pdti .share:hover {
+        background-position: center bottom;
+    }
+
+    /*.pdIcos .dot{ transition:300ms; -webkit-transition:300ms; }
+.pdIcos a:hover .dot{ background:#c80000; border-color:#c80000; }
+.pdIcos a:hover .name{ color:#c80000; }*/
+    .ixmore:hover {
+        color: #c80000;
+    }
+
+    .ixmore:hover .aw {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
+
+    .menu-nav2 a {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+    }
+
+    .menu-content {
+        display: block !important;
+    }
+
+    .myser .mss a:hover {
+        color: #c80000;
+    }
+
+    .myteam .ixmore:hover .aw {
+        background-position: left 1px;
+    }
+
+    /*.logo2{ transition:none; -webkit-transition:none; }*/
+    .logo2:hover {
+        background-position: center bottom;
+    }
+
+    .protools a:hover {
+        background: #c80000;
+        border-color: #c80000;
+    }
+
+    .menu-nav2 a:hover .txx {
+        opacity: 0.6;
+    }
+
+    .menu-tools .share:hover {
+        opacity: 0.6;
+    }
+
+    .menu-tools .search:hover {
+        opacity: 0.6;
+    }
+}
+
+@media screen and (max-width: 1890px) {
+    .stnav li {
+        margin: 0 3%;
+    }
+
+    .abpartners .apa1 .tx {
+        margin-top: 10px;
+    }
+
+    .mypos .ti, .pa > p {
+        font-size: 23px;
+    }
+
+    .mypos .tx1, .tx, .pin > span {
+        font-size: 18px;
+    }
+
+    .pin > span {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .mypos .ti, .pa > p {
+        font-size: 33px;
+    }
+
+    .mypos .tx1, .tx, .pin > span {
+        font-size: 18px;
+    }
+
+    .pin > span {
+        width: 220px;
+    }
+
+    .abbox {
+        padding: 46px 48px 54px 48px;
+    }
+
+    .curnav {
+        padding-left: 48px;
+    }
+
+    .curnav .b .aw {
+        left: -24px;
+    }
+
+    .absurvey .t, .absurvey .b {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .abctas .txts {
+        padding-left: 15%;
+        padding-top: 12%;
+    }
+
+    .absurvey .t .ti {
+        margin-top: 22%;
+    }
+
+    /*.abctas .telList li{ margin-right:38px; }*/
+    .aibox .txts {
+        width: 100%;
+    }
+
+    .aibox .slick-dots {
+        top: 42%;
+    }
+
+    .aibox .txts .tx {
+        margin-top: 48px;
+    }
+
+    .serpic .txts {
+        right: -40%;
+        top: 30%;
+    }
+
+    .stnav li {
+        width: 168px;
+    }
+
+    .stnav .b {
+        padding-left: 78px;
+    }
+
+    .nwnav {
+        margin-top: 10%;
+    }
+
+    .ndti .txts, .ndtxts .txts {
+        width: 848px;
+    }
+
+    .nvdlist {
+        margin-top: 18% !important;
+    }
+
+    .tmcrbox {
+        padding-top: 30%;
+    }
+
+    .prolist .txts .t {
+        padding: 8% 60px 0 10%;
+    }
+
+    .prolist .txts .tx {
+        left: 10%;
+    }
+
+    .protools {
+        bottom: -5px;
+        right: -5px;
+    }
+
+    .pdcrbox {
+        padding: 40% 8% 0 8%;
+    }
+
+    .pdIcos a {
+        margin-right: 10px;
+    }
+
+    .mypoint .pa {
+        padding-top: 21%;
+    }
+
+    .mythink .pa {
+        padding-top: 15%;
+    }
+
+    .mypos .pa {
+        padding-top: 23%;
+    }
+
+    .myser .pa {
+        padding-top: 20%;
+    }
+
+    .myteam .pa {
+        padding-top: 25%;
+    }
+
+    .video2 {
+        height: 340px;
+    }
+
+    .ipbox {
+        padding-left: 31%;
+    }
+
+    .abcrtxts, .sercrtxts {
+        padding-top: 38%;
+    }
+
+    .abpartners .apa1 .tx {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .mypos .ti, .pa > p {
+        font-size: 33px;
+    }
+
+    .mypos .tx1, .tx, .pin > span {
+        font-size: 18px;
+    }
+
+    .pin > span {
+        width: 170px;
+    }
+
+    .absurvey .t, .absurvey .b {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .abctas .txts {
+        padding-left: 8%;
+        padding-top: 9%;
+    }
+
+    .abnav .txts {
+        padding-top: 38%;
+    }
+
+    .stslide {
+        margin-left: 6%;
+    }
+
+    .aibox .slick-dots {
+        right: -48px;
+    }
+
+    .absurvey .t .ti {
+        margin-top: 16%;
+    }
+
+    .aibox .txts .tx {
+        margin-top: 45px;
+    }
+
+    .serpic .txts .ti {
+        font-size: 28px;
+    }
+
+    .serpic .txts {
+        width: 588px;
+    }
+
+    .stnav li {
+        width: 162px;
+    }
+
+    .stnav .icos {
+        width: 84px;
+        height: 68px;
+    }
+
+    .stnav .icos .ico {
+        width: 168px;
+        height: 135px;
+        margin-top: -68px;
+        margin-left: -84px;
+    }
+
+    .stnav .t .ti {
+        top: 20px;
+    }
+
+    .stnav .b {
+        padding-left: 100px;
+        margin-top: 8px;
+    }
+
+    /*.stnav li.act .t .ti{ font-size:22px !important; }*/
+    .ndti .txts, .ndtxts .txts {
+        width: 730px;
+    }
+
+    .ndti .txts .pa, .ndtxts .txts .freeTx {
+        padding-left: 28px;
+    }
+
+    .tmlist .lines {
+        width: 200px;
+        height: 84px;
+        top: -64px;
+    }
+
+    .tmlist {
+        margin-top: 115px;
+    }
+
+    .tmlist li {
+        margin-bottom: 60px;
+    }
+
+    .probox {
+        padding: 30px 32px 8.2% 32px;
+    }
+
+    .prolist .txts .t .ti {
+        font-size: 22px;
+    }
+
+    .prolist .txts .t {
+        padding: 30px 60px 0 25px;
+    }
+
+    .prolist .txts .tx {
+        left: 25px;
+        bottom: 15px;
+    }
+
+    .protools {
+        bottom: -10px;
+        right: -8px;
+    }
+
+    .pdInfo {
+        width: 100%;
+    }
+
+    .pdIcos .name {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .pdIcos .dot {
+        width: 66px;
+        height: 66px;
+    }
+
+    .pdIcos a {
+        width: 80px;
+    }
+
+    .pdIcos a {
+        margin-right: 14px;
+    }
+
+    .ipbox {
+        padding-left: 32%;
+    }
+
+    .mypoint .pa {
+        padding-top: 23%;
+    }
+
+    .mypos .pa {
+        padding-top: 25%;
+    }
+
+    .mythink .pa {
+        padding-top: 18%;
+    }
+
+    .myteam .pa {
+        padding-top: 27%;
+    }
+
+    .abpartners .txts {
+        padding-top: 18%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .mypos .ti, .pa > p {
+        font-size: 33px;
+    }
+
+    .mypos .tx1, .tx, .pin > span {
+        font-size: 18px;
+    }
+
+    .pin > span {
+        width: 150px;
+    }
+
+    .abbox {
+        padding: 40px 42px 48px 42px;
+    }
+
+    .curnav {
+        padding-left: 42px;
+    }
+
+    .curnav .b .aw {
+        left: -18px;
+    }
+
+    .abcrtxts, .sercrtxts {
+        padding-top: 30%;
+    }
+
+    .absurvey .t .ti {
+        font-size: 26px;
+        margin-top: 15%;
+    }
+
+    .absurvey .t {
+        padding-top: 20%;
+    }
+
+    .aibox {
+        width: 90%;
+    }
+
+    .aibox .slick-dots {
+        top: 38%;
+    }
+
+    .aibox .txts .tx {
+        margin-top: 38px;
+    }
+
+    .abpartners .txts {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .absurvey .t {
+        padding-bottom: 30px;
+    }
+
+    .aibox .txts .tx {
+        margin-top: 32px;
+    }
+
+    .stslide {
+        margin-left: 5%;
+    }
+
+    .abnav .txts .aws {
+        margin-top: 8%;
+    }
+
+    .abpartners .txts .tx {
+        margin-top: 19%;
+        font-size: 12px;
+        line-height: 22px !important;
+    }
+
+    /*.abctas .telList li { margin-right: 28px; }*/
+    .nav, .abcrtxts, .sercrtxts {
+        padding-left: 25px;
+    }
+
+    .abnav .txts .en, .abnav .txts .ch {
+        font-size: 24px;
+    }
+
+    .abnav .txts .en {
+        margin-top: 5px;
+    }
+
+    .serbox {
+        padding: 20px 20px 0 20px;
+    }
+
+    .curnav2 {
+        padding-left: 20px !important;
+    }
+
+    .curnav2 .b .aw {
+        left: 4px !important;
+    }
+
+    .curnav2 .b {
+        padding-left: 75px;
+    }
+
+    .stnav li {
+        width: 152px;
+    }
+
+    .stnav .t .ti {
+        font-size: 15px;
+    }
+
+    .stnav .b {
+        padding-left: 90px;
+    }
+
+    .nvlist .addbox {
+        right: 25px;
+    }
+
+    .nvlist li, .blbox {
+        padding: 0 25px 0 15px;
+    }
+
+    .nvlist a, .backList2 {
+        padding: 0 25px 0 35px;
+    }
+
+    .nvlist .square {
+        left: 10px;
+    }
+
+    .nvlist .pa {
+        padding: 12px 0;
+    }
+
+    .nwnav {
+        margin-top: 5%;
+        padding: 0 50px;
+    }
+
+    .nwcrbox .nwti {
+        margin-right: 50px;
+    }
+
+    .nwbox > .pw {
+        padding-left: 32px;
+        padding-right: 32px;
+        width: auto;
+    }
+
+    .nvlist {
+        margin-top: 25px;
+    }
+
+    .nvdlist {
+        margin-top: 15% !important;
+    }
+
+    .ndti .txts .pa {
+        padding-top: 35px;
+        padding-bottom: 45px;
+    }
+
+    .ndti .txts {
+        margin-top: -10%;
+    }
+
+    .tmbox {
+        padding: 14% 8% 0 8%;
+    }
+
+    .tmtxts {
+        width: 100%;
+    }
+
+    .tmcrbox {
+        padding-top: 20%;
+    }
+
+    .probox {
+        padding: 20px 20px 8.2% 20px;
+    }
+
+    .prolist .txts .t .ti {
+        font-size: 20px;
+    }
+
+    .procrbox {
+        padding: 0 25px 0 25px;
+    }
+
+    .prolist .txts .tx {
+        bottom: 10px;
+        left: 20px;
+    }
+
+    .protools {
+        bottom: -15px;
+        right: -10px;
+    }
+
+    .prolist .txts .t {
+        padding: 25px 60px 0 20px;
+    }
+
+    .pdcrbox {
+        padding: 35% 8% 0 8%;
+    }
+
+    .pdIcos a {
+        margin-right: 8px;
+    }
+
+    .pdIcos .dot {
+        width: 60px;
+        height: 60px;
+    }
+
+    .pdIcos .ico {
+        transform-origin: center center;
+        -webkit-transform-origin: center center;
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+    }
+
+    .itTx1 .itoL {
+        width: 108px;
+    }
+
+    .itTx1 .itoR {
+        width: 100px;
+    }
+
+    .itTx1, .pagesider .ixtxts {
+        width: 208px;
+        height: 318px;
+    }
+
+    .itTx1 .numbox img {
+        margin-top: 45px;
+    }
+
+    .itTx1 .tibox .ti2 .pa, .itTx1 .tibox .ti3 .pa, .itTx1 .tibox .ti5 .pa {
+        padding-top: 85px;
+        height: 233px;
+    }
+
+    .itTx1 .tibox .ti1 .pa {
+        padding-top: 105px;
+        height: 213px;
+    }
+
+    .itTx1 .tibox .ch {
+        font-size: 16px;
+    }
+
+    .itTx1 .tibox .line2 {
+        margin: 18px 0 7px 0;
+    }
+
+    .itTx1 .tibox .en {
+        font-size: 12px;
+    }
+
+    .page-controls li {
+        font-size: 12px;
+        padding: 0 1px;
+        margin-left: 8px;
+    }
+
+    .navbox .b {
+        padding: 33px 0;
+    }
+
+    .menu-content {
+        bottom: 90px;
+    }
+
+    .itTx .ti {
+        font-size: 28px;
+    }
+
+    .ixtxts {
+        width: 580px;
+        height: 230px;
+    }
+
+    .itTx .ti {
+        margin-bottom: 28px;
+    }
+
+    .ipbox {
+        padding-left: 33%;
+    }
+
+    .mouse {
+        bottom: 15%;
+    }
+
+    .mypos .pa {
+        padding-top: 23%;
+    }
+
+    .mypoint .pa {
+        padding-top: 6%;
+    }
+
+    .myteam .pa {
+        padding-top: 25%;
+    }
+
+    .abctas .telList a {
+        font-size: 12px;
+    }
+
+    .abctas .telList .ti {
+        margin-bottom: 15px;
+    }
+
+    .abctas .telList {
+        margin-top: 8%;
+    }
+
+    .mypos .ti, .mypoint .ti, .myser .ti, .myteam .ti {
+        font-size: 30px;
+    }
+
+    .mtlist li {
+        width: 116px;
+        height: 116px;
+    }
+
+    .mtlist .ti {
+        font-size: 20px;
+    }
+
+    .mtlist .pa2 {
+        padding-top: 35px;
+    }
+
+    .mtlist {
+        margin-bottom: 28px;
+    }
+
+    .mythink .pa {
+        padding-top: 15%;
+    }
+
+    .myser .pa {
+        padding-top: 18%;
+    }
+
+    .tmcrti .tx2 {
+        font-size: 32px;
+    }
+
+    .abpartners .apa1 .tx {
+        margin-top: 15px;
+    }
+
+    .nvlist {
+        height: 351px;
+    }
+
+    .nwv-controls {
+        padding: 0 50px;
+    }
+
+    .nvlist-demo .slick-dots {
+        padding: 0 50px;
+    }
+
+    .backList2 .ico {
+        height: 52px;
+    }
+
+    .backList2 .txx {
+        padding: 14px 0;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .mypos .ti, .pa > p {
+        font-size: 33px;
+    }
+
+    .mypos .tx1, .tx, .pin > span {
+        font-size: 18px;
+    }
+
+    .pin > span {
+        width: 130px;
+    }
+
+    .absurvey .t, .absurvey .b {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .absurvey .t .ti {
+        margin-top: 12%;
+        font-size: 24px;
+    }
+
+    .abctas .txts {
+        padding-left: 5%;
+        padding-top: 7%;
+    }
+
+    .abctas .telList {
+        margin-top: 8%;
+    }
+
+    .serpic .txts .ti {
+        font-size: 26px;
+    }
+
+    .serpic .txts {
+        width: 550px;
+    }
+
+    .serpic .txts .pa {
+        padding-top: 8.5%;
+        padding-bottom: 9%;
+    }
+
+    .stnav li {
+        width: 142px;
+    }
+
+    .stnav .b {
+        padding-left: 80px;
+    }
+
+    .ndti .txts, .ndtxts .txts {
+        width: 90%;
+    }
+
+    .team-infos {
+        padding: 0;
+    }
+
+    .tmlist .txts, .tmlist .bodr {
+        top: 35px;
+    }
+
+    .prolist .txts .t .ti {
+        font-size: 18px;
+    }
+
+    .prolist .txts .t .line1 {
+        margin-bottom: 6px;
+    }
+
+    .prolist .txts .t .line2 {
+        margin-top: 6px;
+    }
+
+    .pdtxts .txts .tx {
+        width: 100%;
+    }
+
+    .pdti .ti {
+        font-size: 24px;
+    }
+
+    .abpartners .apa1 .tx {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mypos .ti, .pa > p {
+        font-size: 33px;
+    }
+
+    .mypos .tx1, .tx, .pin > span {
+        font-size: 18px;
+    }
+
+    .pin > span {
+        width: 130px;
+    }
+
+    .stnav li {
+        width: 25%;
+        margin: 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .stnav li.act .ico {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+    }
+
+    .stnav .t .ti {
+        font-size: 14px;
+    }
+
+    .stnav .b .en {
+        font-size: 12px;
+        line-height: 15px;
+        height: 45px;
+    }
+
+    .stnav .b {
+        padding-left: 55%;
+        margin-top: 5px;
+    }
+
+    .stnav li.act .b .line1 {
+        width: 47px;
+    }
+
+    .stnav li.act .b .line2 {
+        width: 49px;
+    }
+
+    .team-infos .tx {
+        width: 100%;
+    }
+
+    .mtlist li {
+        width: 106px;
+        height: 106px;
+    }
+
+    .mtlist .ti {
+        font-size: 18px;
+    }
+
+    .mtlist .txx {
+        margin-top: 0;
+    }
+
+    .mtlist .pa2 {
+        padding-top: 32px;
+    }
+
+    .mtlist li {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mypos .ti, .pa > p {
+        font-size: 15px;
+    }
+
+    .mypos .tx1, .tx, .pin > span {
+        font-size: 12px;
+    }
+
+    .pin > span {
+        width: 130px;
+    }
+
+    .abbox {
+        padding: 30px 30px 40px 30px;
+    }
+
+    .abnav .txts .en, .abnav .txts .ch {
+        font-size: 22px;
+    }
+
+    .nav a {
+        margin-left: 25px;
+    }
+
+    .header .menu {
+        width: 65px;
+    }
+
+    .header .navbox {
+        padding-right: 65px;
+        width: 33.33%;
+        box-sizing: border-box;
+    }
+
+    .abcrtxts, .sercrtxts {
+        padding-right: 25px;
+        padding-top: 46%;
+    }
+
+    .absurvey .t .sym {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+    }
+
+    .absurvey .t .ti {
+        font-size: 20px;
+    }
+
+    .stslide {
+        margin-right: 5%;
+    }
+
+    .stslide .slick-dots {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 25px;
+    }
+
+    .aibox .slick-dots li {
+        margin: 0 5px;
+        display: inline-block;
+        *zoom: 1;
+        *display: inline;
+    }
+
+    .aibox .txts {
+        padding: 0;
+    }
+
+    .aibox {
+        padding-top: 38px;
+    }
+
+    .aibox .txts .ti {
+        font-size: 22px;
+    }
+
+    .aibox .txts .tx {
+        margin-top: 25px;
+    }
+
+    .abpartners .apa {
+        width: 49%;
+        margin-left: 1%;
+    }
+
+    .abpartners {
+        margin-left: -1%;
+    }
+
+    .abpartners .txts .tx {
+        margin-top: 17%;
+        padding-left: 0;
+    }
+
+    .abpartners .apa1 .tx {
+        margin-top: 10px;
+    }
+
+    .abpartners .txts {
+        padding-top: 5%;
+    }
+
+    .abpartners .txts .ti .line {
+        display: none;
+    }
+
+    .abpartners .txts .ti {
+        padding-left: 0;
+    }
+
+    .abctas .telList li {
+        margin-right: 0;
+        width: 50%;
+        padding-right: 5px;
+        box-sizing: border-box;
+    }
+
+    .abctas .pic {
+        display: none;
+    }
+
+    .abctas .txts {
+        position: relative;
+        padding-right: 5%;
+    }
+
+    .abctas .txts .addr {
+        font-size: 18px;
+    }
+
+    .curnav {
+        padding-left: 30px;
+    }
+
+    .curnav .b .aw {
+        left: -6px;
+    }
+
+    .f-ma {
+        display: none;
+    }
+
+    .f-tx2 {
+        margin-top: 15px;
+    }
+
+    /*.abcrtxts .tx{ width:100%; }*/
+    .menu-content {
+        transition: none;
+        -webkit-transition: none;
+        position: fixed;
+        width: 33.33%;
+        left: auto;
+        bottom: auto !important;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        display: none;
+    }
+
+    .menu-handler .burger {
+        background: #fff;
+    }
+
+    .menu-tools .search .btn {
+        background-image: url("http://test.myushan.com//lingzhong/search.png");
+    }
+
+    .menu-tools .share {
+        background-image: url("http://test.myushan.com//lingzhong/share.png");
+    }
+
+    .menu-tools .search .txx {
+        border-color: #fff;
+    }
+
+    .menu-tools .search .txx input {
+        color: #fff;
+    }
+
+    .menu-nav {
+        padding-top: 35%;
+    }
+
+    .header .menu-handler {
+        left: 15px;
+    }
+
+    .menu.menushow {
+        height: 64px;
+        background: none;
+    }
+
+    /*.header .menu.active .menu-handler{ top:0; }*/
+    /*.header .menu-handler{ width:100%; height:100%; left:0; top:0; }
+.header .menu-handler .burger{ position:absolute; width:35px; left:15px; }*/
+    /*.header .menu-handler .burger-1{ top:23px; }*/
+    /*.header .menu-handler .burger-2{ top:37px; }*/
+    /*.menu-handler.active .burger-1{ top:30px; -webkit-transform: rotate(225deg); transform: rotate(225deg); }
+.menu-handler.active .burger-2{ top:30px; -webkit-transform: rotate(-225deg); transform: rotate(-225deg); }
+.menu-handler.active .burger{ background:#000; }*/
+    /*.menu-handler .burger{ transform-origin: center; -webkit-transform-origin: center; transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1); -webkit-transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1); }*/
+    .serpic .txts .ti {
+        font-size: 22px;
+    }
+
+    .sttxts li {
+        margin-left: 5%;
+    }
+
+    .serpic .txts .aws {
+        transform-origin: right bottom;
+        -webkit-transform-origin: right bottom;
+        transform: scale(0.65);
+        -webkit-transform: scale(0.65);
+    }
+
+    .serpic .txts {
+        width: 438px;
+    }
+
+    .newslist a {
+        margin-bottom: 5%;
+    }
+
+    .newslist .datebox .line3 {
+        width: 60%;
+    }
+
+    .newslist .pa {
+        padding: 0;
+    }
+
+    .nvlist .addbox {
+        display: none;
+    }
+
+    .nvlist a, .backList2 {
+        padding: 0 5px 0 15px;
+    }
+
+    .nwcrbox .nwti {
+        margin-right: 30px;
+    }
+
+    .nwnav {
+        margin-top: 10%;
+        padding: 0 30px;
+    }
+
+    .nwnav li {
+        margin-left: 5px;
+    }
+
+    .nvlist .nowti {
+        width: 100%;
+    }
+
+    .ndti .txts .ti {
+        font-size: 22px;
+    }
+
+    .ndti .txts .date {
+        margin-top: 10px;
+    }
+
+    .ndti .txts .tx {
+        margin-top: 15px;
+    }
+
+    .tmbox {
+        padding: 14% 5%;
+    }
+
+    .tmlist .txts, .tmlist .bodr {
+        padding-bottom: 0;
+        top: 0;
+        left: 0;
+        border: none;
+    }
+
+    .tmlist .item2 {
+        padding-top: 35px;
+    }
+
+    .tmlist li {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    .tmlist .item {
+        width: 48%;
+        margin-left: 2%;
+    }
+
+    .tmlist {
+        margin-left: -2%;
+        margin-top: 60px;
+    }
+
+    .tmcrbox {
+        padding: 25% 25px 0 25px;
+    }
+
+    .tmtti .en {
+        font-size: 22px;
+    }
+
+    .tmtti .r .ch {
+        font-size: 16px;
+    }
+
+    .tmtti .r .py {
+        margin-top: 4px;
+    }
+
+    .tmtxts .line {
+        width: 116px;
+    }
+
+    .tmtxts .tx1, .tmtxts .works {
+        margin-top: 25px;
+    }
+
+    .pcrnav a {
+        padding: 0 10px;
+    }
+
+    .pcrnav .square {
+        margin-right: 15px;
+    }
+
+    .pcrnav .ico {
+        margin-right: 20px;
+    }
+
+    .pcrnav .bodr, .pcrnav .line {
+        left: 25px;
+        right: 23px;
+    }
+
+    .prosearchbox {
+        left: 57px;
+        right: 25px;
+    }
+
+    .prosearchbox .pstxts {
+        width: 100%;
+        box-sizing: border-box;
+        height: 36px;
+        line-height: 36px;
+        padding-top: 0;
+        padding-bottom: 0;
+        float: none;
+    }
+
+    .prosearchbox .psbtn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 10px;
+    }
+
+    .pcrnav .aw {
+        right: 25px;
+    }
+
+    .pdIcos a {
+        width: 25%;
+        margin-right: 0;
+    }
+
+    .pdIcos .name {
+        padding: 0 5px;
+    }
+
+    .pdcrbox {
+        padding: 35% 25px 0 25px;
+    }
+
+    .pdIcos .dot {
+        width: 100%;
+        height: 40px;
+        border: none;
+    }
+
+    .pdIcos .ico {
+        transform: none;
+        -webkit-transform: none;
+    }
+
+    .pdIcos .name {
+        font-size: 10px;
+    }
+
+    /*.ms-mpc{ display:none; }*/
+    .ipbox {
+        padding-left: 238px;
+        padding-right: 40px;
+    }
+
+    .mypos .pa {
+        padding-top: 38%;
+    }
+
+    .mypoint .pa {
+        padding-top: 32%;
+    }
+
+    .mythink .pa {
+        padding-top: 33%;
+    }
+
+    .myser .pa {
+        padding-top: 33%;
+    }
+
+    .myteam .pa {
+        padding-top: 45%;
+    }
+
+    .navbox .b {
+        padding: 28px 0;
+    }
+
+    .menu-nav1 {
+        display: none;
+    }
+
+    .menu-nav2 {
+        display: block;
+    }
+
+    .menu-content {
+        background: #c80000;
+    }
+
+    #boxsider .navbox {
+        display: none !important;
+    }
+
+    #boxsider .logobox {
+        display: none !important;
+    }
+
+    #boxsider .menu .menu-handler {
+        top: 22px;
+        left: 15px;
+    }
+
+    #boxsider .menu .menu-handler .burger {
+        background: #fff;
+    }
+
+    .menu-content {
+        opacity: 0;
+        visibility: visible;
+    }
+
+    .mypos .ti, .mypoint .ti, .myser .ti, .myteam .ti {
+        font-size: 26px;
+    }
+
+    .mypos .tx {
+        margin-bottom: 42px;
+    }
+
+    .mypoint .pa {
+        padding-top: 38%;
+    }
+
+    .myteam .pa {
+        padding-top: 42%;
+    }
+
+    .staw {
+        bottom: 0;
+    }
+
+    .stawbox {
+        padding: 107px 0 127px 0;
+    }
+
+    .abcrtxts .tx2 {
+        font-size: 30px;
+    }
+
+    .tmcrti .tx2 {
+        font-size: 30px;
+    }
+
+    .nwv-controls {
+        padding: 0 30px;
+    }
+
+    .nvlist-demo .slick-dots {
+        padding: 0 30px;
+    }
+}
+

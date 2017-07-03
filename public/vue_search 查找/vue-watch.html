@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+   <!--  <p>
+   		Random.extend({
+   constellation: function(date) {
+       var constellations = ['白羊座', '金牛座', '双子座', '巨蟹座', '狮子座', '处女座', '天秤座', '天蝎座', '射手座', '摩羯座', '水瓶座', '双鱼座']
+       return this.pick(constellations)
+   }
+   })
+   Random.constellation()
+   // => "水瓶座"
+   Mock.mock('@CONSTELLATION')
+   // => "天蝎座"
+   Mock.mock({
+   constellation: '@CONSTELLATION'
+   })
+   // => { constellation: "射手座" }
+   </p> -->
+	<div id="app">
+		<search-input v-bind:init-data="initData"></search-input>
+	</div>
+	<script type="text/javascript" src="axios.min.js"></script>
+	<script type="text/javascript" src="mock-min.js"></script>
+	<script type="text/javascript" src="vue.js"></script>
+	<script type="text/javascript">
+	var url = 'http://aaa.bbb.ccc/api/search';
+	Mock.mock(url,{
+		"result|5-10": [
+		  /[a-z][A-Z][0-9]/
+		]
+  	});
+
+	Vue.component('searchInput',{
+		template: '<div>\
+						<input type="text" v-model="searchText"/>\
+						<ul>\
+							<li v-for="text in results" @click="doSearch(text)">{{text}}</li>\
+						</ul>\
+					</div>',
+		props: ['init-data'],
+		data: function() {
+			return {
+				searchText: this.initData,
+				results: [],
+				timeout: null
+			}
+		},
+		methods: {
+			doSearch (text) {
+				this.searchText = text;
+			}
+		},
+		watch: {
+			'searchText' : function (curVal,oldVal) {
+				if(this.timeout){
+					clearTimeout(this.timeout);
+				}
+    //防抖动机制
+				this.timeout = setTimeout(()=>{
+					axios.get(url).then((rep)=>{
+						this.results = rep.data.result;
+					});
+					this.timeout = null;
+				},500);
+			}
+		}
+	});
+
+	var app = new Vue({
+		el: '#app',
+		data:{
+			initData: 'abc'
+		}
+	});
+	</script>
+</body>
+</html>

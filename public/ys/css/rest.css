@@ -1,0 +1,132 @@
+
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, button, textarea, p, th, td, b, i, strong {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+strong, b {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+fieldset, img {
+    border: 0
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    outline: none
+}
+
+li {
+    list-style: none
+}
+
+i {
+    font-style: normal
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit
+}
+
+input, button, textarea, select {
+    *font-size: 100%
+}
+
+.clear:after {
+    display: block;
+    content: "clear";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.clear {
+    zoom: 1;
+}
+
+body,html{
+    width:100%;
+    height:100%;
+    min-width: 320px;
+}
+*{
+    font-size: PingHei, STHeitiSC-Light, 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif!important;
+}
+
+button,
+a { cursor: pointer; }
+
+/*切换效果*/
+.infor-a-derc .derc-box, .infor-a-img .img-wrap,.infor-b .inde4 ul li  .infor_jpg img,.infor-b .inde4 .inde4_title p,.infor-d ul.ul_icon li .u-li-icon,.infor-d ul.ul_icon li .ic,
+.banner,.infor-a-bj,.infor-a-img .img-horizon,.img-vertical-a,.infor-a-img .img-vertical-a,
+.infor-a-img .img-vertical-b,.infor-a-img .img-derc-a,.infor-a-img .img-derc-b,.block-e .infor-img .img-wrap,.block-d .infor-img  h2,.block-e .infor-img  h2{
+
+    -webkit-transition: 0.8s all .2s cubic-bezier(.215, .61, .355, 1);
+    -moz-transition: 0.8s all .2s cubic-bezier(.215, .61, .355, 1);
+    -o-transition: 0.8s all .2s cubic-bezier(.215, .61, .355, 1);
+    transition: 0.8s all .2s cubic-bezier(.215, .61, .355, 1);
+    will-change: transform, opacity
+}
+.infor-b .inde4 ul li .left_icon, .inde4 ul li  .right_icon ,.infor-b .inde4 ul li .center_icon {
+    -webkit-transition: 0.8s all .1s cubic-bezier(0.68, -0.55, 0.27, 1);
+    -moz-transition: 0.8s all .1s cubic-bezier(0.68, -0.55, 0.27, 1);
+    -o-transition: 0.8s all .1s cubic-bezier(0.68, -0.55, 0.27, 1);
+    transition: 0.8s all .1s cubic-bezier(0.68, -0.55, 0.27, 1);
+    will-change: transform, opacity
+}
+/*======================================================================================================================
+hover  button
+ ======================================================================================================================*/
+.btn-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transition: -webkit-transform .3s, opacity .3s, background .3s;
+    transition: transform .3s, opacity .3s, background .3s
+}
+
+.btn-animation:hover {
+    transition: .2s all 0s cubic-bezier(0.2, 1, .3, 1)
+}
+
+.btn-animation:hover::before {
+    opacity: 1;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, .3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, .3, 1)
+}
