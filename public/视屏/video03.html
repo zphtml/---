@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>video</title>
+</head>
+<body>
+
+    <video width="600" height="300">
+        <source src="video/mov_bbb.mp4">
+    </video>
+    <div class="con">
+        <input type="button" value="播放" onclick=play()>
+        <input type="button" value="暂停" onclick=pause()>
+        <input type="button" value="重新加载" onclick=reload()>
+        <progress value="0" max="100"></progress>
+        <input type="button" value="静音" onclick=muted()>
+        <input type="range" min="0" max="100" oninput= changeVolume(this)>
+        <input type="button" value="全屏" onclick=fullScreen()>
+    </div>
+
+    <script>
+
+        var video = document.querySelector("video");
+
+
+        function play() {
+
+            //调用play方法进行播放
+            video.play();
+            getProgress();
+
+        }
+
+        function pause() {
+
+            //调用pause方法可以暂停视频
+            video.pause();
+            clearInterval(video.timer);
+            video.timer = null;
+
+        }
+
+        function reload() {
+
+            //重新加载视频
+            video.load();
+        }
+
+        function getProgress() {
+
+            var pro = document.querySelector("progress");
+
+            video.timer = setInterval(function () {
+
+                console.log(video.currentTime);
+
+                //duration 返回视频的总时长
+                //currentTime 返回或设置当前播放的时间
+
+                pro.value = video.currentTime / video.duration * 100 ;
+
+                if (video.currentTime == video.duration){
+
+                    clearInterval(video.timer);
+                    video.timer = null;
+                }
+
+            },100);
+        }
+        function muted() {
+            //是否静音
+            video.muted = true;
+        }
+
+        function changeVolume(range) {
+
+            //设置音量 取值为 0 到 1
+            video.volume = range.value / 100;
+        }
+        function fullScreen() {
+
+            //全屏播放 ie 和 欧朋不支持
+            if (video.webkitRequestFullscreen){
+                video.webkitRequestFullscreen();
+            }else {
+                video.mozRequestFullscreen();
+            }
+        }
+
+
+    </script>
+
+
+</body>
+</html>

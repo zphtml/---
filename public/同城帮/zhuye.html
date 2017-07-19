@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>同城帮</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.3&key=06fb75f531ce19fd2af711465487d07a&plugin=AMap.Autocomplete,AMap.PlaceSearch"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="js/zhuye.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/zhuye.css"/>
+	</head>
+	<body >
+		<div class="map">
+			<div class="map_">
+				<div class="map_kaitou">
+					<p>地图模式</p>
+					<span><a href="##">x</a></span>
+				</div>
+					<div id="container"></div>
+				<div class="button">
+					<button id="en">显示英文</button>
+					<button id="zh_cn">显示中文</button>
+					<button id="zh_en">显示中英文对照</button>
+				</div>
+						
+				
+			</div>
+		</div>
+		<div class="head">
+			<div class="head_">
+				<ul class="head_left">
+					<li>北京[切换城市]</li>
+					<li>同城首页</li>
+				</ul>
+				<ul class="head_right">
+					<li><a href="#">登录</a></li>
+					<li><a href="#">注册</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li>客服电话: 4000-399-360</li>
+					<li><a href="#">客户服务</a><span class="head_right_sanjiao"></span></li>
+					<li><a href="#">投诉建议</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav">
+			<h1>同城帮</h1>
+			<ul>
+				<li><a href="#">二手良品</a>
+					<img src="img/img/pubiao.jpg"/>
+				</li>
+				<li><a href="#">手机回收</a></li>
+				<li><a href="#">手机维修</a></li>
+				<li><a href="#">电脑维修</a></li>
+				<li><a href="#">以旧换新</a></li>
+				<li><a href="#">手机维修</a></li>
+			</ul>
+		</div>
+		
+		<div class="banner">
+			<div class="xinxi">
+				<ul>
+					<li   num="1"><a href="#" class="xinxi_1">修手机\pad</a><div class="xinxi_sanjiao"></div></li>
+					<div class="xinxi_tuozhan" num="1">
+				<div class="xinxi_tuozhan_left"><p>屏幕 ></p></div>
+					<ul>
+						<li><a href="#">但显示正常</a></li>
+						<li><a href="#">屏幕不显示或者花屏</a></li>
+						<li><a href="#">屏幕触摸失灵</a></li>
+						<li><a href="#">pad更换屏幕</a></li>
+					</ul>
+					<div class="xinxi_tuozhan_left"><p>电池/充电/开机 ></p></div>
+					<ul>
+						<li><a href="#">电池问题</a></li>
+						<li><a href="#">不开机</a></li>
+						<li><a href="#">充电连接问题</a></li>
+					</ul>
+					<div class="xinxi_tuozhan_left"><p>按键 ></p></div>
+					<ul>
+						<li><a href="#">开机键失灵</a></li>
+						<li><a href="#">home键失灵</a></li>
+						<li><a href="#">音量键失灵</a></li>
+					</ul>
+					<div class="xinxi_tuozhan_left"><p>声音震动 ></p></div>
+					<ul>
+						<li><a href="#">听筒问题</a></li>
+						<li><a href="#">麦克风问题</a></li>
+						<li><a href="#">外方扬声器问题</a></li>
+						<li><a href="#">外方扬声器问题</a></li>
+						<li><a href="#">震动功能失效</a></li>
+					</ul>
+					<div class="xinxi_tuozhan_left"><p>拍照/录像 ></p></div>
+					<ul>
+						<li><a href="#">后摄像头无法拍摄</a></li>
+						<li><a href="#">前摄像头拍摄故障</a></li>
+					</ul>
+					<div class="xinxi_tuozhan_left"><p>外壳/边框 ></p></div>
+					<ul>
+						<li><a href="#">中框变形</a></li>
+						<li><a href="#">手机换彩壳</a></li>
+					</ul>
+					<div class="xinxi_tuozhan_left"><p>进水夜/主板故障 ></p></div>
+					<ul>
+						<li><a href="#">进水入液</a></li>
+						<li><a href="#">手机主板故障</a></li>
+					</ul>
+					<div class="xinxi_tuozhan_left"><p>其他故障 ></p></div>
+					<ul>
+						<li><a href="#">软件升级/刷机</a></li>
+						<li><a href="#">WiFi功能故障 </a></li>
+					</ul>
+					<div class="xinxi_tuozhan_left"><p>个性化服务 ></p></div>
+					<ul>
+						<li><a href="#">点亮iPhone logo </a></li>
+						<li><a href="#">蓝光护眼钢化膜 </a></li>
+						<li><a href="#">极透高清钢化膜 </a></li>
+						<li><a href="#">爱机深度清理 </a></li>
+						<li><a href="#">手机换彩壳 </a></li>
+					</ul>
+				</div>
+					<li   num="2"><a href="#" class="xinxi_2">修电脑</a><div class="xinxi_sanjiao"></div></li>
+					<div class="xinxi_tuozhan_xiudiannao"  num="2">
+					<div class="xinxi_tuozhan_xiudiannao_1">
+						<p>热门问题 :</p>
+					</div>
+						<ul>
+							<li><a href="#">重装系统</a></li>
+							<li><a href="#">电脑清灰</a></li>
+							<li><a href="#">数据恢复</a></li>
+							<li><a href="#">系统故障恢复</a></li>
+							<li><a href="#">驱动安装</a></li>
+							<li><a href="#">游戏加速</a></li>
+						</ul>
+					<div class="xinxi_tuozhan_xiudiannao_1" >
+						<p>其他他问题 :</p>
+					</div>
+						<ul>
+							<li><a href="#">开机加速</a></li>
+							<li><a href="#">网速优化</a></li>
+							<li><a href="#">蓝屏死机</a></li>
+							<li><a href="#">电脑没声音</a></li>
+							<li><a href="#">路由器调试</a></li>
+							<li><a href="#">无法上网</a></li>
+							<li><a href="#">更换风扇</a></li>
+							<li><a href="#">无法上网</a></li>
+							<li><a href="#">病毒查杀</a></li>
+						</ul>
+				</div>
+					<li  num="3"><a href="#" class="xinxi_3">卖手机</a><div class="xinxi_sanjiao"></div></li>
+					<div class="xinxi_tuozhan_phone"  num="3">
+					<ul>
+						<li><a href="#">苹果</a></li>
+						<li><a href="#">三星</a></li>
+						<li><a href="#">小米</a></li>
+						<li><a href="#">华为</a></li>
+						<li><a href="#">步步高</a></li>
+						<li><a href="#">oppo</a></li>
+						<li><a href="#">HTC</a></li>
+						<li><a href="#">魅族</a></li>
+						<li><a href="#">索尼</a></li>
+						<li><a href="#">联想</a></li>
+						<li><a href="#">酷派</a></li>
+						<li><a href="#">中兴</a></li>
+						<li><a href="#">诺基亚</a></li>
+						<li><a href="#">朵唯</a></li>
+						<li><a href="#">乐视</a></li>
+						<li><a href="#">LG</a></li>
+						<li><a href="#">黑莓</a></li>
+						<li><a href="#">TCL</a></li>
+						<li><a href="#">锤子</a></li>
+						<li><a href="#">一加</a></li>
+						<li><a href="#">美图秀秀</a></li>
+						<li><a href="#">微软</a></li>
+						<li><a href="#">金立</a></li>
+						<li><a href="#">360手机</a></li>
+						<li><a href="#">摩托罗拉</a></li>
+					</ul>
+				</div>
+				
+					<li  num="4"><a href="#" class="xinxi_4">卖二手手机</a><div class="xinxi_sanjiao"></div></li>
+					<div class="xinxi_tuozhan_xiuli"  num="4">
+					<ul>
+						<li><a href="#">三星</a></li>
+						<li><a href="#">苹果</a></li>
+						<li><a href="#">小米</a></li>
+						<li><a href="#">华为</a></li>
+						<li><a href="#">HTC</a></li>
+						<li><a href="#">步步高</a></li>
+						<li><a href="#">诺基亚</a></li>
+						<li><a href="#">酷派</a></li>
+						<li><a href="#">索尼</a></li>
+						<li><a href="#">魅族</a></li>
+						<li><a href="#">联想</a></li>
+						<li><a href="#">努比亚</a></li>
+						<li><a href="#">LG</a></li>
+						<li><a href="#">vivo</a></li>
+						<li><a href="#">oppo</a></li>
+						<li><a href="#">乐视</a></li>
+						<li><a href="#">360手机</a></li>				
+						<li><a href="#">微软</a></li>
+						<li><a href="#">黑莓</a></li>					
+						<li><a href="#">戴尔</a></li>
+					</ul>
+				</div>
+				</ul>
+			</div>
+			
+				
+				
+				
+				
+			<div class="banner_">
+				<div class="max">
+					<a href="#"><img src="img/img/nav_middle_lunbo_01.jpg" /></a>
+					<a href="#"><img src="img/img/nav_middle_lunbo_02.jpg" /></a>
+					<a href="#"><img src="img/img/nav_middle_lunbo_03.jpg" /></a>
+					<a href="#"><img src="img/img/nav_middle_lunbo_04.jpg" /></a>
+					<a href="#"><img src="img/img/nav_middle_lunbo_01.jpg" /></a>			
+				</div>
+				<div class="quan">
+					<ul>
+						<li class="color"></li>
+						<li class="colorok"></li>
+						<li class="colorok"></li>
+						<li class="colorok"></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	<div class="banner_next">
+		<div class="bannernext">
+			<ul>
+				<li><img src="img/img/nav_bottom_01 (1).jpg"/></li>
+				<li><img src="img/img/nav_bottom_01 (2).jpg"/></li>
+				<li><img src="img/img/nav_bottom_01 (3).jpg"/></li>
+				<li><img src="img/img/nav_bottom_01 (4).jpg"/></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="mainfirst">
+				<h2>热门手机回收</h2>
+				<p><a href="#">查看详情</a></p>
+			</div>
+			<div class="mainlast">
+				<ul>
+					<li><a href="#"><img src="img/img/body_middle_011.jpg"/></a></li>
+					<li><a href="#"><img src="img/img/body_middle_02_30.jpg"/></a></li>
+					<li><a href="#"><img src="img/img/body_middle_03_32.jpg"/></a></li>
+					<li><a href="#"><img src="img/img/body_middle_04_34.jpg"/></a></li>
+					<li><a href="#"><img src="img/img/body_middle_05_36.jpg"/></a></li>
+					<li><a href="#"><img src="img/img/body_middle_06_38.jpg"/></a></li>
+				</ul>
+			</div>
+			
+		</div>
+
+		<div class="main">
+			<div class="mainfirst">
+				<h2>二手良品精选</h2>
+				<p><a href="#">查看详情</a></p>
+			</div>
+			<div class="mainlast">
+				<ul>
+					<li><a href="#"><img src="img/img/body_bottom_01_44.jpg"/></a></li>
+					<li><a href="#"><img src="img/img/body_bottom_02_45.jpg"/></a></li>
+					<li><a href="#"><img src="img/img/body_bottom_03_46.jpg"/></a></li>
+					<li><a href="#"><img src="img/img/body_bottom_04_47.jpg"/></a></li>
+					<li><a href="#"><img src="img/img/body_bottom_05_48.jpg"/></a></li>
+					<li><a href="#"><img src="img/img/body_bottom_06_49.jpg"/></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="main">
+			<div class="mainfirst">
+				<h2>到店维修</h2>
+			</div>
+		</div>
+	</div>	
+	
+	<div class="mainlast_">
+		<div class="mainlast_input" >
+			<div class="select">
+				<p><a href="##" >北京</a></p>
+				
+			</div>
+			<div class="select_">
+				<p><a href="##" >选择县区</a></p>
+			</div>
+			<input type="text" name="message" placeholder="输入您的位置查找最近的商家" id="tipinput"/>
+			<input type="submit" value="搜索" name="seek" id="btn"/>
+		</div>
+		<div class="box_shiqu">
+					<div class="box_shiqu_name">
+						<span>城市列表</span>
+						<button class="box_shiqu_guanbi">关闭 x</button>
+					</div>
+					<div class="box_shiqu_">
+						<div class="box_shiqu_remen_">
+							<div class="box_shiqu_remen">
+									<P>热门</P>
+							</div>
+							<ul class="box_shiqu_remen_city"></ul>
+						</div>
+					</div>
+				</div>
+				<div class="box_xianqu_name">
+					<div class="box_shiqu_name">
+						<span>区县列表</span>
+						<button class="box_shiqu_guanbi">关闭 x</button>
+					</div>
+					<div class="box_xianqu_liebiao">
+						<div class="box_xianqu_liebiao_">
+							<ul>
+								<li><a href="##">全部县区</a></li>
+								<li><a href="##">xxx</a></li>
+								<li><a href="##">xx</a></li>
+								<li><a href="##">xxx</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		<div class="mainlast_xinxi">
+			<div class="mainlast_left">
+				<div class="mainlast_left_nav">
+					<ul>
+						<li><a href="#">默认排序</a></li>
+						<li><a href="#">按成交量</a></li>                     
+						<li><a href="#">按人气</a></li>	
+					</ul>
+					<div class="mainlast_left_checked"><input type="checkbox" name = "checkbox" />先行赔付</div>
+					<div class="mainlast_right_nav">
+						<p><a href="##">地图模式</a></p>
+					</div>
+				</div>
+	<!--商铺信息-->
+		<div class="mainlast_left_shop">
+					<ul class="mainlast_left_shop_ul">
+					</ul>
+		</div>
+				<div id="mainlast_left_shop_fanye">
+				
+			</div>
+			</div>
+			<div class="mainlast_right">
+				<div class="mainlast_right_biaoti">
+					<p>商家好评</p>
+				</div>
+				<div class="mainlast_right_xinxi">
+					<ul>
+						<li>
+							<div class="mainlast_right_num1">1</div>
+							<div class = "mainlast_right_img">
+								<img src="img/img/t01ac02fad9b0458ec4.jpg" />
+							</div>
+							<div class="mainlast_right_pinglun">
+								<p>连金诚维修中心</p>
+								<p>11986条评论</p>
+							</div>
+						</li>
+						<li>
+							<div class="mainlast_right_num1">2</div>
+							<div class = "mainlast_right_img">
+								<img src="img/img/t01ac02fad9b0458ec4.jpg" />
+							</div>
+							<div class="mainlast_right_pinglun">
+								<p>连金诚维修中心</p>
+								<p>11986条评论</p>
+							</div>
+						</li>
+						<li>
+							<div class="mainlast_right_num1">3</div>
+							<div class = "mainlast_right_img">
+								<img src="img/img/t01ac02fad9b0458ec4.jpg" />
+							</div>
+							<div class="mainlast_right_pinglun">
+								<p>连金诚维修中心</p>
+								<p>11986条评论</p>
+							</div>
+						</li>
+						<li>
+							<div class="mainlast_right_num2">4</div>
+							<div class = "mainlast_right_img">
+								<img src="img/img/t01ac02fad9b0458ec4.jpg" />
+							</div>
+							<div class="mainlast_right_pinglun">
+								<p>连金诚维修中心</p>
+								<p>11986条评论</p>
+							</div>
+						</li>
+						<li>
+							<div class="mainlast_right_num2">5</div>
+							<div class = "mainlast_right_img">
+								<img src="img/img/t01ac02fad9b0458ec4.jpg" />
+							</div>
+							<div class="mainlast_right_pinglun">
+								<p>连金诚维修中心</p>
+								<p>11986条评论</p>
+							</div>
+						</li>
+						<li>
+							<div class="mainlast_right_num2">6</div>
+							<div class = "mainlast_right_img">
+								<img src="img/img/t01ac02fad9b0458ec4.jpg" />
+							</div>
+							<div class="mainlast_right_pinglun">
+								<p>连金诚维修中心</p>
+								<p>11986条评论</p>
+							</div>
+						</li>
+						<li>
+							<div class="mainlast_right_num2">7</div>
+							<div class = "mainlast_right_img">
+								<img src="img/img/t01ac02fad9b0458ec4.jpg" />
+							</div>
+							<div class="mainlast_right_pinglun">
+								<p>连金诚维修中心</p>
+								<p>11986条评论</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="food">
+		<div class="food_xinxi">
+			<ul>
+				<li>
+					<div class="food_pig1"></div>
+					<div class="food_text">
+						<p>购物指南</p>
+						<p><a href="#">购物流程</a></p>
+						<p><a href="#">用户注册</a></p>
+						<p><a href="#">帮助文档</a></p>
+					</div>
+				</li>
+				<li>
+					<div class="food_pig2"></div>
+					<div class="food_text">
+						<p>支付方式</p>
+						<p><a href="#">在线支付</a></p>
+						<p><a href="#">当面支付</a></p>
+					</div>
+				</li>
+				<li>
+					<div class="food_pig3"></div>
+					<div class="food_text">
+						<p>售后服务</p>
+						<p><a href="#">投诉建议</a></p>
+					</div>
+				</li>
+				<li>
+					<div class="food_pig4"></div>
+					<div class="food_text">
+						<p>特保障色</p>
+						<p><a href="#">360担保支付</a></p>
+					</div>
+				</li>
+				<li>
+					<div class="food_pig5"></div>
+					<div class="food_text">
+						<p>商家合作</p>
+						<p><a href="#" class="food_text_color">加盟同城帮</a></p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="food_last">
+			<div class="food_last1">
+			<span>客服电话：4000-399-360</span>
+			<span><a href="#">投诉建议</a></span>
+			<span><a href="#">网站地图</a></span>
+			</div>
+			<p>copryright @ 2005-2016 306.CN All Rights Resrved 360安全中心</p>
+			<span class="food_last2"><a href="#">京IC备08010314号-19</a></span><span>京公网安备10000000006号</span>
+		</div>
+	</div>
+		<a href="#" class="zhiding"><img src="img/img/zhiding.jpg" />回顶部</a>
+		<div class="erweima">
+			<div><img src="img/img/xiaorenwu.jpg"/></div>
+			<div ><a href="##" class="qqzhixun">QQ在线咨询</a></div>
+			<div class="time">09:00-18:00</div>
+			<div><img src="img/img/erweima.jpg"/></div>
+		</div>
+	</body>
+</html>

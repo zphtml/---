@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+		<style type="text/css">
+			/*全局样式=*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	font-size:14px;
+	font-family:Microsoft YaHei,"微软雅黑"；
+}
+ul,ol,li{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+img{
+	border:none;
+}
+#mybox{
+	width: 800px;
+	margin: 0 auto;
+
+}
+#mybox ul li{
+	float: left;
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 20px 0 0;
+	border: 1px solid red ;
+}
+#mybox ul li a{
+	display: block;
+}
+.none{
+	display: none;
+}
+.acolor{
+	background: orange;
+}
+		</style>
+	</head>
+	<body>
+		<div id="mybox">
+					
+			</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			//html翻页数最多为10；
+			function page(pageID,pagenum,pageAllNum,pagethis){
+				var fanye = '<ul>'
+								+'<li class="none"><a href="##"><<首页</a></li>'
+								+'<li class="none"><a href="##">上一页</a></li>'
+								+'<li><a href="##">下一页</a></li>'
+								+'<li class="none"><a href="##">尾页>></a></li>'
+								+'</ul>';
+				var allpage = Math.ceil(pageAllNum/pagenum);//总页数，向上取整
+				var Id  = $("#"+pageID);
+				console.log(pagethis);
+				$("#"+pageID).html(fanye);
+				
+				var pagethis = pagethis||"1"
+				pagethis<2?Id.find("ul>li:eq(0)").addClass("none"):Id.find("ul>li:eq(0)").removeClass("none");
+				pagethis<5?Id.find("ul>li:eq(1)").addClass("none"):Id.find("ul>li:eq(1)").removeClass("none");
+				pagethis<16?Id.find("ul>li:last").addClass("none"):Id.find("ul>li:last").removeClass("none");
+				//循环时判断,1.系统条数大于十； 2.系统条数小于10
+				var oA = "";
+				var tim = pagethis<5?1:pagethis-4;
+				for(var n = 0;tim<=allpage&&n<10;n++){
+					oA+='<li><a href="##">'+tim+'</a></li>'
+					tim++;
+				}
+				Id.find("ul>li:eq(1)").after(oA);
+			}
+			page("mybox",5,500,80)
+			$("#mybox").delegate("a","click",function(){
+				page("mybox",5,500,$(this).text());
+				console.log(typeof $(this).text())
+//				
+			})
+		})
+		
+		
+		
+		
+		
+	</script>
+</html>

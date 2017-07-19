@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{ margin:0; padding:0; font-family:"微软雅黑";}
+	#outer{ background:url(game_bg.jpg) 0 0 no-repeat; height:480px; width:320px; position:relative;margin: 0 auto;}
+	#fraction{ position:absolute; font-weight:bold; font-size:16px; color:white; left:65px; top:13px;}
+	#time{ position:absolute; background:url(progress.png) 0 0 no-repeat; width:180px; height:16px; left: 63px;top: 66px;}
+	#wolfs img{ position:absolute;}
+	#menu{ position:absolute; width:320px; text-align:center; left:0; top:200px;}
+	#start,#handle,#end{ line-height:50px; font-size:30px; font-weight:bold; color:#F00; display:block; text-decoration:none;}
+	#end{ position:absolute; width:320px; text-align:center; top:200px; left:0; display:none;}
+	#reload{color: #f00;font-size: 30px;position: absolute;bottom: 0px;display:none;}
+	#baffle{width:320px;height:440px;color:#f00;font-size:30px;position:absolute;top:300px;left:80px;display:none;}
+	</style>
+</head>
+<body>
+<div id="outer">
+	<div id="fraction">0</div>
+    <div id="time"></div>
+    <div id="wolfs">
+    </div>
+    <div id="menu">
+        <a href="#" id="start">开始游戏</a>
+    </div>
+    <div id="end">游戏结束</div>
+    <a id='reload'>重新开始</a>
+    <div id="baffle"><a href="#" id="start">&nbsp</a></div>
+</div>
+<script type="text/javascript">
+var timer = document.getElementById("time");   //进度条
+var	wolfHouse = document.getElementById("wolfs");
+var startBtn = document.getElementById("start");   // 开始按钮
+var reload =document.getElementById("reload");   //从新开始
+var end =document.getElementById("end");
+var arrPos = [{l:"98px",t:"115px"},{l:"17px",t:"160px"},{l:"15px",t:"221px"},{l:"30px",t:"294px"},{l:"122px",t:"274px"},{l:"207px",t:"296px"},{l:"200px",t:"212px"},{l:"187px",t:"142px"},{l:"100px",t:"192px"}];
+var lift = [0,1,2,3,4,5,4,3,2,1,0];
+var sore = 0;
+var fraction = document.getElementById("fraction");
+var baffle =document.getElementById("baffle");
+//开始按钮条件
+startBtn.onclick = function(){
+	startBtn.style.display = "none";
+	time();
+	var main = setInterval(function(){
+		if(timer.offsetWidth==0){
+			clearInterval(main);
+		}else{
+			creatWolf();
+		}
+		
+	},1000)
+}
+//重新开始
+reload.onclick = function(){
+location.reload()   //接受可选参数，默认false,使用本地缓存     true,去服务器重新取得页面
+};
+
+function time(){
+	var timCounter = setInterval(function(){
+		//进度条结束前，每秒递减
+		if(timer.offsetWidth>0){
+			timer.style.width = (timer.offsetWidth - 6) +"px";
+		}else{
+			clearInterval(timCounter);   //进度条清除计时器
+			reload.style.display = "block";
+			end.style.display = "block";
+			baffle.style.display = "block";
+			baffle.innerHTML = "您的得分是："+fraction.innerHTML;
+		}
+	},400)
+}
+//创建狼 
+function creatWolf(){
+	var wolf = document.createElement("img");
+	//设置出现狼的种类
+	var wolftype = rand(0,10)>7?"x":"h";
+	//初始化index
+	wolf.index = 0;
+	wolf.clicked  =false;
+	wolf.src = wolftype+wolf.index+".png"
+	wolfHouse.appendChild(wolf);
+	var position = arrPos[rand(0,9)];
+	wolf.style.left = position.l;
+	wolf.style.top = position.t;
+	var tmp = 0;
+	var showTime = setInterval(function(){
+		tmp++;
+		if(tmp<lift.length){
+			wolf.index = lift[tmp];
+			wolf.src = wolftype+wolf.index+".png";
+		}else{
+			clearInterval(showTime);
+			wolfHouse.removeChild(wolf);
+		}
+	},200);
+	//绑定狼
+	wolf.onclick = function(){
+		clearInterval(showTime);
+		//如果被点击过不再执行计分
+		if(wolf.clicked) return;
+		//设置当前狼为被点击状态
+		wolf.clicked = true;
+		wolf.index = 5;
+		scrore(wolftype);
+		var hitwolf = setInterval(function(){
+			if(wolf.index<10){
+				wolf.src = wolftype+wolf.index+".png";
+				wolf.index++;
+			}else{
+				clearInterval(hitwolf)
+				wolfHouse.removeChild(wolf);
+			}
+			
+		},100)
+		wolf.src = wolftype+wolf.index+".png";
+	};
+};
+//随机函数
+function rand(min,max){
+	return parseInt(Math.random()*(max-min)+min);
+}
+//分数
+function scrore(wolftype){
+	if(wolftype =="h"){
+		sore+=10
+	}else{
+		sore-=10
+	};
+	fraction.innerHTML = sore;
+};
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

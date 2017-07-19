@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伪元素选择器</title>
+		<style type="text/css">
+			#box{
+				width: 300px;
+				margin: 0 auto;
+				background: rgba(123,122,312,0.4);
+			}
+			#box:first-line{
+				color: blue;
+			}
+			#box:first-letter{
+				font-size: 30px;
+				font-weight: bold;
+			}
+			#box:first-of-type{
+				color: red;
+			}
+			p{
+				height: 30px;
+				background: pink;
+			}
+			p:before{
+				content: "";
+				display: inline-block;
+				height: 30px;
+				line-height: 30px;
+				width: 30px;
+				background: url(img/360.jpg) no-repeat;
+				background-size: cover;
+				vertical-align: middle;
+			}
+			p:after{
+				content: "";
+				display: inline-block;
+				height: 30px;
+				line-height: 30px;
+				width: 30px;
+				background: url(img/360.jpg) no-repeat;
+				background-size: cover;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- first-line 匹配内容的第一行                    fist-letter   匹配内容的第一个字符-->
+		<!-- before 在元素内容之前                    fafter 在元素内容之后-->
+		
+		<div id="box">
+			王菲（Faye Wong），1969年8月8日出生于北京，中国流行乐女歌手、影视演员。
+			1989年凭借歌曲《仍是旧句子》在香港歌坛出道，同年发行首张个人专辑《王靖雯》[1]。
+			1992年因演唱歌曲《容易受伤的女人》而被听众所熟知。1993年在专辑《十万个为什么？》 
+			中尝试另类音乐的风格[2]。1994年凭借专辑《天空》奠定其在华语歌坛的地位，并获得十
+		</div>
+		<div id="box2">
+			<p>12</p>
+			<p>21</p>
+			<p>23</p>
+		</div>
+	</body>
+</html>

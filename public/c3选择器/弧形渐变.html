@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 300px;
+				height: 300px;
+				margin: 100px auto;
+				border-radius: 50%;
+			}
+			#box{
+				/*表示径向渐变，想从一个颜色渐变到另一个颜色 秩序填写两个颜色即可*/
+				background: radial-gradient(red,purple);
+			}
+			
+			#box1{
+				background: radial-gradient(purple,red);
+				height: 200px;
+			}
+			#box2{
+				/*ellipse  随元素狂傲变化  回形成椭圆       circle  不会随高度变化*/
+				background: radial-gradient(circle,pink,purple);
+			}
+			
+			#box3{
+				/*多颜色渐变*/
+				background: radial-gradient(red,purple,yellow,pink);
+			}
+			
+			#box3{
+				/*改变径向渐变的大小  可以是固定值  也可以是百分百   如果有一个值  则代表大小的宽和高   如果有两个值  则分别代表宽和高  但是职位百分比的时候必须分开写*/
+				/*多颜色渐变*/
+				/*background: radial-gradient(40% 40%,pink,purple);*/
+				/*background: radial-gradient(30px,pink,purple);*/
+				background: radial-gradient(50% 30px,pink,purple);
+			}
+			#box4{
+				/*改变径向的渐变的方向  用 at  加方向      例如 at+left*/
+				background: radial-gradient(at left,pink,black);
+				
+			}
+			#box5{
+				/*重复渐变  必须给定一个大小   否则两个渐变颜色无法显示重复*/
+				background:-moz-repeating-radial-gradient(30px,palegreen,purple) ;
+				background:-webkit-repeating-radial-gradient(30px,palegreen,purple) ;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<div id="box1"></div>
+		<div id="box5">
+			
+		</div>
+	</body>
+</html>

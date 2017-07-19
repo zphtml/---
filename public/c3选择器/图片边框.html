@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图片边框</title>
+		<style type="text/css">
+			#box{
+				width: 300px;
+				height: 300px;
+				border: 3px solid transparent;
+				background: pink;
+				margin: 100px auto;
+				/*border-image-source: url(img/border.png);*/
+				border-image-width:30px ;
+				border-image-slice: 26 26;
+				/*图片边框重复 stretch 拉升 默认值     repeat 重复*/
+				border-image-repeat: round;
+				/*图片向外偏移量*/
+				border-image-outset:50px ;
+				
+				border-image:url(img/border.png) 26 /30px 30px round;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			
+		</div>
+			
+	</body>
+</html>

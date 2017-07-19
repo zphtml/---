@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+
+    <style>
+
+        html,body,div,p,img,span,ul,li,input{
+            margin: 0;
+            padding: 0;
+        }
+
+        input{
+            outline: none;
+        }
+
+        #box{
+
+            width: 500px;
+            height: 700px;
+            margin: 50px auto;
+            border: 1px solid pink;
+
+        }
+
+        header{
+
+            height: 100px;
+            background-color: cornflowerblue;
+        }
+
+        .view{
+
+            height: 400px;
+            text-align: center;
+            line-height: 400px;
+            background-color: pink;
+
+        }
+
+        .controller{
+            height: 200px;
+            background-color: antiquewhite;
+            position: relative;
+        }
+
+        header p{
+
+            text-align: center;
+            line-height: 100px;
+            font-size: 30px;
+        }
+
+        .view span{
+
+            display: inline-block;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            vertical-align: middle;
+            border-radius: 50%;
+
+            -webkit-animation: ro 3s linear infinite;
+            -o-animation: ro 3s linear infinite;
+            animation: ro 3s linear infinite;
+        }
+
+        .view span:before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            margin-left: -40px;
+            margin-top: -40px;
+            background-color: white;
+        }
+
+        @keyframes ro {
+
+            0%{
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100%{
+
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes ro {
+
+            0%{
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100%{
+
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        
+        #playBtn{
+            
+            width: 70px;
+            height: 70px;
+            
+            background-image: url("img/icon.jpg");
+            background-position: -219px -35px;
+            background-color: transparent;
+            background-size: 300px 225px;
+            background-repeat: no-repeat;
+            border: none;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            margin-left: -35px;
+            
+        }
+
+        .playBtnSelected{
+
+            background-position: -150px -35px!important;
+        }
+
+        #volume{
+
+            position: absolute;
+
+            right: 30px;
+
+            top: 20px;
+
+        }
+
+        #volume input{
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 100px;
+        }
+
+        #volume span{
+
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+        }
+
+        #pross{
+            height: 5px;
+            background-color: orange;
+            width: 400px;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        #pross div{
+
+            width: 0px;
+            height: 100%;
+            border-radius: 5px;
+            background-color: green;
+
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <audio>
+        <source src="video/许嵩%20-%20江湖%20%5Bmqms2%5D.mp3">
+    </audio>
+
+    <div id="box">
+
+        <header>
+            <p>
+                演 员
+            </p>
+        </header>
+
+        <div class="view">
+            <span>
+                <img src="img/1.jpg" alt="">
+            </span>
+        </div>
+
+        <div class="controller">
+            <div id="pross">
+                <div></div>
+            </div>
+            <input  id = "playBtn" type="button" onclick=play(this)>
+            <lable id = "volume">🔊
+                <input type="range" max="100" value="50" oninput= changeVolume(this)>
+                <span>99</span>
+            </lable>
+        </div>
+    </div>
+
+    <ul></ul>
+
+    <script>
+
+
+        //创建一个构造函数 传人一个audio元素
+
+//        function Player(audioEle,playBtn,pauseBtn) {
+//
+//            //把audio 元素设置成我们player的一个属性
+//            this.audioEle = audioEle;
+//
+//            this.play = function () {
+//
+//                this.audioEle.play();
+//            }
+//
+//            this.pause = function () {
+//
+//                this.audioEle.pause();
+//            }
+//
+//
+//        }
+
+        var audio = document.querySelector("audio");
+
+        //设置一个自定义属性来记录当前的播放状态
+        audio.isPlay = false;
+
+        function play (btn) {
+
+            //判断播放状态 来决定是播放和是该暂停
+            if (!audio.isPlay){
+
+                audio.play();
+
+                //如果之前没有播放 我们将进行播放操作 并且把播放状态设置为true;
+                audio.isPlay = true;
+
+                //当播放的时候讲播放按钮的className 设置成按下的类名 来更改背景图片
+                btn.className = "playBtnSelected";
+
+                //在播放的时候调用进度条函数 让进度条与播放时间同步
+                press();
+
+
+            }else {
+
+                audio.pause();
+
+                //暂停之后我们把播放状态设置成false
+                audio.isPlay = false;
+
+                //当按下暂停按钮后移除className 让背景图片返回到播放的图片
+                btn.className = "";
+
+                //暂停时 停止进度条的定时器 不在让进度条移动
+                clearInterval(audio.timer);
+                audio.timer  = null;
+
+//                btn.value = "播放";
+            }
+        }
+
+
+        //初始化音量 运行changeVolume 并且传入range 就会根据 range 设置的初始值对音量进行设置
+        changeVolume(document.querySelector("#volume > input"));
+
+        function changeVolume(range) {
+
+            audio.volume = range.value / 100;
+
+            //让后面显示音量的span 也跟着变值
+            range.nextElementSibling.innerHTML = range.value;
+
+        }
+
+
+        function press() {
+
+            var per = document.querySelector("#pross");
+
+            var perDiv = document.querySelector("#pross > div");
+
+            audio.timer = setInterval(function () {
+
+                //当前播放时间 除总时间 是个百分百的值
+                var value = audio.currentTime / audio.duration;
+
+                //播放时间的百分比 等于 进度条的百分比 所以 播放的百分比乘以进度条的总长度 就是进度的大小
+                perDiv.style.width = value * parseFloat(getComputedStyle(per).width) + "px";
+
+                //audio.ended 标识了当前播放是否完成
+                if (audio.ended){
+
+                    clearInterval(audio.timer);
+                    audio.timer  = null;
+                }
+
+
+            },50);
+
+        }
+
+        var ul = document.querySelector("ul");
+
+        var title = document.querySelector("header > p");
+
+        ul.addEventListener("click",function (e) {
+
+
+            if (e.target.nodeName == "LI"){
+
+                title.innerHTML = e.target.innerHTML;
+
+                audio.src = e.target._url;
+
+                audio.load();
+
+            }
+
+        })
+
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function () {
+
+            if (xhr.readyState == 4 && xhr.status == 200){
+
+                //将拿到的数据解析成js对象
+                var obj = JSON.parse(xhr.responseText);
+
+                for (var key in obj){
+
+                    var li = document.createElement("li");
+
+                    li.innerHTML = key;
+
+                    li._url = obj[key];
+
+                    ul.appendChild(li);
+
+                }
+
+            }
+        }
+
+        xhr.open("get","http://localhost:1314/music");
+
+        xhr.send(null);
+
+
+    </script>
+
+
+</body>
+</html>

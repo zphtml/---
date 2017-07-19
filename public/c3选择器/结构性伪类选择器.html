@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				height: 30px;
+				background: yellow;
+			}
+			/*在父元素下找第一个子元素，第一个子元素必须为指定的类型*/
+			#box p:first-child{
+				background: red;
+			}
+			#box div{
+				height: 30px;
+			}
+			/*last 在父元素下找最高后一个子元素，最后一个子元素必须是指定的类型*/
+			#box p:last-child{
+				background: red;
+			}
+			/*nth 在父元素下找第n格子元素*/
+			
+			/*在父元素下找倒数第n个子元素*/
+			#box p:nth-last-child(1){
+				
+			}
+			/*在父元素下找第一个p的指定元素*/
+			#box p:first-of-type{
+				background: pink;
+			}
+			#box p:last-of-type{
+				background: black;
+			}
+			/*在父元素下找指定元素类型的第n个*/
+			#box p:nth-of-type(3){
+				background: blue;
+			}
+			/*在父元素下倒数找指定的元素*/
+			#box p:nth-last-type(3){}
+			/*在父元素下时只有唯一一个指定元素的生效*/
+			#box:only-child{}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div></div>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,134 @@
+{
+    "errno": 0,
+    "errmsg": "OK",
+     "hotcity":[
+            {
+                "id": "1",
+                "cityid": "7",
+                "code": "bei_jing",
+                "hotrank": "1",
+                "name": "北京",
+                "status": "1"
+            },
+            {
+                "id": "2",
+                "cityid": "182",
+                "code": "shang_hai",
+                "hotrank": "1",
+                "name": "上海",
+                "status": "1"
+            },
+            {
+                "id": "3",
+                "cityid": "63",
+                "code": "guang_zhou",
+                "hotrank": "0",
+                "name": "广州",
+                "status": "1"
+            },
+            {
+                "id": "4",
+                "cityid": "210",
+                "code": "tian_jin",
+                "hotrank": "0",
+                "name": "天津",
+                "status": "1"
+            },
+            {
+                "id": "5",
+                "cityid": "234",
+                "code": "xi_an",
+                "hotrank": "0",
+                "name": "西安",
+                "status": "1"
+            },
+            {
+                "id": "6",
+                "cityid": "183",
+                "code": "shen_zhen",
+                "hotrank": "0",
+                "name": "深圳",
+                "status": "1"
+            },
+            {
+                "id": "7",
+                "cityid": "222",
+                "code": "wu_han",
+                "hotrank": "0",
+                "name": "武汉",
+                "status": "1"
+            },
+            {
+                "id": "8",
+                "cityid": "21",
+                "code": "cheng_du",
+                "hotrank": "0",
+                "name": "成都",
+                "status": "1"
+            },
+            {
+                "id": "9",
+                "cityid": "22",
+                "code": "chong_qing",
+                "hotrank": "0",
+                "name": "重庆",
+                "status": "1"
+            },
+            {
+                "id": "10",
+                "cityid": "154",
+                "code": "nan_jing",
+                "hotrank": "0",
+                "name": "南京",
+                "status": "1"
+            },
+            {
+                "id": "11",
+                "cityid": "184",
+                "code": "shen_yang",
+                "hotrank": "0",
+                "name": "沈阳",
+                "status": "1"
+            },
+            {
+                "id": "12",
+                "cityid": "70",
+                "code": "hang_zhou",
+                "hotrank": "0",
+                "name": "杭州",
+                "status": "1"
+            },
+            {
+                "id": "13",
+                "cityid": "99",
+                "code": "ji_nan",
+                "hotrank": "0",
+                "name": "济南",
+                "status": "1"
+            },
+            {
+                "id": "14",
+                "cityid": "277",
+                "code": "zheng_zhou",
+                "hotrank": "0",
+                "name": "郑州",
+                "status": "1"
+            },
+            {
+                "id": "15",
+                "cityid": "172",
+                "code": "qing_dao",
+                "hotrank": "0",
+                "name": "青岛",
+                "status": "1"
+            },
+            {
+                "id": "16",
+                "cityid": "185",
+                "code": "su_zhou",
+                "hotrank": "0",
+                "name": "苏州",
+                "status": "1"
+            }
+        ]
+       }	

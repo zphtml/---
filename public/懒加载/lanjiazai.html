@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+   
+    <style type="text/css">
+           * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #div1 {
+            width: 520px;
+            margin: 30px auto;
+            border: 1px solid red;
+            overflow: hidden;
+        }
+
+        li {
+            width: 160px;
+            height: 160px;
+            float: left;
+            list-style: none;
+            margin: 5px;
+            border: 1px dashed green;
+        }
+        img{
+        width:100%
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+            <ul>
+                <li>
+                    <img src="src/123.bmp" data-src="http://4493bz.1985t.com/uploads/allimg/140710/1-140G0161612.jpg">
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="http://4493bz.1985t.com/uploads/allimg/140628/1-14062Q33R6.jpg">
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="http://4493bz.1985t.com/uploads/allimg/140628/1-14062Q33242.jpg">
+                </li>
+                <li>
+                     <img src="src/123.bmp" data-src="http://img.bizhi.sogou.com/images/2014/12/10/997251.jpg">     
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="http://dl.bizhi.sogou.com/images/2014/12/02/986640.jpg">
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="http://imgstore.cdn.sogou.com/app/a/100540002/1170473_s_90_2_219x160.jpg">
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="http://imgstore.cdn.sogou.com/app/a/100540002/1170473_s_90_2_219x160.jpg">
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="http://imgstore.cdn.sogou.com/app/a/100540002/1170473_s_90_2_219x160.jpg">
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="http://imgstore.cdn.sogou.com/app/a/100540002/1170473_s_90_2_219x160.jpg">
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="http://imgstore.cdn.sogou.com/app/a/100540002/1170473_s_90_2_219x160.jpg">
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="http://imgstore.cdn.sogou.com/app/a/100540002/1170473_s_90_2_219x160.jpg">
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="http://imgstore.cdn.sogou.com/app/a/100540002/1170473_s_90_2_219x160.jpg">
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="http://imgstore.cdn.sogou.com/app/a/100540002/1170473_s_90_2_219x160.jpg">
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="http://imgstore.cdn.sogou.com/app/a/100540002/1170473_s_90_2_219x160.jpg">
+                </li>
+                <li>
+                    <img src="src/123.bmp" data-src="src/223.jpg">
+                </li>
+               
+            </ul>
+        </div>
+ <script type="text/javascript">
+
+    
+       window.onload = function () {
+            window.onscroll();
+        };
+  window.onscroll = function () {
+            var oDiv = document.getElementById('div1');
+            var oUl = oDiv.children[0];
+            var aLi = oUl.children;
+            for (var i = 0;i<aLi.length; i++) {
+                 var oLi = aLi[i];
+                //检查oLi是否在可视区域
+                var t = document.documentElement.clientHeight + (document.documentElement.scrollTop || document.body.scrollTop);
+                var h = getH(oLi);
+                if (h < t) {
+                    setTimeout("setImg(" + i + ")", 1000);
+                }
+            }
+        };
+       
+        // 图片的动态加载就是通过读取li元素，然后获得li元素的data-src属性的值赋予动态创建的图片的src，从而实现了图片的创建。
+ function setImg(index){                               
+                var oDiv=document.getElementById("div1")
+                var oUl=oDiv.children[0];
+                var aLi=oUl.children;
+               aLi[index].children[0].src = aLi[index].children[0].dataset.src
+            };
+            function getH(obj) {  
+                var h = 0;  
+                while (obj) {  
+                    h += obj.offsetTop;  
+                    obj = obj.offsetParent;  
+                }  
+                return h;  
+    }  
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		/*匹配页面的根元素*/
+			:root{
+				/*background: red;*/
+			}
+			
+			/*empty 代表内容为空的元素*/
+			p{
+				height: 30px;
+				background: green;
+			}
+			p:empty{
+				background: pink;
+			}
+			/*not  排除某一类元素  排除第二个li*/
+			li{
+				background: red;
+				height: 30px;
+				margin: 10px;
+			}
+			li:not(nth-child(.li2)){
+				background: pink;
+			}
+			/*target 给选中的锚点对应元素设置样式*/
+			.box div{
+				height: 100px;
+				margin: 50px 0 0 0;
+				background: pink;
+			}
+			.box div:target{
+				background:yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<p></p>
+		<p></p>
+		<p></p>
+		<ul>
+			<li></li>
+			<li class="li2"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>-->
+		<div class="box">
+			<nav>
+				<a href="#b1">锚点1</a>
+				<a href="#b2">锚点2</a>
+				<a href="#b3">锚点3</a>
+			</nav>
+				<div id="b1"></div>
+				<div id="b2"></div>
+				<div id="b3"></div>
+		</div>
+	</body>
+</html>

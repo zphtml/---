@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+			input:focus{
+				/*去掉input 选中式的复选框*/
+				outline: none;
+				border: 1px solid red ;
+			}
+			/*设置禁用下的状态*/
+			input:disabled{
+				
+			}
+			input:enabled{
+				background: red;
+			}
+			input:read-only{
+				background: pink;
+			}
+			input:read-write{
+				background: green;
+			}
+			/*给单选按钮或者复选按钮 设置选中的样式*/
+			input:checked{
+				width: 100px;
+				height: 100px;
+			}
+			/*选中时文字的样式*/
+			div{
+				font-size: 30px;
+			}
+			div::selection{
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="">
+			<input type="text" />
+			<input type="text" disabled="disabled"/>
+			<input type="text" />
+			<input type="text" readonly="readonly" value="hahhaha"/>	
+			<input type="checkbox"/>
+			<input type="checkbox"/>
+			<input type="checkbox"/>
+			
+			
+		</form>
+		<div>
+			您你你你你你你你你你你你你你你你你你你您
+		</div>
+	</body>
+</html>

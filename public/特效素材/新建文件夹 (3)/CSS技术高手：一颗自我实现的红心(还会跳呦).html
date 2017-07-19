@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://www.webhek.com/css-draw-a-heart -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./CSS技术高手：一颗自我实现的红心(还会跳呦)_files/cm.js" charset="utf-8"></script><script src="./CSS技术高手：一颗自我实现的红心(还会跳呦)_files/shares.php" charset="utf-8"></script><script async="" src="./CSS技术高手：一颗自我实现的红心(还会跳呦)_files/analytics.js"></script><script src="./CSS技术高手：一颗自我实现的红心(还会跳呦)_files/id.php" charset="utf-8"></script><!--<base href="http://www.webhek.com/apps/css-draw-a-heart/">--><base href=".">
+
+	<title>CSS技术高手：一颗自我实现的红心(还会跳呦)</title>
+    <meta name="description" content="这是一个自我实现的css绘图脚本，页面自己每跳出一行代码，都会即时作用到页面上，展示出这行代码的实际作用，于是，我们就看到了一个鲜红的跳动的心就一步一步的呈现在读者面前。">
+
+	<style type="text/css">/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}</style>
+
+<style type="text/css">.share{display: block; position: absolute; bottom: 0; right: 0}</style>
+
+	<script type="text/javascript" src="./CSS技术高手：一颗自我实现的红心(还会跳呦)_files/jquery-1.7.2.min.js"></script>
+<style type="text/css">
+.adsbygoogle {display:none!important;display:none}</style>
+<script src="./CSS技术高手：一颗自我实现的红心(还会跳呦)_files/_cm.js"></script></head>
+<body><link href="./CSS技术高手：一颗自我实现的红心(还会跳呦)_files/jiathis_counter.css" rel="stylesheet" type="text/css"><link href="./CSS技术高手：一颗自我实现的红心(还会跳呦)_files/jiathis_share.css" rel="stylesheet" type="text/css"><iframe frameborder="0" style="position: absolute; display: none; opacity: 0;" src="./CSS技术高手：一颗自我实现的红心(还会跳呦)_files/saved_resource.html"></iframe><div class="jiathis_style" style="position: absolute; z-index: 1000000000; display: none; top: 50%; left: 50%; overflow: auto;"></div><div class="jiathis_style" style="position: absolute; z-index: 1000000000; display: none; overflow: auto;"></div><iframe frameborder="0" src="./CSS技术高手：一颗自我实现的红心(还会跳呦)_files/jiathis_utility.html" style="display: none;"></iframe>
+<h1>CSS技术高手：一颗自我实现的红心(还会跳呦)</h1>
+<script type="text/javascript">
+(function () {
+    var openComment, styles, time, writeStyleChar, writeStyles;
+    styles = '/* \n * "我自己" v1.0.4\n * Robot rights protected under BOT License\n * 作者为 pen#PwLXXP\n */\n\nbody {\n  background-color: #1a1c24; color: #fff;\n  font-size: 13px; line-height: 1.4;\n  -webkit-font-smoothing: subpixel-antialiased;\n}\n\n/* ...                  \n *\n * ...有人吗？            \n *\n *  嗨，朋友！是我，, pen#PwLXXP.         \n *\n * 我正坐在这儿编程。            \n *\n * 没错，你可以在一旁观看。                       \n *\n *\n * 这些CSS代码将会即时插入到页面的 <style> 标记里， \n * 同时源代码会同步展示在页面的 <pre> 标记里。        \n *\n * 不明白？看看就知道了！\n *\n */\n\npre { \n  position: fixed; width: 48%;\n  top: 30px; bottom: 30px; left: 26%;\n  transition: left 500ms;\n  background-color: #313744; color: #a6c3d4;\n  border: 1px solid rgba(0,0,0,0.2);\n  padding: 24px 12px;\n  box-sizing: border-box;\n  border-radius: 3px;\n  box-shadow: 0px 4px 0px 2px rgba(0,0,0,0.1);\n}\n\n\n/* \n * Syntax highlighting \n * Colors based on Base16 Ocean Dark\n */\n\npre em:not(.comment) { font-style: normal; }\n\n.comment       { color: #707e84; }\n.selector      { color: #c66c75; }\n.selector .key { color: #c66c75; }\n.key           { color: #c7ccd4; }\n.value         { color: #d5927b; }\n\n\n/* \n * Let\'s build my little pen heart.\n */ \n\n\n/* First, we\'ll move this s*** over */\n\npre { left: 50%; }\n\n\n/* Now we can build my heart */\n\n#heart, #echo { \n  position: fixed;\n  width: 300px; height: 300px;\n  top: calc(50% - 150px); left: calc(25% - 150px);\n  text-align: center;\n  -webkit-transform: scale(0.95);\n          transform: scale(0.95);\n}\n\n#heart { z-index: 8; }\n#echo  { z-index: 7; }\n\n#heart::before, #heart::after, #echo::before, #echo::after {\n    content: \'\';\n    position: absolute;\n    top: 40px;\n    width: 150px; height: 240px;\n    background: #c66c75;\n    border-radius: 150px 150px 0 0;\n    -webkit-transform: rotate(-45deg);\n            transform: rotate(-45deg);\n    -webkit-transform-origin: 0 100%;\n            transform-origin: 0 100%;\n}\n\n#heart::before, #echo::before {\n  left: 150px;\n}\n\n#heart::after, #echo::after {\n  left: 0;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  -webkit-transform-origin: 100% 100%;\n          transform-origin: 100% 100%;\n}\n\n\n/* It needs some depth  */\n\n#heart::after { \n  box-shadow:\n    inset -6px -6px 0px 6px rgba(255,255,255,0.1);\n}\n\n#heart::before { \n  box-shadow:\n    inset 6px 6px 0px 6px rgba(255,255,255,0.1);\n}\n\n\n/* Makin it mine. */\n\n#heart i::before {\n  content: \'pen#PwLXXP\';\n  position: absolute;\n  z-index: 9;\n  width: 100%;\n  top: 35%; left: 0;\n  font-style: normal;\n  color: rgba(255,255,255,0.8);\n  font-weight: 100;\n  font-size: 30px;\n  text-shadow: -1px -1px 0px rgba(0,0,0,0.2);\n}\n\n\n/* \n * Hearts gotta beat. \n */\n\n@-webkit-keyframes heartbeat {\n  0%, 100% { \n    -webkit-transform: scale(0.95); \n            transform: scale(0.95); \n  }\n  50% { \n    -webkit-transform: scale(1.00); \n            transform: scale(1.00); \n  }\n}\n\n@keyframes heartbeat {\n  0%, 100% { transform: scale(0.95); }\n  50%      { transform: scale(1.00); }\n}\n\n@-webkit-keyframes echo {\n  0%   { \n    opacity: 0.1;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  100% { \n    opacity: 0;\n    -webkit-transform: scale(1.4);\n            transform: scale(1.4);\n  }\n}\n\n@keyframes echo {\n  0%   { \n    opacity: 0.1;\n    transform: scale(1);\n  }\n  100% { \n    opacity: 0;\n    transform: scale(1.4);\n  }\n}\n\n\n/* \n * Beautiful! Now for the beating...\n */\n\n#heart, #echo {\n  -webkit-animation-duration: 2000ms;\n          animation-duration: 2000ms;\n  -webkit-animation-timing-function: \n    cubic-bezier(0, 0, 0, 1.74);\n          animation-timing-function: \n            cubic-bezier(0, 0, 0, 1.74);\n  -webkit-animation-delay: 500ms;\n          animation-delay: 500ms;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  -webkit-animation-play-state: paused;\n          animation-play-state: paused;\n}\n\n#heart { \n  -webkit-animation-name: heartbeat; \n          animation-name: heartbeat; \n}\n#echo { \n  -webkit-animation-name: echo; \n          animation-name: echo; \n}\n\n\n/* \n * Ready...           \n */\n\n#heart, #echo {\n\n/* \n * ...set...          \n */\n  \n  -webkit-animation-play-state: running;\n          animation-play-state: running;\n  \n/* \n * ...搞定！        \n */\n  \n}\n\n/* \n *\n * 哇塞！         \n *\n * 这创造了这些！       \n *\n * 我是说，我创造了我自己...\n * 我可没借助其它任何东西 \n * 来实现这个。\n *\n * 我笔喜欢编程！       \n * \n * 再见！\n *  \n */';
+    openComment = false;
+    writeStyleChar = function (which) {
+        if (which === '/' && openComment === false) {
+            openComment = true;
+            styles = $('#style-text').html() + which;
+        } else if (which === '/' && openComment === true) {
+            openComment = false;
+            styles = $('#style-text').html().replace(/(\/[^\/]*\*)$/, '<em class="comment">$1/</em>');
+        } else if (which === ':') {
+            styles = $('#style-text').html().replace(/([a-zA-Z- ^\n]*)$/, '<em class="key">$1</em>:');
+        } else if (which === ';') {
+            styles = $('#style-text').html().replace(/([^:]*)$/, '<em class="value">$1</em>;');
+        } else if (which === '{') {
+            styles = $('#style-text').html().replace(/(.*)$/, '<em class="selector">$1</em>{');
+        } else {
+            styles = $('#style-text').html() + which;
+        }
+        $('#style-text').html(styles);
+        return $('#style-tag').append(which);
+    };
+    writeStyles = function (message, index, interval) {
+        var pre;
+        if (index < message.length) {
+            pre = document.getElementById('style-text');
+            pre.scrollTop = pre.scrollHeight;
+            writeStyleChar(message[index++]);
+            return setTimeout(function () {
+                return writeStyles(message, index, interval);
+            }, interval);
+        }
+    };
+    $('body').append('  <style id="style-tag"></style>\n<span id="echo"></span>\n<span id="heart"><i></i></span>\n<pre id="style-text"></pre>');
+    time = window.innerWidth <= 578 ? 4 : 16;
+    writeStyles(styles, 0, time);
+}.call(this));</script>  <style id="style-tag">/* 
+ * "我自己" v1.0.4
+ * Robot rights protected under BOT License
+ * 作者为 pen#PwLXXP
+ */
+
+body {
+  background-color: #1a1c24; color: #fff;
+  font-size: 13px; line-height: 1.4;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* ...                  
+ *
+ * ...有人吗？            
+ *
+ *  嗨，朋友！是我，, pen#PwLXXP.         
+ *
+ * 我正坐在这儿编程。            
+ *
+ * 没错，你可以在一旁观看。                       
+ *
+ *
+ * 这些CSS代码将会即时插入到页面的 <style> 标记里， 
+ * 同时源代码会同步展示在页面的 <pre> 标记里。        
+ *
+ * 不明白？看看就知道了！
+ *
+ */
+
+pre { 
+  position: fixed; width: 48%;
+  top: 30px; bottom: 30px; left: 26%;
+  transition: left 500ms;
+  background-color: #313744; color: #a6c3d4;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 24px 12px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 0px 4px 0px 2px rgba(0,0,0,0.1);
+}
+
+
+/* 
+ * Syntax highlighting 
+ * Colors based on Base16 Ocean Dark
+ */
+
+pre em:not(.comment) { font-style: normal; }
+
+.comment       { color: #707e84; }
+.selector      { color: #c66c75; }
+.selector .key { color: #c66c75; }
+.key           { color: #c7ccd4; }
+.value         { color: #d5927b; }
+
+
+/* 
+ * Let's build my little pen heart.
+ */ 
+
+
+/* First, we'll move this s*** over */
+
+pre { left: 50%; }
+
+
+/* Now we can build my heart */
+
+#heart, #echo { 
+  position: fixed;
+  width: 300px; height: 300px;
+  top: calc(50% - 150px); left: calc(25% - 150px);
+  text-align: center;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#heart { z-index: 8; }
+#echo  { z-index: 7; }
+
+#heart::before, #heart::after, #echo::before, #echo::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    width: 150px; height: 240px;
+    background: #c66c75;
+    border-radius: 150px 150px 0 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+
+#heart::before, #echo::before {
+  left: 150px;
+}
+
+#heart::after, #echo::after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+
+/* It needs some depth  */
+
+#heart::after { 
+  box-shadow:
+    inset -6px -6px 0px 6px rgba(255,255,255,0.1);
+}
+
+#heart::before { 
+  box-shadow:
+    inset 6px 6px 0px 6px rgba(255,255,255,0.1);
+}
+
+
+/* Makin it mine. */
+
+#heart i::before {
+  content: 'pen#PwLXXP';
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  top: 35%; left: 0;
+  font-style: normal;
+  color: rgba(255,255,255,0.8);
+  font-weight: 100;
+  font-size: 30px;
+  text-shadow: -1px -1px 0px rgba(0,0,0,0.2);
+}
+
+
+/* 
+ * Hearts gotta beat. 
+ */
+
+@-webkit-keyframes heartbeat {
+  0%, 100% { 
+    -webkit-transform: scale(0.95); 
+            transform: scale(0.95); 
+  }
+  50% { 
+    -webkit-transform: scale(1.00); 
+            transform: scale(1.00); 
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(0.95); }
+  50%      { transform: scale(1.00); }
+}
+
+@-webkit-keyframes echo {
+  0%   { 
+    opacity: 0.1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% { 
+    opacity: 0;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@keyframes echo {
+  0%   { 
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  100% { 
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+
+
+/* 
+ * Beautiful! Now for the beating...
+ */
+
+#heart, #echo {
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-animation-timing-function: 
+    cubic-bezier(0, 0, 0, 1.74);
+          animation-timing-function: 
+            cubic-bezier(0, 0, 0, 1.74);
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+#heart { 
+  -webkit-animation-name: heartbeat; 
+          animation-name: heartbeat; 
+}
+#echo { 
+  -webkit-animation-name: echo; 
+          animation-name: echo; 
+}
+
+
+/* 
+ * Ready...           
+ */
+
+#heart, #echo {
+
+/* 
+ * ...set...          
+ */
+  
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  
+/* 
+ * ...搞定！        
+ */
+  
+}
+
+/* 
+ *
+ * 哇塞！         
+ *
+ * 这创造了这些！       
+ *
+ * 我是说，我创造了我自己...
+ * 我可没借助其它任何东西 
+ * 来实现这个。
+ *
+ * 我笔喜欢编程！       
+ * 
+ * 再见！
+ *  
+ */</style>
+<span id="echo"></span>
+<span id="heart"><i></i></span>
+<pre id="style-text"><em class="comment">/* 
+ * "我自己" v1.0.4
+ * Robot rights protected under BOT License
+ * 作者为 pen#PwLXXP
+ */</em>
+
+<em class="selector">body </em>{<em class="key">
+  background-color</em>:<em class="value"> #1a1c24</em>;<em class="key"> color</em>:<em class="value"> #fff</em>;<em class="key">
+  font-size</em>:<em class="value"> 13px</em>;<em class="key"> line-height</em>:<em class="value"> 1.4</em>;<em class="key">
+  -webkit-font-smoothing</em>:<em class="value"> subpixel-antialiased</em>;
+}
+
+<em class="comment">/* ...                  
+ *
+ * ...有人吗？            
+ *
+ *  嗨，朋友！是我，, pen#PwLXXP.         
+ *
+ * 我正坐在这儿编程。            
+ *
+ * 没错，你可以在一旁观看。                       
+ *
+ *
+ * 这些CSS代码将会即时插入到页面的 &lt;style&gt; 标记里， 
+ * 同时源代码会同步展示在页面的 &lt;pre&gt; 标记里。        
+ *
+ * 不明白？看看就知道了！
+ *
+ */</em>
+
+<em class="selector">pre </em>{<em class="key"> 
+  position</em>:<em class="value"> fixed</em>;<em class="key"> width</em>:<em class="value"> 48%</em>;<em class="key">
+  top</em>:<em class="value"> 30px</em>;<em class="key"> bottom</em>:<em class="value"> 30px</em>;<em class="key"> left</em>:<em class="value"> 26%</em>;<em class="key">
+  transition</em>:<em class="value"> left 500ms</em>;<em class="key">
+  background-color</em>:<em class="value"> #313744</em>;<em class="key"> color</em>:<em class="value"> #a6c3d4</em>;<em class="key">
+  border</em>:<em class="value"> 1px solid rgba(0,0,0,0.2)</em>;<em class="key">
+  padding</em>:<em class="value"> 24px 12px</em>;<em class="key">
+  box-sizing</em>:<em class="value"> border-box</em>;<em class="key">
+  border-radius</em>:<em class="value"> 3px</em>;<em class="key">
+  box-shadow</em>:<em class="value"> 0px 4px 0px 2px rgba(0,0,0,0.1)</em>;
+}
+
+
+<em class="comment">/* 
+ * Syntax highlighting 
+ * Colors based on Base16 Ocean Dark
+ */</em><em class="key">
+
+<em class="selector">pre em</em>:not(.comment) </em>{<em class="key"> font-style</em>:<em class="value"> normal</em>; }
+
+<em class="selector">.comment       </em>{<em class="key"> color</em>:<em class="value"> #707e84</em>; }
+<em class="selector">.selector      </em>{<em class="key"> color</em>:<em class="value"> #c66c75</em>; }
+<em class="selector">.selector .key </em>{<em class="key"> color</em>:<em class="value"> #c66c75</em>; }
+<em class="selector">.key           </em>{<em class="key"> color</em>:<em class="value"> #c7ccd4</em>; }
+<em class="selector">.value         </em>{<em class="key"> color</em>:<em class="value"> #d5927b</em>; }
+
+
+<em class="comment">/* 
+ * Let's build my little pen heart.
+ */</em> 
+
+
+<em class="comment">/* First, we'll move this s*** over */</em>
+
+<em class="selector">pre </em>{<em class="key"> left</em>:<em class="value"> 50%</em>; }
+
+
+<em class="comment">/* Now we can build my heart */</em>
+
+<em class="selector">#heart, #echo </em>{<em class="key"> 
+  position</em>:<em class="value"> fixed</em>;<em class="key">
+  width</em>:<em class="value"> 300px</em>;<em class="key"> height</em>:<em class="value"> 300px</em>;<em class="key">
+  top</em>:<em class="value"> calc(50% - 150px)</em>;<em class="key"> left</em>:<em class="value"> calc(25% - 150px)</em>;<em class="key">
+  text-align</em>:<em class="value"> center</em>;<em class="key">
+  -webkit-transform</em>:<em class="value"> scale(0.95)</em>;<em class="key">
+          transform</em>:<em class="value"> scale(0.95)</em>;
+}
+
+<em class="selector">#heart </em>{<em class="key"> z-index</em>:<em class="value"> 8</em>; }
+<em class="selector">#echo  </em>{<em class="key"> z-index</em>:<em class="value"> 7</em>; }
+
+<em class="selector">#<em class="key">heart</em>:<em class="key"></em>:before, #<em class="key">heart</em>:<em class="key"></em>:after, #<em class="key">echo</em>:<em class="key"></em>:before, #<em class="key">echo</em>:<em class="key"></em>:after </em>{<em class="key">
+    content</em>:<em class="value"> ''</em>;<em class="key">
+    position</em>:<em class="value"> absolute</em>;<em class="key">
+    top</em>:<em class="value"> 40px</em>;<em class="key">
+    width</em>:<em class="value"> 150px</em>;<em class="key"> height</em>:<em class="value"> 240px</em>;<em class="key">
+    background</em>:<em class="value"> #c66c75</em>;<em class="key">
+    border-radius</em>:<em class="value"> 150px 150px 0 0</em>;<em class="key">
+    -webkit-transform</em>:<em class="value"> rotate(-45deg)</em>;<em class="key">
+            transform</em>:<em class="value"> rotate(-45deg)</em>;<em class="key">
+    -webkit-transform-origin</em>:<em class="value"> 0 100%</em>;<em class="key">
+            transform-origin</em>:<em class="value"> 0 100%</em>;
+}
+
+<em class="selector">#<em class="key">heart</em>:<em class="key"></em>:before, #<em class="key">echo</em>:<em class="key"></em>:before </em>{<em class="key">
+  left</em>:<em class="value"> 150px</em>;
+}
+
+<em class="selector">#<em class="key">heart</em>:<em class="key"></em>:after, #<em class="key">echo</em>:<em class="key"></em>:after </em>{<em class="key">
+  left</em>:<em class="value"> 0</em>;<em class="key">
+  -webkit-transform</em>:<em class="value"> rotate(45deg)</em>;<em class="key">
+          transform</em>:<em class="value"> rotate(45deg)</em>;<em class="key">
+  -webkit-transform-origin</em>:<em class="value"> 100% 100%</em>;<em class="key">
+          transform-origin</em>:<em class="value"> 100% 100%</em>;
+}
+
+
+<em class="comment">/* It needs some depth  */</em>
+
+<em class="selector">#<em class="key">heart</em>:<em class="key"></em>:after </em>{<em class="key"> 
+  box-shadow</em>:<em class="value">
+    inset -6px -6px 0px 6px rgba(255,255,255,0.1)</em>;
+}
+
+<em class="selector">#<em class="key">heart</em>:<em class="key"></em>:before </em>{<em class="key"> 
+  box-shadow</em>:<em class="value">
+    inset 6px 6px 0px 6px rgba(255,255,255,0.1)</em>;
+}
+
+
+<em class="comment">/* Makin it mine. */</em>
+
+<em class="selector">#<em class="key">heart i</em>:<em class="key"></em>:before </em>{<em class="key">
+  content</em>:<em class="value"> 'pen#PwLXXP'</em>;<em class="key">
+  position</em>:<em class="value"> absolute</em>;<em class="key">
+  z-index</em>:<em class="value"> 9</em>;<em class="key">
+  width</em>:<em class="value"> 100%</em>;<em class="key">
+  top</em>:<em class="value"> 35%</em>;<em class="key"> left</em>:<em class="value"> 0</em>;<em class="key">
+  font-style</em>:<em class="value"> normal</em>;<em class="key">
+  color</em>:<em class="value"> rgba(255,255,255,0.8)</em>;<em class="key">
+  font-weight</em>:<em class="value"> 100</em>;<em class="key">
+  font-size</em>:<em class="value"> 30px</em>;<em class="key">
+  text-shadow</em>:<em class="value"> -1px -1px 0px rgba(0,0,0,0.2)</em>;
+}
+
+
+<em class="comment">/* 
+ * Hearts gotta beat. 
+ */</em>
+
+<em class="selector">@-webkit-keyframes heartbeat </em>{
+<em class="selector">  0%, 100% </em>{<em class="key"> 
+    -webkit-transform</em>:<em class="value"> scale(0.95)</em>;<em class="key"> 
+            transform</em>:<em class="value"> scale(0.95)</em>; 
+  }
+<em class="selector">  50% </em>{<em class="key"> 
+    -webkit-transform</em>:<em class="value"> scale(1.00)</em>;<em class="key"> 
+            transform</em>:<em class="value"> scale(1.00)</em>; 
+  }
+}
+
+<em class="selector">@keyframes heartbeat </em>{
+<em class="selector">  0%, 100% </em>{<em class="key"> transform</em>:<em class="value"> scale(0.95)</em>; }
+<em class="selector">  50%      </em>{<em class="key"> transform</em>:<em class="value"> scale(1.00)</em>; }
+}
+
+<em class="selector">@-webkit-keyframes echo </em>{
+<em class="selector">  0%   </em>{<em class="key"> 
+    opacity</em>:<em class="value"> 0.1</em>;<em class="key">
+    -webkit-transform</em>:<em class="value"> scale(1)</em>;<em class="key">
+            transform</em>:<em class="value"> scale(1)</em>;
+  }
+<em class="selector">  100% </em>{<em class="key"> 
+    opacity</em>:<em class="value"> 0</em>;<em class="key">
+    -webkit-transform</em>:<em class="value"> scale(1.4)</em>;<em class="key">
+            transform</em>:<em class="value"> scale(1.4)</em>;
+  }
+}
+
+<em class="selector">@keyframes echo </em>{
+<em class="selector">  0%   </em>{<em class="key"> 
+    opacity</em>:<em class="value"> 0.1</em>;<em class="key">
+    transform</em>:<em class="value"> scale(1)</em>;
+  }
+<em class="selector">  100% </em>{<em class="key"> 
+    opacity</em>:<em class="value"> 0</em>;<em class="key">
+    transform</em>:<em class="value"> scale(1.4)</em>;
+  }
+}
+
+
+<em class="comment">/* 
+ * Beautiful! Now for the beating...
+ */</em>
+
+<em class="selector">#heart, #echo </em>{<em class="key">
+  -webkit-animation-duration</em>:<em class="value"> 2000ms</em>;<em class="key">
+          animation-duration</em>:<em class="value"> 2000ms</em>;<em class="key">
+  -webkit-animation-timing-function</em>:<em class="value"> 
+    cubic-bezier(0, 0, 0, 1.74)</em>;<em class="key">
+          animation-timing-function</em>:<em class="value"> 
+            cubic-bezier(0, 0, 0, 1.74)</em>;<em class="key">
+  -webkit-animation-delay</em>:<em class="value"> 500ms</em>;<em class="key">
+          animation-delay</em>:<em class="value"> 500ms</em>;<em class="key">
+  -webkit-animation-iteration-count</em>:<em class="value"> infinite</em>;<em class="key">
+          animation-iteration-count</em>:<em class="value"> infinite</em>;<em class="key">
+  -webkit-animation-play-state</em>:<em class="value"> paused</em>;<em class="key">
+          animation-play-state</em>:<em class="value"> paused</em>;
+}
+
+<em class="selector">#heart </em>{<em class="key"> 
+  -webkit-animation-name</em>:<em class="value"> heartbeat</em>;<em class="key"> 
+          animation-name</em>:<em class="value"> heartbeat</em>; 
+}
+<em class="selector">#echo </em>{<em class="key"> 
+  -webkit-animation-name</em>:<em class="value"> echo</em>;<em class="key"> 
+          animation-name</em>:<em class="value"> echo</em>; 
+}
+
+
+<em class="comment">/* 
+ * Ready...           
+ */</em>
+
+<em class="selector">#heart, #echo </em>{
+
+<em class="comment">/* 
+ * ...set...          
+ */</em><em class="key">
+  
+  -webkit-animation-play-state</em>:<em class="value"> running</em>;<em class="key">
+          animation-play-state</em>:<em class="value"> running</em>;
+  
+<em class="comment">/* 
+ * ...搞定！        
+ */</em>
+  
+}
+
+<em class="comment">/* 
+ *
+ * 哇塞！         
+ *
+ * 这创造了这些！       
+ *
+ * 我是说，我创造了我自己...
+ * 我可没借助其它任何东西 
+ * 来实现这个。
+ *
+ * 我笔喜欢编程！       
+ * 
+ * 再见！
+ *  
+ */</em></pre>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_qzone" title="分享到QQ空间"><span class="jiathis_txt jtico jtico_qzone"></span></a>
+	<a class="jiathis_button_tsina" title="分享到微博"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+	<a class="jiathis_button_tqq" title="分享到腾讯微博"><span class="jiathis_txt jtico jtico_tqq"></span></a>
+	<a class="jiathis_button_weixin" title="分享到微信"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+	<a class="jiathis_button_renren" title="分享到人人网"><span class="jiathis_txt jtico jtico_renren"></span></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"><span class="jiathis_button_expanded jiathis_counter jiathis_bubble_style" id="jiathis_counter_7" title="累计分享17次">17</span></a>
+</div>
+<script type="text/javascript" src="./CSS技术高手：一颗自我实现的红心(还会跳呦)_files/jia.js" charset="utf-8"></script><script type="text/javascript" src="./CSS技术高手：一颗自我实现的红心(还会跳呦)_files/plugin.client.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+</div>
+<script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-2477810-34', 'auto');  ga('send', 'pageview');</script> <span id="pageendflag"></span> 
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced (User agent is rejected)
+
+ Served from: www.webhek.com @ 2016-08-04 18:22:03 by W3 Total Cache --><!-- 2016-8-4 18:22 static gzip--></body></html>

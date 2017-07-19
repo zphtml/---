@@ -1,0 +1,306 @@
+/*全局样式=*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	font-size:12px;
+	font-family:Microsoft YaHei,"微软雅黑"；
+}
+ul,ol,li{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+img{
+	border:none;
+}
+/*==================开头栏========================*/
+.head{
+	width: 100%;
+	height: 32px;
+	background: #f6f6f6;
+}
+.head_{
+	width: 950px;
+	height: 32px;
+	margin: 0 auto;
+}
+.head_left {
+	float: left;
+	margin: 0  0 0 5px;
+}
+.head_left li{
+	float: left;
+	line-height: 32px;
+	padding: 0 12px 0 0;
+	background: url(../img/img/xixian.jpg) no-repeat right center;
+}
+.head_left li:last-child{
+	background:none;
+	padding: 0 0 0 12px;
+}
+.head_right{
+	float: right;
+}
+.head_right li{
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 12px 0 12px;
+	background: url(../img/img/xixian.jpg) no-repeat right center;
+	
+}
+.head_right li:last-child{
+	padding: 0 0 0 12px ;
+	background: none;
+}
+.head_right li a{
+	color: #666666;
+}
+.head_right li:last-child a{
+	color: red;
+}
+.span{
+	height: 0px;
+	border-top:5px solid #676767;
+	border-bottom:5px solid #f6f6f6;
+	border-left: 5px  solid #f6f6f6;
+	border-right:5px  solid #f6f6f6;
+	position: absolute;
+	top: 14px;
+	right: 160px;
+}
+.head_right li:nth-child(5){
+	padding: 0 25px 0 12px;
+}
+/*================标题==================*/
+.nav{
+	width: 950px;
+	height: 97px;
+	margin: 0 auto;
+	border: 1px solid red ;
+}
+.nav h1{
+	float: left;
+	width:218px;
+	height: 57px;
+	margin: 20px 0 0 0;
+	background: url(../img/360.jpg) no-repeat left center;
+	font-size: 0;
+}
+.nav img{
+	float: right;
+	margin: 9px 0 0 0;
+}
+/*===============细线================*/
+.xixian{
+	width: 100%;
+	height: 1px;
+	background: #4bac20;
+}
+.xinxi{
+	width: 950px;
+	height: 31px;
+	margin: 10px auto 0;
+}
+.xinxi_text{
+	width: 950px;
+	height: 31px;
+	margin: 10px auto 0;
+}
+.xinxi_box{
+	width: 237px;
+	height: 24px;
+	font-size: 11px;
+	border: 1px solid red ;
+	line-height: 23px;
+	text-align: center;
+	float: left;
+	color: #ebebeb;
+}
+.xinxi_box:first{
+	color: #ff9000;
+}
+.okinfor_{
+	width: 950px;
+	height: 42px;
+	margin: 8px auto 15px;
+	border: 1px solid red ;
+	
+}
+.okinfor{
+	height: 42px;
+	width: 90px;
+	line-height: 42px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 1px solid red ;
+}
+.zhifu{
+	width: 950px;
+	height: 430px;
+	border: 1px solid red;
+	margin: 0 auto;
+}
+.zhifudaohang{
+	width: 950px;
+	height: 35px;
+}
+.zhifudaohang div{
+	margin:0 3px 0 0 ;
+}
+.zhifu1{
+	width: 310px;
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 4px solid #bbeeae ;
+	float: left;
+/*	background: url(../img/t01f48138f1da401aec.png) no-repeat 140px -200px;*/
+}
+.zhifu1 p{
+	margin: 0 0 0 30px;
+}
+.zhifu1 span{
+	color: #0099ff;
+}
+.zhifu2{
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	text-align:center;
+	float: left;
+	border-bottom: 4px solid #bbeeae ;
+}
+.zhifu3{
+	width: 260px;
+	height: 35px;
+	line-height: 35px;
+	text-align:center;
+	float: left;
+	border-bottom: 4px solid #bbeeae ;
+}
+.zhifuxinxi{
+	width: 950px;
+	height: 90px;
+	border: 1px dashed #e4e4e4;
+	clear: both;
+}
+.zhifuxinxi_{
+	width: 310px;
+	height: 90px;
+	float: left;
+	border: 1px solid red ;
+}
+.zhifuxinxi_ dl dt{
+	width: 72px;
+	height: 72px;
+	border: 1px solid #dedee0;
+	float: left;
+	margin: 10px  0 0 10px;
+}
+.ipnone{
+	float: left;
+	margin: 17px 0 0 10px;
+}
+.ipnone p{
+	margin: 0 0 25px 0;
+}
+.ipnone div{
+	width: 40px;
+	height: 18px;
+	border: 1px solid red ;
+	background: url(../img/t01f48138f1da401aec.png) no-repeat 20px 0px;
+}
+.danjia,.heji{
+	width: 120px;
+	height: 90px;
+	border: 1px solid red ;
+	float: left;
+}
+.danjia_{
+	width: 82px;
+	height:46px ;
+	border: 1px solid red ;
+	margin: 22px 0 0 20px;
+}
+.danjia_ p{
+	line-height: 23px;
+}
+.number_{
+	width: 100px;
+	height: 25px;
+	margin: 35px 0 0 12px;
+}
+.jia,.jian{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	float: left;
+	margin: 3px 0 0 0;
+	text-align: center;
+	line-height: 20px;
+}
+
+.number_ input[type = text]{
+	width: 50px;
+	height: 25px;
+	border-radius:3px ;
+	border: 1px solid #cccccc;
+	outline: none;
+	float: left;
+	margin: 0 5px 0 5px;
+}
+.fuwufangshi{
+	width: 260px;
+	height: 90px;
+	float: left;
+	border: 1px solid red;
+}
+.fuwufangshi dl{
+	width: 238px;
+	height: 58px;
+	border: 1px solid red ;
+	margin: 15px 0 0 13px;
+}
+.fuwufangshi dl input[type = "text"]{
+	width: 120px;
+	height: 20px;
+	margin: 8px 0 9px 58px ;
+}
+.Span_color{
+	color: #0099ff;
+	font-size: 11px;
+}
+.heji dl{
+	width: 92px;
+	height: 56px;
+	margin: 15px auto 0;
+	border: 1px solid red;
+}
+.heji dl dt{
+	border: 1px solid red;
+	width: 30px;
+	margin:10px auto ;
+	color: #ff6600;
+}
+.heji dl dd{
+	width: 90px;
+	height: 20px;
+	border: 1px solid #ffe5b9 ;
+	background: #fff5e1;
+	color: #ff6600;
+	line-height:20px;
+	text-align: center;
+}
+.zhifufangshi{
+	height: 305px;
+	width:950px;
+	background: #f9f9f9;
+	clear: both;
+}
